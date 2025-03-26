@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo y los enlaces hacia los extremos */
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .header .logo {
+    width: 300px;
+    height: 100px;
+    background-image: url(/images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header nav {
+    display: flex;
+    justify-content: space-between; /* Asegura que los enlaces estén distribuidos correctamente */
+    width: 100%;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los enlaces dentro del nav */
+    width: 100%;
+  }
+  
+  .header nav ul li {
+    margin: 0 15px; /* Añade margen entre los elementos de la lista */
+  }
+  
+  .header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente para mejorar la legibilidad */
+  }
+  
+  .left-nav, .right-nav {
+    display: flex;
+    gap: 15px; /* Espaciado entre los enlaces */
+  }
+  

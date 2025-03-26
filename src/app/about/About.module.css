@@ -1,0 +1,50 @@
+.aboutContainer {
+    max-width: 800px;
+    margin: 10rem auto;
+    padding: 2rem;
+    background-color: #e7e8e0c1;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .aboutContainer h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .aboutContainer p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    max-height: 51vh; /* Ajusta la altura */
+    overflow: hidden;
+  }
+  
+  .topImage {
+    width: 100%;
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    object-fit: cover; /* Muestra la imagen completa dentro del contenedor */
+    object-position: center top;
+  }
+  
+  .overlayTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em; /* Ajusta el tamaño del título */
+    font-weight: bold; /* Hace el título más grueso */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Añade una sombra al texto */
+    background-color: rgba(0, 0, 0, 0.2); /* Añade un fondo semitransparente */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }

@@ -1,0 +1,36 @@
+.banner {
+  background-image: url('/images/banner.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  padding: 5rem 2rem;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer { /* Estilos para el contenedor del texto */
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.banner h2,
+.banner p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem 0;
+}
+
+.banner h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 1.5em;
+}
