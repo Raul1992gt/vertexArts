@@ -4,33 +4,51 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  text-align: center;
   padding: 5rem 2rem;
   min-height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Asegura que el texto dentro del título esté centrado */
 }
 
-.textContainer { /* Estilos para el contenedor del texto */
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.banner h2,
-.banner p {
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 0.5rem 0;
-}
-
-.banner h2 {
+.title {
   font-size: 3em;
   font-weight: bold;
+  color: white;
+  max-width: 80%; /* Ajustar el ancho máximo del título */
+  text-align: center; /* Centra el texto dentro del título */
+  margin-top: 50px;
 }
 
-.banner p {
-  font-size: 1.5em;
+/* Media Query para pantallas móviles */
+@media (max-width: 768px) {
+  .banner {
+    padding: 3rem 1rem;
+    min-height: 300px;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Asegurar que el texto se alinee al centro */
+  }
+
+  .title {
+    font-size: 2em; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
+    padding: 0.5rem 1rem; /* Añadir espacio alrededor del texto */
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: static; /* Eliminar la posición absoluta en pantallas pequeñas */
+    margin: 0 auto; /* Centrar el título */
+    width: 100%;
+    max-width: calc(100% - 2rem); /* Evitar que toque el borde de la pantalla */
+    box-sizing: border-box;
+  }
+}
+
+/* Media Query para pantallas aún más pequeñas (móviles) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5em; /* Ajustar el tamaño de la fuente para pantallas muy pequeñas */
+  }
 }

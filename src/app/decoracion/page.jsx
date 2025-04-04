@@ -6,16 +6,16 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import Link from 'next/link';
 
-const EncimerasPage = () => {
+const decoracionPage = () => {
   const proyectoPrincipal = {
     title: 'Proyectos',
-    bannerImage: '/images/encimeras/portada/encimeras.webp',
-    mainImage: '/images/encimeras/proyectos/proyecto1.webp', 
+    bannerImage: '/images/decoracion/portada/decoracion.webp',
+    mainImage: '/images/decoracion/proyectos/proyecto1.webp', 
     images: [
-      { src: '/images/encimeras/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
-      { src: '/images/encimeras/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
-      { src: '/images/encimeras/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
-      { src: '/images/encimeras/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
+      { src: '/images/decoracion/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
+      { src: '/images/decoracion/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
+      { src: '/images/decoracion/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
+      { src: '/images/decoracion/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
     ],
   };
 
@@ -48,16 +48,16 @@ const EncimerasPage = () => {
       <Header />
       <div className={styles.imageContainer}>
         <img src={proyectoPrincipal.bannerImage} alt="Imagen Principal" className={styles.topImage} />
-        <h2 className={styles.overlayTitle}>Encimeras</h2>
+        <h2 className={styles.overlayTitle}>Decoración</h2>
       </div>
 
       <div className={styles.aboutContainer}>
-        <h1>Project Art Encimeras</h1>
+        <h1>Project Art Decoración</h1>
         <p>
-          En Project Art, somos especialistas en la fabricación de encimeras de cocina y baño elaboradas con resina epoxi, diseñadas para combinar funcionalidad, durabilidad y estilo único. Cada pieza es cuidadosamente personalizada, adaptándose a las necesidades y preferencias de nuestros clientes.
-          La resina epoxi nos permite crear superficies lisas y resistentes, ideales para soportar el uso diario y la exposición a la humedad, el calor y los productos de limpieza. Además, su versatilidad nos permite jugar con colores, texturas y efectos, creando acabados que van desde lo minimalista hasta diseños más artísticos y personalizados.
-          Nuestras encimeras destacan no solo por su estética, sino también por su sostenibilidad. Apostamos por procesos responsables y la integración de materiales reciclados siempre que es posible, asegurando que cada creación sea tanto hermosa como respetuosa con el medio ambiente.
-          Ya sea para un diseño moderno o rústico, en Project Art trabajamos contigo para transformar tus espacios en algo verdaderamente excepcional, con encimeras únicas que combinan innovación, arte y calidad superior.
+          Diseño con impacto para grandes espacios.
+          En Project Art llevamos nuestra experiencia en materiales reciclados y diseño sostenible al siguiente nivel, especializándonos en la decoración de grandes espacios como restaurantes, hoteles, pubs y discotecas. Creamos ambientes únicos que combinan funcionalidad, estética y respeto por el medio ambiente.
+          Entendemos que cada espacio tiene una identidad propia, por eso trabajamos de forma personalizada en cada proyecto, adaptando nuestras encimeras, revestimientos y mobiliario a las necesidades del cliente y del entorno. Nuestro enfoque une creatividad, materiales nobles reciclados y acabados exclusivos, logrando resultados que destacan por su originalidad y carácter.
+          Ya sea un restaurante que busca una atmósfera acogedora, un hotel que quiere ofrecer una experiencia memorable, o una discoteca que desea un diseño vibrante y moderno, en Project Art transformamos ideas en espacios que inspiran.
         </p>
         <div className={styles.gallery}>
           {/* Card principal */}
@@ -103,8 +103,8 @@ const EncimerasPage = () => {
         <h2>Otras Categorías</h2>
         <div className={styles.linksContainer}>
           <Link href="/mobiliario" className={styles.categoryLink}>Mobiliario</Link>
+          <Link href="/encimeras" className={styles.categoryLink}>Encimeras</Link>
           <Link href="/suelo" className={styles.categoryLink}>Suelos</Link>
-          <Link href="/decoracion" className={styles.categoryLink}>Decoración</Link>
         </div>
       </div>
 
@@ -113,4 +113,4 @@ const EncimerasPage = () => {
   );
 };
 
-export default EncimerasPage;
+export default decoracionPage;

@@ -21,11 +21,17 @@ const categories = [
     image: '/images/suelos.webp',
     link: '/suelo',
   },
+  {
+    name: 'Decoracion', 
+    description: 'Servicio profesional de instalación y montaje para un acabado impecable.',
+    image: '/images/decoracion.webp', 
+    link: '/decoracion',
+  },
 ];
 
 const Categories = () => {
   return (
-    <div className={styles.categories}>
+    <div id='categorias' className={styles.categories}>
       <h2>Nuestras Categorías</h2>
       <div className={styles['category-list']}>
         {categories.map((category, index) => (

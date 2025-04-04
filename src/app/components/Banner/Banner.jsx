@@ -3,14 +3,8 @@ import styles from './Banner.module.css';
 
 const Banner = () => {
   return (
-    <section
-      className={styles.banner}
-      style={{ backgroundImage: "url('/images/banner.webp')" }}
-    >
-      <div className={styles.textContainer}> {/* Contenedor para el texto */}
-        <h2>Mobiliario único con Resina Epoxi</h2>
-        <p>Dale un toque sofisticado a tu espacio con nuestros muebles personalizados.</p>
-      </div>
+    <section className={styles.banner}>
+      <h2 className={styles.title}>Innovación y estilo en cada detalle</h2>
     </section>
   );
 };

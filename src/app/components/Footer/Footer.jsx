@@ -11,18 +11,18 @@ const Footer = () => {
         <div className={styles['footer-column']}>
           <h4>Síguenos</h4>
           <div className={styles['footer-social']}>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            {/*<a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
-            </a>
+            </a>*/}
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            {/*<a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -31,17 +31,17 @@ const Footer = () => {
           <h4>Enlaces</h4>
           <ul>
             <li>
-              <Link href="/about">Sobre Nosotros</Link>
+              <Link href="/">Inicio</Link>
             </li>
             <li>
-              <Link href="/compromiso">Compromiso</Link>
+              <Link href="/about">Nosotros</Link>
             </li>
             <li>
               <Link href="/contacto">Contacto</Link>
             </li>
-            <li>
+            {/*<li>
               <Link href="/faq">Preguntas Frecuentes</Link>
-            </li>
+            </li>*/}
           </ul>
         </div>
 
@@ -50,17 +50,17 @@ const Footer = () => {
           <h4>Contacto</h4>
           <p>Email: contacto@empresa.com</p>
           <p>Teléfono: +34 600 123 456</p>
-          <p>Dirección: Calle Falsa 123, Ciudad</p>
+          <p>Dirección: Calle Falsa 123, Esquivias</p>
         </div>
 
         {/* Logo Grande */}
-        <div className={`${styles['footer-column']} ${styles['footer-logo']}`} style={{ backgroundImage: "url('/images/logo.png')" }}>
+        <div className={`${styles['footer-column']} ${styles['footer-logo']}`} style={{ backgroundImage: "url('/images/logo2.png')" }}>
           {/* Logo en el Footer */}
         </div>
       </div>
 
       <div className={styles['footer-bottom']}>
-        © {new Date().getFullYear()} Project Art. Todos los derechos reservados.
+        © {new Date().getFullYear()} Raúl García Torrejón. Todos los derechos reservados.
       </div>
     </footer>
   );

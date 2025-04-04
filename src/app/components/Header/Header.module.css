@@ -1,53 +1,99 @@
 .header {
-    display: flex;
-    justify-content: space-between; /* Alinea el logo y los enlaces hacia los extremos */
-    align-items: center;
-    background-color: rgba(51, 51, 51, 0.3);
-    position: fixed;
-    top: 0;
+  display: flex;
+  justify-content: center; /* Centra el contenido */
+  align-items: center; /* Centra verticalmente */
+  background-color: rgba(51, 51, 51, 0.8); /* Fondo oscuro y más opaco */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 0; /* Ajusta el padding para hacerlo más compacto */
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  margin: 0 auto; /* Centra el header dentro de la página */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Añade sombra suave debajo */
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.menuButton {
+  display: none; /* Oculta el botón por defecto en pantallas grandes */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navList {
+  list-style: none;
+  display: flex; /* Alinea los elementos en una fila */
+  gap: 2rem; /* Espaciado entre los elementos de la lista */
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  text-align: center;
+}
+
+.navLink {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Animaciones para hover */
+}
+
+.navLink:hover {
+  color: #ffcc00; /* Color de texto en hover */
+  transform: scale(1.1); /* Efecto de escala en hover */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .menuButton {
+    display: block; /* Muestra el botón solo en pantallas pequeñas */
+  }
+
+  .nav {
+    justify-content: space-between; /* Alinea el contenido entre los extremos */
+  }
+
+  .navList {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column; /* Los elementos del menú se apilan verticalmente */
+    gap: 1rem;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    background-color: rgba(51, 51, 51, 0.9); /* Fondo oscuro para el menú */
+    position: absolute;
+    top: 70px; /* Ajusta para que se vea debajo del header */
     left: 0;
-    right: 0;
-    z-index: 1000;
-    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para el menú */
+    transform: translateY(-10px); /* Menú ligeramente desplazado al abrir */
+    opacity: 0; /* Inicia con opacidad 0 para animación */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
   }
-  
-  .header .logo {
-    width: 300px;
-    height: 100px;
-    background-image: url(/images/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+
+  .navList.active {
+    display: flex; /* Muestra el menú cuando está activo */
+    opacity: 1; /* Hace el menú visible */
+    transform: translateY(0); /* Restaura la posición */
   }
-  
-  .header nav {
-    display: flex;
-    justify-content: space-between; /* Asegura que los enlaces estén distribuidos correctamente */
-    width: 100%;
+
+  .navItem {
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 1rem;
   }
-  
-  .header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centra los enlaces dentro del nav */
-    width: 100%;
+
+  .navLink {
+    font-size: 1rem; /* Reduce el tamaño del texto */
   }
-  
-  .header nav ul li {
-    margin: 0 15px; /* Añade margen entre los elementos de la lista */
-  }
-  
-  .header nav ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem; /* Ajusta el tamaño de la fuente para mejorar la legibilidad */
-  }
-  
-  .left-nav, .right-nav {
-    display: flex;
-    gap: 15px; /* Espaciado entre los enlaces */
-  }
-  
+}

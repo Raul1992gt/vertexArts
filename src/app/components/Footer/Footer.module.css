@@ -7,7 +7,7 @@
 
 .footer-container {
   display: flex;
-  flex-wrap: nowrap; /* Cambia a nowrap para evitar el salto de línea */
+  flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
   justify-content: space-around;
   max-width: 1100px;
   margin: auto;
@@ -72,6 +72,7 @@
   width: 350px;
   height: 200px;
   margin: 20px auto;
+  margin-top: -20px;
 }
 
 .footer-bottom {
@@ -80,4 +81,36 @@
   padding-top: 1rem;
   font-size: 0.9rem;
   color: #bbb;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    justify-content: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%; /* Las columnas ocuparán el 100% del ancho */
+    margin: 0.5rem 0;
+  }
+
+  .footer-logo {
+    width: 200px;
+    height: 120px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+/* Media Query para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  .footer h4 {
+    font-size: 1.2rem; /* Reducir el tamaño del título */
+  }
+
+  .footer-social a {
+    font-size: 1.2rem; /* Reducir el tamaño de los íconos */
+  }
 }
