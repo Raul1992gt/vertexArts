@@ -52,11 +52,14 @@ const SueloPage = () => {
       </div>
 
       <div className={styles.aboutContainer}>
-        <h1>Project Art Suelos</h1>
+        <h1>Vertex Art Suelos</h1>
         <p>
-          En Project Art, somos expertos en la creación de suelos de resina epoxi, una solución moderna y versátil que combina durabilidad, estética y funcionalidad. Nuestros suelos están diseñados para transformar cualquier espacio, aportando un acabado liso, brillante y resistente que se adapta tanto a entornos residenciales como comerciales.
-          La resina epoxi es un material innovador que permite personalizar completamente los suelos. Desde acabados monocromáticos y minimalistas hasta diseños artísticos con efectos tridimensionales, marmoleados o metálicos, nuestras creaciones destacan por su exclusividad y atención al detalle. Además de su belleza, estos suelos ofrecen una gran resistencia al desgaste, los impactos, la humedad y los productos químicos, convirtiéndolos en una opción práctica y duradera.
-          En Project Art, utilizamos técnicas avanzadas y materiales de alta calidad para garantizar resultados impecables. Ya sea para renovar un hogar, una oficina, un local comercial o un espacio industrial, nuestros suelos de resina epoxi son la combinación perfecta de diseño contemporáneo y funcionalidad, ofreciendo una superficie que impresiona y perdura con el tiempo.
+          En Vertex Art, somos expertos en la creación de suelos de resina epoxi, una solución moderna y versátil que combina durabilidad, estética y funcionalidad. Nuestros suelos están diseñados para transformar cualquier espacio, aportando un acabado liso, brillante y resistente que se adapta tanto a entornos residenciales como comerciales.
+          La resina epoxi es un material innovador que permite personalizar completamente los suelos. Desde acabados monocromáticos y minimalistas hasta diseños artísticos con efectos tridimensionales, marmoleados o metálicos, nuestras creaciones destacan por su exclusividad y atención al detalle. Además de su belleza, estos suelos ofrecen una gran resistencia al desgaste, 
+          los impactos, la humedad y los productos químicos, convirtiéndolos en una opción práctica y duradera.
+          </p>
+          <p>
+          En Vertex Art, utilizamos técnicas avanzadas y materiales de alta calidad para garantizar resultados impecables. Ya sea para renovar un hogar, una oficina, un local comercial o un espacio industrial, nuestros suelos de resina epoxi son la combinación perfecta de diseño contemporáneo y funcionalidad, ofreciendo una superficie que impresiona y perdura con el tiempo.
         </p>
         <div className={styles.gallery}>
           {/* Card principal */}

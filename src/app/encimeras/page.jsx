@@ -52,12 +52,14 @@ const EncimerasPage = () => {
       </div>
 
       <div className={styles.aboutContainer}>
-        <h1>Project Art Encimeras</h1>
+        <h1>Vertex Art Encimeras</h1>
         <p>
-          En Project Art, somos especialistas en la fabricación de encimeras de cocina y baño elaboradas con resina epoxi, diseñadas para combinar funcionalidad, durabilidad y estilo único. Cada pieza es cuidadosamente personalizada, adaptándose a las necesidades y preferencias de nuestros clientes.
+          En Vertex Art, somos especialistas en la fabricación de encimeras de cocina y baño elaboradas con resina epoxi, diseñadas para combinar funcionalidad, durabilidad y estilo único. Cada pieza es cuidadosamente personalizada, adaptándose a las necesidades y preferencias de nuestros clientes.
           La resina epoxi nos permite crear superficies lisas y resistentes, ideales para soportar el uso diario y la exposición a la humedad, el calor y los productos de limpieza. Además, su versatilidad nos permite jugar con colores, texturas y efectos, creando acabados que van desde lo minimalista hasta diseños más artísticos y personalizados.
+          </p>
+          <p>
           Nuestras encimeras destacan no solo por su estética, sino también por su sostenibilidad. Apostamos por procesos responsables y la integración de materiales reciclados siempre que es posible, asegurando que cada creación sea tanto hermosa como respetuosa con el medio ambiente.
-          Ya sea para un diseño moderno o rústico, en Project Art trabajamos contigo para transformar tus espacios en algo verdaderamente excepcional, con encimeras únicas que combinan innovación, arte y calidad superior.
+          Ya sea para un diseño moderno o rústico, en Vertex Art trabajamos contigo para transformar tus espacios en algo verdaderamente excepcional, con encimeras únicas que combinan innovación, arte y calidad superior.
         </p>
         <div className={styles.gallery}>
           {/* Card principal */}

@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
 
         {/* Logo Grande */}
-        <div className={`${styles['footer-column']} ${styles['footer-logo']}`} style={{ backgroundImage: "url('/images/logo2.png')" }}>
+        <div className={`${styles['footer-column']} ${styles['footer-logo']}`} style={{ backgroundImage: "url('/images/logo.png')" }}>
           {/* Logo en el Footer */}
         </div>
       </div>

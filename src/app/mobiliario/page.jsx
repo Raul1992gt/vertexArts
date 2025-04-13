@@ -52,12 +52,14 @@ const MobiliarioPage = () => {
       </div>
 
       <div className={styles.aboutContainer}>
-        <h1>Project Art Mobiliario</h1>
+        <h1>Vertex Art Mobiliario</h1>
         <p>
-          En Project Art, nos especializamos en la creación de muebles únicos elaborados con materiales reciclados como madera y hierro, combinando sostenibilidad, diseño artesanal y durabilidad. Cada pieza que fabricamos cuenta una historia, al dar una nueva vida a materiales que han sido cuidadosamente seleccionados y transformados con dedicación y creatividad.
+          En Vertex Art, nos especializamos en la creación de muebles únicos elaborados con materiales reciclados como madera y hierro, combinando sostenibilidad, diseño artesanal y durabilidad. Cada pieza que fabricamos cuenta una historia, al dar una nueva vida a materiales que han sido cuidadosamente seleccionados y transformados con dedicación y creatividad.
           La madera recuperada aporta carácter, textura y un encanto natural a nuestros diseños, mientras que el hierro reciclado añade fuerza, estilo industrial y modernidad. La fusión de estos materiales crea muebles que destacan por su autenticidad y funcionalidad, perfectos para quienes buscan soluciones responsables sin comprometer la estética.
+          </p>
+          <p>
           Nuestro enfoque artesanal nos permite personalizar cada proyecto según las necesidades y gustos de nuestros clientes. Ya sea una mesa, un armario o una estantería, nos aseguramos de que cada pieza sea única, reflejando tanto nuestro compromiso con la calidad como el valor del diseño sostenible.
-          En Project Art, creemos que los muebles no solo deben embellecer un espacio, sino también contar una historia de respeto por el medio ambiente y el trabajo duro. Transformamos materiales reciclados en obras de arte funcionales, creando piezas que marcan la diferencia tanto en tu hogar como en el planeta.
+          En Vertex Art, creemos que los muebles no solo deben embellecer un espacio, sino también contar una historia de respeto por el medio ambiente y el trabajo duro. Transformamos materiales reciclados en obras de arte funcionales, creando piezas que marcan la diferencia tanto en tu hogar como en el planeta.
         </p>
         <div className={styles.gallery}>
           {/* Card principal */}

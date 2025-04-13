@@ -52,12 +52,14 @@ const decoracionPage = () => {
       </div>
 
       <div className={styles.aboutContainer}>
-        <h1>Project Art Decoración</h1>
+        <h1>Vertex Art Decoración</h1>
         <p>
           Diseño con impacto para grandes espacios.
-          En Project Art llevamos nuestra experiencia en materiales reciclados y diseño sostenible al siguiente nivel, especializándonos en la decoración de grandes espacios como restaurantes, hoteles, pubs y discotecas. Creamos ambientes únicos que combinan funcionalidad, estética y respeto por el medio ambiente.
+          En Vertex Art llevamos nuestra experiencia en materiales reciclados y diseño sostenible al siguiente nivel, especializándonos en la decoración de grandes espacios como restaurantes, hoteles, pubs y discotecas. Creamos ambientes únicos que combinan funcionalidad, estética y respeto por el medio ambiente.
+        </p>
+        <p>
           Entendemos que cada espacio tiene una identidad propia, por eso trabajamos de forma personalizada en cada proyecto, adaptando nuestras encimeras, revestimientos y mobiliario a las necesidades del cliente y del entorno. Nuestro enfoque une creatividad, materiales nobles reciclados y acabados exclusivos, logrando resultados que destacan por su originalidad y carácter.
-          Ya sea un restaurante que busca una atmósfera acogedora, un hotel que quiere ofrecer una experiencia memorable, o una discoteca que desea un diseño vibrante y moderno, en Project Art transformamos ideas en espacios que inspiran.
+          Ya sea un restaurante que busca una atmósfera acogedora, un hotel que quiere ofrecer una experiencia memorable, o una discoteca que desea un diseño vibrante y moderno, en Vertex Art transformamos ideas en espacios que inspiran.
         </p>
         <div className={styles.gallery}>
           {/* Card principal */}
