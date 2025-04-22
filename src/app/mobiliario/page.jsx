@@ -9,13 +9,13 @@ import Link from 'next/link';
 const MobiliarioPage = () => {
   const proyectoPrincipal = {
     title: 'Proyectos',
-    bannerImage: '/images/mobiliario/portada/mobiliario.webp',
-    mainImage: '/images/mobiliario/proyectos/proyecto1.webp', 
+    bannerImage: '/vertexArts/images/mobiliario/portada/mobiliario.webp',
+    mainImage: '/vertexArts/images/mobiliario/proyectos/proyecto1.webp', 
     images: [
-      { src: '/images/mobiliario/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
-      { src: '/images/mobiliario/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
-      { src: '/images/mobiliario/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
-      { src: '/images/mobiliario/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
+      { src: '/vertexArts/images/mobiliario/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
+      { src: '/vertexArts/images/mobiliario/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
+      { src: '/vertexArts/images/mobiliario/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
+      { src: '/vertexArts/images/mobiliario/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
     ],
   };
 

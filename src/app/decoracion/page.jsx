@@ -9,13 +9,13 @@ import Link from 'next/link';
 const decoracionPage = () => {
   const proyectoPrincipal = {
     title: 'Proyectos',
-    bannerImage: '/images/decoracion/portada/decoracion.webp',
-    mainImage: '/images/decoracion/proyectos/proyecto1.webp', 
+    bannerImage: '/vertexArts/images/decoracion/portada/decoracion.webp',
+    mainImage: '/vertexArts/images/decoracion/proyectos/proyecto1.webp', 
     images: [
-      { src: '/images/decoracion/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
-      { src: '/images/decoracion/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
-      { src: '/images/decoracion/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
-      { src: '/images/decoracion/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
+      { src: '/vertexArts/images/decoracion/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
+      { src: '/vertexArts/images/decoracion/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
+      { src: '/vertexArts/images/decoracion/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
+      { src: '/vertexArts/images/decoracion/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
     ],
   };
 

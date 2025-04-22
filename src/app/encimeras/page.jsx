@@ -9,13 +9,13 @@ import Link from 'next/link';
 const EncimerasPage = () => {
   const proyectoPrincipal = {
     title: 'Proyectos',
-    bannerImage: '/images/encimeras/portada/encimeras.webp',
-    mainImage: '/images/encimeras/proyectos/proyecto1.webp', 
+    bannerImage: '/vertexArts/images/encimeras/portada/encimeras.webp',
+    mainImage: '/vertexArts/images/encimeras/proyectos/proyecto1.webp', 
     images: [
-      { src: '/images/encimeras/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
-      { src: '/images/encimeras/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
-      { src: '/images/encimeras/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
-      { src: '/images/encimeras/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
+      { src: '/vertexArts/images/encimeras/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
+      { src: '/vertexArts/images/encimeras/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
+      { src: '/vertexArts/images/encimeras/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
+      { src: '/vertexArts/images/encimeras/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
     ],
   };
 
