@@ -50,7 +50,7 @@ const Contacto = () => {
       <Header />
       <div className={styles.contactContainer}>
         <div className={styles.imageSection}>
-          <img src="/images/logo2.png" alt="Imagen Impactante" className={styles.image} />
+          <img src="/vertexArts/images/logo2.png" alt="Imagen Impactante" className={styles.image} />
         </div>
         <div className={styles.formSection}>
           <h1 className={styles.title}>¡Contáctanos!</h1>

@@ -9,13 +9,13 @@ import Link from 'next/link';
 const SueloPage = () => {
   const proyectoPrincipal = {
     title: 'Proyectos',
-    bannerImage: '/images/suelo/portada/suelos.webp',
-    mainImage: '/images/suelo/proyectos/proyecto1.webp', 
+    bannerImage: '/vertexArts/images/suelo/portada/suelos.webp',
+    mainImage: '/vertexArts/images/suelo/proyectos/proyecto1.webp', 
     images: [
-      { src: '/images/suelo/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
-      { src: '/images/suelo/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
-      { src: '/images/suelo/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
-      { src: '/images/suelo/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
+      { src: '/vertexArts/images/suelo/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
+      { src: '/vertexArts/images/suelo/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
+      { src: '/vertexArts/images/suelo/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
+      { src: '/vertexArts/images/suelo/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
     ],
   };
 

@@ -6,25 +6,25 @@ const categories = [
   {
     name: 'Encimeras',
     description: 'Diseños modernos y personalizados, perfectos para tu cocina o baño.',
-    image: '/images/encimeras.webp',
+    image: 'https://raul1992gt.github.io/vertexArts/images/encimeras.webp',
     link: '/encimeras',
   },
   {
     name: 'Mobiliario',
     description: 'Detalles únicos para tu hogar, con piezas personalizadas para cada espacio.',
-    image: '/images/mobiliario.webp',
+    image: 'https://raul1992gt.github.io/vertexArts/images/mobiliario.webp',
     link: '/mobiliario',
   },
   {
     name: 'Suelos',
     description: 'Espacios elegantes y funcionales que combinan estilo y comodidad.',
-    image: '/images/suelos.webp',
+    image: 'https://raul1992gt.github.io/vertexArts/images/suelos.webp',
     link: '/suelo',
   },
   {
     name: 'Decoracion', 
     description: 'Servicio profesional de instalación y montaje para un acabado impecable.',
-    image: '/images/decoracion.webp', 
+    image: 'https://raul1992gt.github.io/vertexArts/images/decoracion.webp', 
     link: '/decoracion',
   },
 ];
