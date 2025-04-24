@@ -40,7 +40,7 @@ const About = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link href="/suelos">
+            <Link href="/suelo">
               <img src="/vertexArts/images/suelos.webp" alt="Materiales reciclados" className={styles.sliderImage}/>
             </Link>
           </SwiperSlide>
