@@ -35,7 +35,7 @@ const About = () => {
         {/* Acordeones */}
         <div className={styles.accordionContainer}>
           
-        <button className={styles.accordion} onClick={() => togglePanel(1)}>
+          <button className={styles.accordion} onClick={() => togglePanel(1)}>
             Esfuerzo
           </button>
           <div className={`${styles.panel} ${active === 1 ? styles.show : ''}`}>

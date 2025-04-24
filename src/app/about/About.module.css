@@ -1,23 +1,19 @@
 .accordion {
-  background-color: #A67B5B;
-  padding: 1rem;
-  width: auto; /* Ajusta el ancho al contenido */
-  max-width: 80%; /* Evita que sea demasiado ancho */
-  text-align: left;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
-  display: block; /* Evita que se alineen en una fila */
-  border-radius: 8px;
+  width: 250px; /* Tamaño fijo para que todas las cajas tengan el mismo ancho */
+  display: block;
+  border-radius: 50px;
+  font-size: 1.1rem; /* Tamaño del texto aumentado */
+  line-height: 1.6;   /* Espaciado entre líneas */
+  background-color:#A67B5B;
 }
 
 .accordionContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: center; /* Centra los elementos verticalmente */
+  flex-direction: row; /* Ahora las cajas van en fila horizontal */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem; /* Espacio entre cajas */
+  flex-wrap: wrap; /* Por si no entran en una línea, que bajen a la siguiente */
 }
 
 .accordion:hover {
@@ -25,12 +21,16 @@
 }
 
 .panel {
-  padding: 0 1rem;
+  margin-top: 0.5rem;
   display: none;
   background-color: #d1d1d1c1;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
   border-radius: 8px;
+  padding: 1.5rem; /* Espaciado interior */
+  min-height: 180px; /* Altura mínima para que no se vea tan pequeño */
+  width: 100%; /* Que ocupe el ancho disponible del contenedor */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional para dar profundidad */
+  box-sizing: border-box;
 }
 
 .panel.show {
