@@ -4,6 +4,11 @@ import React, { useState } from 'react';
 import styles from './About.module.css';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import Link from 'next/link';
 
 const About = () => {
   const [active, setActive] = useState(null);
@@ -15,8 +20,31 @@ const About = () => {
   return (
     <div>
       <Header />
-      <div className={styles.imageContainer}>
-        <img src="/vertexArts/images/nosotros.webp" alt="Imagen Superior" className={styles.topImage} />
+      <div className={styles.sliderContainer}>
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{ delay: 3000 }}
+          modules={[Autoplay, Pagination]}
+          pagination={{ clickable: true }}
+        >
+          <SwiperSlide>
+            <Link href="/decoracion">
+              <img src="/vertexArts/images/decoracion.webp" alt="Nosotros" className={styles.sliderImage}/>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="/encimeras">
+              <img src="/vertexArts/images/encimeras.webp" alt="Diseño" className={styles.sliderImage}/>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="/suelos">
+              <img src="/vertexArts/images/suelos.webp" alt="Materiales reciclados" className={styles.sliderImage}/>
+            </Link>
+          </SwiperSlide>
+        </Swiper>
       </div>
       <div className={styles.aboutContainer}>
         <h1>Vertex Art</h1>
