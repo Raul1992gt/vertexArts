@@ -48,7 +48,6 @@ const MobiliarioPage = () => {
       <Header />
       <div className={styles.imageContainer}>
         <img src={proyectoPrincipal.bannerImage} alt="Imagen Principal" className={styles.topImage} />
-        <h2 className={styles.overlayTitle}>Mobiliario</h2>
       </div>
 
       <div className={styles.aboutContainer}>
@@ -61,45 +60,7 @@ const MobiliarioPage = () => {
           Nuestro enfoque artesanal nos permite personalizar cada proyecto según las necesidades y gustos de nuestros clientes. Ya sea una mesa, un armario o una estantería, nos aseguramos de que cada pieza sea única, reflejando tanto nuestro compromiso con la calidad como el valor del diseño sostenible.
           En Vertex Art, creemos que los muebles no solo deben embellecer un espacio, sino también contar una historia de respeto por el medio ambiente y el trabajo duro. Transformamos materiales reciclados en obras de arte funcionales, creando piezas que marcan la diferencia tanto en tu hogar como en el planeta.
         </p>
-        <div className={styles.gallery}>
-          {/* Card principal */}
-          <div className={styles.card} onClick={openModal}>
-            <img src={proyectoPrincipal.mainImage} alt={proyectoPrincipal.title} className={styles.cardImage} />
-            <h3>{proyectoPrincipal.title}</h3>
-          </div>
-        </div>
       </div>
-
-      {/* Modal para ver el carrusel de imágenes */}
-      {selectedProject && (
-  <div className={styles.modal} onClick={closeModal}>
-    <div
-      className={styles.modalContent}
-      onClick={(e) => e.stopPropagation()} // Evita que el modal se cierre al hacer clic dentro
-    >
-      <button className={styles.modalButton} onClick={prevImage}>
-        &lt;
-      </button>
-      <img
-        src={selectedProject.images[currentImageIndex].src}
-        alt={selectedProject.images[currentImageIndex].alt}
-        className={styles.modalImage}
-      />
-      <button className={styles.modalButton} onClick={nextImage}>
-        &gt;
-      </button>
-      <div className={styles.imageIndex}>
-        {currentImageIndex + 1} / {selectedProject.images.length}
-      </div>
-      {/* Contenedor de texto fuera de la imagen */}
-      <div className={styles.textContainer}>
-        <p className={styles.imageText}>{selectedProject.images[currentImageIndex].text}</p>
-      </div>
-    </div>
-  </div>
-)}
-
-
 
       <div className={styles.categoriesLinks}>
         <h2>Otras Categorías</h2>

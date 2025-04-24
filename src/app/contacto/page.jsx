@@ -26,7 +26,7 @@ const Contacto = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_URL, {
+    const response = await fetch("https://formspree.io/f/mqkngbek", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

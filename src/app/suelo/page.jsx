@@ -48,7 +48,6 @@ const SueloPage = () => {
       <Header />
       <div className={styles.imageContainer}>
         <img src={proyectoPrincipal.bannerImage} alt="Imagen Principal" className={styles.topImage} />
-        <h2 className={styles.overlayTitle}>Suelos</h2>
       </div>
 
       <div className={styles.aboutContainer}>
@@ -61,44 +60,7 @@ const SueloPage = () => {
           <p>
           En Vertex Art, utilizamos técnicas avanzadas y materiales de alta calidad para garantizar resultados impecables. Ya sea para renovar un hogar, una oficina, un local comercial o un espacio industrial, nuestros suelos de resina epoxi son la combinación perfecta de diseño contemporáneo y funcionalidad, ofreciendo una superficie que impresiona y perdura con el tiempo.
         </p>
-        <div className={styles.gallery}>
-          {/* Card principal */}
-          <div className={styles.card} onClick={openModal}>
-            <img src={proyectoPrincipal.mainImage} alt={proyectoPrincipal.title} className={styles.cardImage} />
-            <h3>{proyectoPrincipal.title}</h3>
-          </div>
-        </div>
       </div>
-
-      {/* Modal para ver el carrusel de imágenes */}
-      {selectedProject && (
-  <div className={styles.modal} onClick={closeModal}>
-    <div
-      className={styles.modalContent}
-      onClick={(e) => e.stopPropagation()} // Evita que el modal se cierre al hacer clic dentro
-    >
-      <button className={styles.modalButton} onClick={prevImage}>
-        &lt;
-      </button>
-      <img
-        src={selectedProject.images[currentImageIndex].src}
-        alt={selectedProject.images[currentImageIndex].alt}
-        className={styles.modalImage}
-      />
-      <button className={styles.modalButton} onClick={nextImage}>
-        &gt;
-      </button>
-      <div className={styles.imageIndex}>
-        {currentImageIndex + 1} / {selectedProject.images.length}
-      </div>
-      {/* Contenedor de texto fuera de la imagen */}
-      <div className={styles.textContainer}>
-        <p className={styles.imageText}>{selectedProject.images[currentImageIndex].text}</p>
-      </div>
-    </div>
-  </div>
-)}
-
 
 
       <div className={styles.categoriesLinks}>

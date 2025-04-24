@@ -48,7 +48,6 @@ const EncimerasPage = () => {
       <Header />
       <div className={styles.imageContainer}>
         <img src={proyectoPrincipal.bannerImage} alt="Imagen Principal" className={styles.topImage} />
-        <h2 className={styles.overlayTitle}>Encimeras</h2>
       </div>
 
       <div className={styles.aboutContainer}>
@@ -61,16 +60,15 @@ const EncimerasPage = () => {
           Nuestras encimeras destacan no solo por su estética, sino también por su sostenibilidad. Apostamos por procesos responsables y la integración de materiales reciclados siempre que es posible, asegurando que cada creación sea tanto hermosa como respetuosa con el medio ambiente.
           Ya sea para un diseño moderno o rústico, en Vertex Art trabajamos contigo para transformar tus espacios en algo verdaderamente excepcional, con encimeras únicas que combinan innovación, arte y calidad superior.
         </p>
-        <div className={styles.gallery}>
-          {/* Card principal */}
+        {/*<div className={styles.gallery}>
           <div className={styles.card} onClick={openModal}>
             <img src={proyectoPrincipal.mainImage} alt={proyectoPrincipal.title} className={styles.cardImage} />
             <h3>{proyectoPrincipal.title}</h3>
           </div>
-        </div>
+        </div>*/}
       </div>
 
-      {/* Modal para ver el carrusel de imágenes */}
+      {/* Modal para ver el carrusel de imágenes 
       {selectedProject && (
   <div className={styles.modal} onClick={closeModal}>
     <div
@@ -91,13 +89,12 @@ const EncimerasPage = () => {
       <div className={styles.imageIndex}>
         {currentImageIndex + 1} / {selectedProject.images.length}
       </div>
-      {/* Contenedor de texto fuera de la imagen */}
       <div className={styles.textContainer}>
         <p className={styles.imageText}>{selectedProject.images[currentImageIndex].text}</p>
       </div>
     </div>
   </div>
-)}
+)}*/}
 
 
 

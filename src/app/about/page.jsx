@@ -17,7 +17,6 @@ const About = () => {
       <Header />
       <div className={styles.imageContainer}>
         <img src="/vertexArts/images/nosotros.webp" alt="Imagen Superior" className={styles.topImage} />
-        <h2 className={styles.overlayTitle}>Nosotros</h2>
       </div>
       <div className={styles.aboutContainer}>
         <h1>Vertex Art</h1>
