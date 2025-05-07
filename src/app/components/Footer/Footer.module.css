@@ -7,7 +7,7 @@
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
+  flex-wrap: wrap;
   justify-content: space-around;
   max-width: 1100px;
   margin: auto;
@@ -16,8 +16,8 @@
 
 .footer-column {
   margin: 1rem;
-  flex: 1; /* Permite que las columnas se expandan y contraigan */
-  min-width: 200px; /* Asegura un ancho mínimo */
+  flex: 1;
+  min-width: 200px;
 }
 
 .footer h4 {
@@ -90,7 +90,7 @@
   }
 
   .footer-column {
-    flex: 1 1 100%; /* Las columnas ocuparán el 100% del ancho */
+    flex: 1 1 100%;
     margin: 0.5rem 0;
   }
 
@@ -107,10 +107,10 @@
 /* Media Query para pantallas muy pequeñas (móviles) */
 @media (max-width: 480px) {
   .footer h4 {
-    font-size: 1.2rem; /* Reducir el tamaño del título */
+    font-size: 1.2rem;
   }
 
   .footer-social a {
-    font-size: 1.2rem; /* Reducir el tamaño de los íconos */
+    font-size: 1.2rem;
   }
 }

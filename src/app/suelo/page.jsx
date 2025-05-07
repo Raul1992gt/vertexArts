@@ -1,16 +1,16 @@
 'use client';
-
-import React, { useState } from 'react';
-import styles from '../estilosCategorias/categoriasEstyle.module.css'; 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import Link from 'next/link';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import Link from 'next/link';
+import styles from '../estilosCategorias/categoriasEstyle.module.css';
 
 const SueloPage = () => {
   const proyectoPrincipal = {
-    title: 'Proyectos',
-    bannerImage: '/vertexArts/images/suelo/portada/suelos.webp',
-    mainImage: '/vertexArts/images/suelo/proyectos/proyecto1.webp', 
     images: [
       { src: '/vertexArts/images/suelo/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
       { src: '/vertexArts/images/suelo/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
@@ -21,9 +21,22 @@ const SueloPage = () => {
   
   return (
     <div>
-      <Header />
+      <Header />     
       <div className={styles.imageContainer}>
-        <img src={proyectoPrincipal.bannerImage} alt="Imagen Principal" className={styles.topImage} />
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          autoplay={{ delay: 3000 }}
+          pagination={{ clickable: true }}
+          navigation
+          loop
+          className={styles.slider}
+        >
+          {proyectoPrincipal.images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img src={image.src} alt={image.alt} className={styles.slider} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       <div className={styles.aboutContainer}>

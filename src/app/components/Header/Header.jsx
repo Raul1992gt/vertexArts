@@ -1,4 +1,4 @@
-"use client";  // Esto indica que el componente es del lado del cliente
+"use client";
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 import Link from 'next/link';
@@ -7,7 +7,7 @@ const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenu = () => {
-    setMenuActive(!menuActive); // Alterna el estado del menú
+    setMenuActive(!menuActive);
   };
 
   return (
@@ -29,9 +29,6 @@ const Header = () => {
           <li className={styles.navItem}>
             <Link href="/contacto" className={styles.navLink}>Contacto</Link>
           </li>
-          {/*<li className={styles.navItem}>
-            <Link href="/#categorias" className={styles.navLink}>Categorías</Link>
-          </li>*/}
         </ul>
       </nav>
     </header>

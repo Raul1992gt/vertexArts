@@ -121,16 +121,16 @@
 /* Media Query para pantallas móviles */
 @media (max-width: 768px) {
   .contactContainer {
-    flex-direction: column; /* Cambia la dirección a columna para móviles */
-    align-items: flex-start; /* Alinea los elementos al principio */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .imageSection {
-    padding-right: 0; /* Elimina el padding para ajustarse mejor en pantallas pequeñas */
-    margin-bottom: 1rem; /* Añade un pequeño espacio entre la imagen y el formulario */
+    padding-right: 0;
+    margin-bottom: 1rem;
   }
 
   .image {
-    max-width: 100%; /* La imagen ocupará todo el ancho disponible */
+    max-width: 100%;
   }
 }

@@ -1,17 +1,19 @@
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import Link from 'next/link';  // Asegúrate de importar Link
+import 'swiper/css/navigation';
+import Link from 'next/link';
 import styles from './Banner.module.css';
 
 const BannerSlider = () => {
   return (
     <Swiper
-      modules={[Autoplay, Pagination]}
+      modules={[Autoplay, Pagination, Navigation]}
       autoplay={{ delay: 3000 }}
       pagination={{ clickable: true }}
+      navigation
       loop
       className={styles.slider}
     >

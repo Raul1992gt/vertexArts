@@ -20,6 +20,8 @@
   padding: 1rem;
   background-color: transparent;
   text-align: center;
+  padding-left: 50px;  /* Agrega espacio a la izquierda */
+  padding-right: 50px; /* Agrega espacio a la derecha */
 }
 
 .aboutContainer h1{
@@ -63,4 +65,24 @@
 
 .categoryLink:hover {
   background: #f0f0f0;
+}
+
+.slider {
+  position: relative;
+  width: 96%; 
+  height: 100%; 
+  display: block; 
+  margin: 0 auto;
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .slider {
+    height: 50vh;
+  }
+  .aboutContainer{
+    padding-left: 10px;  
+    padding-right: 10px; 
+  }
 }

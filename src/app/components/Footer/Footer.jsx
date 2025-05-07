@@ -11,18 +11,9 @@ const Footer = () => {
         <div className={styles['footer-column']}>
           <h4>Síguenos</h4>
           <div className={styles['footer-social']}>
-            {/*<a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook />
-            </a>*/}
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            {/*<a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
-            </a> */}
           </div>
         </div>
 
@@ -39,13 +30,9 @@ const Footer = () => {
             <li>
               <Link href="/contacto">Contacto</Link>
             </li>
-            {/*<li>
-              <Link href="/faq">Preguntas Frecuentes</Link>
-            </li>*/}
           </ul>
         </div>
 
-        {/* Contacto */}
         <div className={styles['footer-column']}>
           <h4>Contacto</h4>
           <p>Email: contacto@empresa.com</p>
@@ -53,9 +40,7 @@ const Footer = () => {
           <p>Dirección: Calle Falsa 123, Esquivias</p>
         </div>
 
-        {/* Logo Grande */}
         <div className={`${styles['footer-column']} ${styles['footer-logo']}`} style={{ backgroundImage: "url('/vertexArts/images/logo.png')" }}>
-          {/* Logo en el Footer */}
         </div>
       </div>
 
