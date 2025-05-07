@@ -19,30 +19,6 @@ const decoracionPage = () => {
     ],
   };
 
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const openModal = () => {
-    setSelectedProject(proyectoPrincipal);
-    setCurrentImageIndex(0);
-  };
-
-  const closeModal = () => {
-    setSelectedProject(null);
-  };
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === selectedProject.images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? selectedProject.images.length - 1 : prevIndex - 1
-    );
-  };
-
   return (
     <div>
       <Header />
