@@ -12,10 +12,13 @@ import styles from '../estilosCategorias/categoriasEstyle.module.css';
 const MobiliarioPage = () => {
   const proyectoPrincipal = {
     images: [
-      { src: '/vertexArts/images/mobiliario/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
-      { src: '/vertexArts/images/mobiliario/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
-      { src: '/vertexArts/images/mobiliario/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
-      { src: '/vertexArts/images/mobiliario/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
+      { src: '/vertexArts/images/mobiliario/ajedrez_web.webp', alt: 'Ajedrez' },
+      { src: '/vertexArts/images/mobiliario/mesa de rio.webp', alt: 'Mesa de rio' },
+      { src: '/vertexArts/images/mobiliario/mesa_grande.webp', alt: 'Mesa grande' },
+      { src: '/vertexArts/images/mobiliario/mesa_rio_mia_web.webp', alt: 'Mesa rio' },
+      { src: '/vertexArts/images/mobiliario/mobiliario_3.webp', alt: 'Mobiliario' },
+      { src: '/vertexArts/images/mobiliario/mobiliario3.webp', alt: 'Mobiliario' },
+      { src: '/vertexArts/images/mobiliario/tabla_corte3.webp', alt: 'Tabla de corte' },
     ],
   };
   

@@ -12,10 +12,13 @@ import styles from '../estilosCategorias/categoriasEstyle.module.css';
 const SueloPage = () => {
   const proyectoPrincipal = {
     images: [
-      { src: '/vertexArts/images/suelo/proyectos/proyecto1.webp', alt: 'Imagen 1 Proyecto 1', text: 'Texto para Imagen 1 Proyecto 1' },
-      { src: '/vertexArts/images/suelo/proyectos/proyecto2.webp', alt: 'Imagen 2 Proyecto 1', text: 'Texto para Imagen 2 Proyecto 1' },
-      { src: '/vertexArts/images/suelo/proyectos/proyecto3.webp', alt: 'Imagen 3 Proyecto 1', text: 'Texto para Imagen 3 Proyecto 1' },
-      { src: '/vertexArts/images/suelo/proyectos/proyecto4.webp', alt: 'Imagen 4 Proyecto 2', text: 'Texto para Imagen 4 Proyecto 2' },
+      { src: '/vertexArts/images/suelo/aplicacion suelos_1.webp', alt: 'Aplicacion de suelos' },
+      { src: '/vertexArts/images/suelo/cockteleria_2.webp', alt: 'Cockteleria' },
+      { src: '/vertexArts/images/suelo/suelos_4.webp', alt: 'Suelos' },
+      { src: '/vertexArts/images/suelo/suelos2_5.webp', alt: 'Suelos' },
+      { src: '/vertexArts/images/suelo/terminacion blanca_6.webp', alt: 'Terminacion blanca' },
+      { src: '/vertexArts/images/suelo/terminacion granito_7.webp', alt: 'Terminacion granito' },
+      { src: '/vertexArts/images/suelo/terminacion granito_7.webp', alt: 'Terminacion granito' },
     ],
   };
   
