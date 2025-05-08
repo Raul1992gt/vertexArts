@@ -53,8 +53,8 @@ const Contacto = () => {
           <img src="/vertexArts/images/logo.png" alt="Imagen Impactante" className={styles.image} />
         </div>
         <div className={styles.formSection}>
-          <h1 className={styles.title}>¡Contáctanos!</h1>
-          <p className={styles.subtitle}>Nos encantaría saber de ti, ¿en qué podemos ayudarte?</p>
+          <h1 className={styles.title}>¿Tienes una chispa creativa?</h1>
+          <p className={styles.subtitle}>Cuéntanos tu idea, por más loca que parezca. Nos encantan los retos.</p>
 
           <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
