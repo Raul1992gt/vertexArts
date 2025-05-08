@@ -77,8 +77,8 @@
 }
 
 @media (max-width: 768px) {
-  .sliderImage {
-    height: 45vh;
+  .topImage {
+    height: 50vh;
   }
 
   .aboutContainer{
