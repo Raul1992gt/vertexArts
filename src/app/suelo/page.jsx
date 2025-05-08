@@ -18,7 +18,7 @@ const SueloPage = () => {
       { src: '/vertexArts/images/suelo/suelos2_5.webp', alt: 'Suelos' },
       { src: '/vertexArts/images/suelo/terminacion blanca_6.webp', alt: 'Terminacion blanca' },
       { src: '/vertexArts/images/suelo/terminacion granito_7.webp', alt: 'Terminacion granito' },
-      { src: '/vertexArts/images/suelo/terminacion granito_7.webp', alt: 'Terminacion granito' },
+      { src: '/vertexArts/images/suelo/terminacion marmolizado_8.webp', alt: 'Terminacion marmolizado' },
     ],
   };
   
