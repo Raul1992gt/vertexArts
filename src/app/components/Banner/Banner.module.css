@@ -9,6 +9,16 @@
   height: 100%;
 }
 
+.slideVideo {
+  width: 96%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
 .slideImage {
   width: 96%;
   height: 100%;
@@ -32,4 +42,11 @@
     height: 100%;
     background-size: cover;
   }
+  
+  .slideVideo {
+    height: 100%;
+    object-fit: cover;
+  }
 }
+
+

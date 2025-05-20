@@ -19,6 +19,7 @@ const MobiliarioPage = () => {
       { src: '/vertexArts/images/mobiliario/mobiliario_3.webp', alt: 'Mobiliario' },
       { src: '/vertexArts/images/mobiliario/mobiliario3.webp', alt: 'Mobiliario' },
       { src: '/vertexArts/images/mobiliario/tabla_corte3.webp', alt: 'Tabla de corte' },
+      { src: '/vertexArts/images/mobiliario/vertexArt.webp', alt: 'Vertex Art' },
     ],
   };
   

@@ -11,12 +11,22 @@ const BannerSlider = () => {
   return (
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
-      autoplay={{ delay: 3000 }}
+      autoplay={{ delay: 4500 }}
       pagination={{ clickable: true }}
       navigation
       loop
       className={styles.slider}
     >
+      <SwiperSlide className={styles.slide}>
+        <video
+          className={styles.slideVideo}
+          src="/videos/vertexArt.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      </SwiperSlide>
       <SwiperSlide className={styles.slide}>
         <Link href="/decoracion">
           <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/decoracion.webp')" }} />
