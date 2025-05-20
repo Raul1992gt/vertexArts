@@ -21,7 +21,7 @@ const BannerSlider = () => {
         <div className={styles.videoWrapper}>
           <video
             className={styles.slideVideo}
-            src="/videos/vertexArt.mp4"
+            src="/vertexArts/videos/vertexArt.mp4"
             autoPlay
             muted
             loop
@@ -31,17 +31,17 @@ const BannerSlider = () => {
       </SwiperSlide>
       <SwiperSlide className={styles.slide}>
         <Link href="/decoracion">
-          <div className={styles.slideImage} style={{ backgroundImage: "url('/images/decoracion.webp')" }} />
+          <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/decoracion.webp')" }} />
         </Link>
       </SwiperSlide>
       <SwiperSlide className={styles.slide}>
         <Link href="/encimeras">
-          <div className={styles.slideImage} style={{ backgroundImage: "url('/images/encimeras.webp')" }} />
+          <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/encimeras.webp')" }} />
         </Link>
       </SwiperSlide>
       <SwiperSlide className={styles.slide}>
         <Link href="/suelo">
-          <div className={styles.slideImage} style={{ backgroundImage: "url('/images/suelos.webp')" }} />
+          <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/suelos.webp')" }} />
         </Link>
       </SwiperSlide>
     </Swiper>
