@@ -18,28 +18,30 @@ const BannerSlider = () => {
       className={styles.slider}
     >
       <SwiperSlide className={styles.slide}>
-        <video
-          className={styles.slideVideo}
-          src="/vertexArts/videos/vertexArt.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
+        <div className={styles.videoWrapper}>
+          <video
+            className={styles.slideVideo}
+            src="/videos/vertexArt.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </div>
       </SwiperSlide>
       <SwiperSlide className={styles.slide}>
         <Link href="/decoracion">
-          <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/decoracion.webp')" }} />
+          <div className={styles.slideImage} style={{ backgroundImage: "url('/images/decoracion.webp')" }} />
         </Link>
       </SwiperSlide>
       <SwiperSlide className={styles.slide}>
         <Link href="/encimeras">
-          <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/encimeras.webp')" }} />
+          <div className={styles.slideImage} style={{ backgroundImage: "url('/images/encimeras.webp')" }} />
         </Link>
       </SwiperSlide>
       <SwiperSlide className={styles.slide}>
         <Link href="/suelo">
-          <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/suelos.webp')" }} />
+          <div className={styles.slideImage} style={{ backgroundImage: "url('/images/suelos.webp')" }} />
         </Link>
       </SwiperSlide>
     </Swiper>
