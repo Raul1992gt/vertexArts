@@ -20,7 +20,7 @@ const BannerSlider = () => {
       <SwiperSlide className={styles.slide}>
         <video
           className={styles.slideVideo}
-          src="/videos/vertexArt.mp4"
+          src="/vertexArts/videos/vertexArt.mp4"
           autoPlay
           muted
           loop
