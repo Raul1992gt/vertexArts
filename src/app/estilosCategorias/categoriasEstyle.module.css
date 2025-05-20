@@ -68,6 +68,11 @@
   margin: 0 auto;
 }
 
+.sliderImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {

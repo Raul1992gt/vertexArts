@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={styles['footer-column']}>
           <h4>Síguenos</h4>
           <div className={styles['footer-social']}>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/vertexartsdesign/#" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
           </div>
@@ -35,9 +35,8 @@ const Footer = () => {
 
         <div className={styles['footer-column']}>
           <h4>Contacto</h4>
-          <p>Email: contacto@empresa.com</p>
-          <p>Teléfono: +34 600 123 456</p>
-          <p>Dirección: Calle Falsa 123, Esquivias</p>
+          <p>Email: projectartandesign3d@gmail.com</p>
+          <p>Teléfono: 608 63 28 43</p>
         </div>
 
         <div className={`${styles['footer-column']} ${styles['footer-logo']}`} style={{ backgroundImage: "url('/vertexArts/images/logo.png')" }}>
@@ -45,7 +44,16 @@ const Footer = () => {
       </div>
 
       <div className={styles['footer-bottom']}>
-        © {new Date().getFullYear()} Raúl García Torrejón. Todos los derechos reservados.
+        © {new Date().getFullYear()}{" "}
+        <a
+          href="https://www.linkedin.com/in/raul-garcia-torrejon/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles['linkedin-link']}
+        >
+          Raúl García
+        </a>
+        . Todos los derechos reservados.
       </div>
     </footer>
   );

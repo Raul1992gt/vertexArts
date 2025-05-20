@@ -114,3 +114,14 @@
     font-size: 1.2rem;
   }
 }
+
+
+.linkedin-link {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.linkedin-link:hover {
+  color: #0a66c2; /* color oficial de LinkedIn */
+}
