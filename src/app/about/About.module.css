@@ -69,10 +69,9 @@
 }
 
 .topImage {
-  width: 96%;
+  width: 60%;
   height: 70vh; 
-  object-fit: cover;
-  object-position: center top; 
+  object-position: center auto; 
   display: block;
   margin: 0 auto;
 }
