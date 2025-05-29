@@ -37,7 +37,7 @@ const MobiliarioPage = () => {
         >
           {proyectoPrincipal.images.map((image, index) => (
             <SwiperSlide key={index}>
-              <img src={image.src} alt={image.alt} className={styles.sliderImage} />
+              <img src={image.src} alt={image.alt} className={styles.slider} />
             </SwiperSlide>
           ))}
         </Swiper>
