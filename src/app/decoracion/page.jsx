@@ -12,9 +12,9 @@ import styles from '../estilosCategorias/categoriasEstyle.module.css';
 const decoracionPage = () => {
   const proyectoPrincipal = {
     images: [
-      { src: '/vertexArts//images/decoracion/decoracion.webp', alt: 'Decoracion' },
-      { src: '/vertexArts//images/decoracion/discoteca.webp', alt: 'Discoteca' },
-      { src: '/vertexArts//images/decoracion/restaurante.webp', alt: 'Restaurante' },
+      { src: '/vertexArts/images/decoracion/decoracion.webp', alt: 'Decoracion' },
+      { src: '/vertexArts/images/decoracion/discoteca.webp', alt: 'Discoteca' },
+      { src: '/vertexArts/images/decoracion/restaurante.webp', alt: 'Restaurante' },
     ],
   };
 
