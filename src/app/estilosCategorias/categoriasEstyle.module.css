@@ -5,9 +5,6 @@
   height: 70vh;
   overflow: hidden;
   margin-bottom: 2rem;
-  /* Si la imagen principal de la categoría está aquí como background-image en un div hijo,
-     ese div hijo necesitaría: background-position: center 75%; o similar */
-  /* Si es una etiqueta <img> directa, necesitaría: object-position: center 75%; o similar */
 }
 
 /* Contenedor de la galería */
@@ -72,7 +69,7 @@
 
 .slider {
   position: relative;
-  width: 98%; 
+  width: 85%; 
   height: 100%; 
   display: block; 
   margin: 0 auto;
@@ -80,8 +77,7 @@
 
 .sliderImage {
   width: 100%;
-  height: auto; /* Mantenido, puede ser útil si el slider controla la altura del slide */
-  /* o height: 100%; si la imagen debe llenar la altura del contenedor .slider */
+  height: 100%;
   object-fit: cover;
   object-position: center 75%; /* CAMBIADO: Prioriza más la parte inferior */
 }
@@ -90,6 +86,7 @@
 @media (max-width: 768px) {
   .slider {
     height: 50vh;
+    width: 98%;
   }
   .aboutContainer{
     padding-left: 10px;  
@@ -99,16 +96,4 @@
   .imageContainer {
     height: 50vh;
   }
-  /* Si es necesario, ajustar object-position o background-position para móviles también */
 }
-
-/* Considerar añadir media queries para pantallas grandes/extragrandes aquí también */
-/* @media (min-width: 2200px) {
-  .sliderImage {
-    object-position: center bottom;
-  }
-  .imageContainer > img, .imageContainer > [style*="background-image"] {
-     object-position: center bottom; 
-     background-position: center bottom !important; 
-  }
-} */
