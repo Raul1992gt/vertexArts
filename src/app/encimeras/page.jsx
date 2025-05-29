@@ -13,13 +13,13 @@ import styles from '../estilosCategorias/categoriasEstyle.module.css';
 const EncimerasPage = () => {
   const proyectoPrincipal = {
     images: [
-      { src: '/images/encimeras/cockteleria.webp', alt: 'Cockteleria' },
-      { src: '/images/encimeras/efecto madera_web2.webp', alt: 'Efecto madera' },
-      { src: '/images/encimeras/efecto_marmol_web.webp', alt: 'Efecto madera' },
-      { src: '/images/encimeras/efecto_piedra_web.webp', alt: 'Efecto piedra' },
-      { src: '/images/encimeras/encimera_granito.webp', alt: 'Encimera granito' },
-      { src: '/images/encimeras/encimera_madera.webp', alt: 'Encimera madera' },
-      { src: '/images/encimeras/vertido_encimera.webp', alt: 'Vertido encimera' },
+      { src: '/vertexArts/images/encimeras/cockteleria.webp', alt: 'Cockteleria' },
+      { src: '/vertexArts/images/encimeras/efecto madera_web2.webp', alt: 'Efecto madera' },
+      { src: '/vertexArts/images/encimeras/efecto_marmol_web.webp', alt: 'Efecto madera' },
+      { src: '/vertexArts/images/encimeras/efecto_piedra_web.webp', alt: 'Efecto piedra' },
+      { src: '/vertexArts/images/encimeras/encimera_granito.webp', alt: 'Encimera granito' },
+      { src: '/vertexArts/images/encimeras/encimera_madera.webp', alt: 'Encimera madera' },
+      { src: '/vertexArts/images/encimeras/vertido_encimera.webp', alt: 'Vertido encimera' },
     ],
   };
 
