@@ -15,19 +15,19 @@ const slideItems = [
   {
     type: 'image',
     href: '/decoracion',
-    imgSrc: '/images/decoracion.webp',
+    imgSrc: '/vertexArts//images/decoracion.webp',
     altText: 'Proyectos de decoración',
   },
   {
     type: 'image',
     href: '/encimeras',
-    imgSrc: '/images/encimeras.webp',
+    imgSrc: '/vertexArts//images/encimeras.webp',
     altText: 'Proyectos de encimeras',
   },
   {
     type: 'image',
     href: '/suelo',
-    imgSrc: '/images/suelos.webp',
+    imgSrc: '/vertexArts//images/suelos.webp',
     altText: 'Proyectos de suelos',
   },
 ];
