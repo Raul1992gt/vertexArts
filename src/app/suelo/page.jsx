@@ -56,7 +56,6 @@ const SueloPage = () => {
 
 
       <div className={styles.categoriesLinks}>
-        <h2>Otras Categorías</h2>
         <div className={styles.linksContainer}>
           <Link href="/encimeras" className={styles.categoryLink}>Encimeras</Link>
           <Link href="/mobiliario" className={styles.categoryLink}>Mobiliario</Link>
