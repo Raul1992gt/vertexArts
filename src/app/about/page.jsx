@@ -19,7 +19,7 @@ const About = () => {
       <Header />
       <div className={styles.sliderContainer}>
       <img
-        src="/images/about.webp"
+        src="/vertexArts/images/about.webp"
         alt="Banner"
         className={styles.topImage}
       />
