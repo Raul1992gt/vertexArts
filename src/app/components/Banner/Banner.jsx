@@ -10,7 +10,7 @@ import styles from './Banner.module.css';
 const slideItems = [
   {
     type: 'video',
-    src: '/videos/vertexArt.mp4',
+    src: '/vertexArts/videos/vertexArt.mp4',
   },
   {
     type: 'image',
