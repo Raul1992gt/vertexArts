@@ -1,11 +1,18 @@
 .accordion {
-  font-family: 'Bernard MT Condensed regular';
-  width: 250px;
-  display: block;
+  font-family: 'Bernard MT Condensed regular', sans-serif;
+  display: inline-block;
+  padding: 10px 25px;
   border-radius: 50px;
   font-size: 1.1rem;
+  font-weight: bold;
   line-height: 1.6;
-  background-color:#A67B5B;
+  background-color: #A67B5B;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  transition: background-color 0.3s ease;
+  letter-spacing: 3.5px;
 }
 
 .accordionContainer {
@@ -19,6 +26,7 @@
 
 .accordion:hover {
   background-color: #AA6600;
+  color: #ffffff;
 }
 
 .panel {

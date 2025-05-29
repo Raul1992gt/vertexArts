@@ -7,6 +7,31 @@ import 'swiper/css/navigation';
 import Link from 'next/link';
 import styles from './Banner.module.css';
 
+const slideItems = [
+  {
+    type: 'video',
+    src: '/videos/vertexArt.mp4',
+  },
+  {
+    type: 'image',
+    href: '/decoracion',
+    imgSrc: '/images/decoracion.webp',
+    altText: 'Proyectos de decoración',
+  },
+  {
+    type: 'image',
+    href: '/encimeras',
+    imgSrc: '/images/encimeras.webp',
+    altText: 'Proyectos de encimeras',
+  },
+  {
+    type: 'image',
+    href: '/suelo',
+    imgSrc: '/images/suelos.webp',
+    altText: 'Proyectos de suelos',
+  },
+];
+
 const BannerSlider = () => {
   return (
     <Swiper
@@ -17,33 +42,29 @@ const BannerSlider = () => {
       loop
       className={styles.slider}
     >
-      <SwiperSlide className={styles.slide}>
-        <div className={styles.videoWrapper}>
-          <video
-            className={styles.slideVideo}
-            src="/vertexArts/videos/vertexArt.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide className={styles.slide}>
-        <Link href="/decoracion">
-          <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/decoracion.webp')" }} />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide className={styles.slide}>
-        <Link href="/encimeras">
-          <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/encimeras.webp')" }} />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide className={styles.slide}>
-        <Link href="/suelo">
-          <div className={styles.slideImage} style={{ backgroundImage: "url('/vertexArts/images/suelos.webp')" }} />
-        </Link>
-      </SwiperSlide>
+      {slideItems.map((item, index) => (
+        <SwiperSlide key={index} className={styles.slide}>
+          {item.type === 'video' ? (
+            <div className={styles.videoWrapper}>
+              <video
+                className={styles.slideVideo}
+                src={item.src}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            </div>
+          ) : (
+            <Link href={item.href} aria-label={item.altText}>
+              <div
+                className={styles.slideImage}
+                style={{ backgroundImage: `url('${item.imgSrc}')` }}
+              />
+            </Link>
+          )}
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

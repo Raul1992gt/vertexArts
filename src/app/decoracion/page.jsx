@@ -12,9 +12,9 @@ import styles from '../estilosCategorias/categoriasEstyle.module.css';
 const decoracionPage = () => {
   const proyectoPrincipal = {
     images: [
-      { src: '/vertexArts/images/decoracion/decoracion.webp', alt: 'Decoracion' },
-      { src: '/vertexArts/images/decoracion/discoteca.webp', alt: 'Discoteca' },
-      { src: '/vertexArts/images/decoracion/restaurante.webp', alt: 'Restaurante' },
+      { src: '/images/decoracion/decoracion.webp', alt: 'Decoracion' },
+      { src: '/images/decoracion/discoteca.webp', alt: 'Discoteca' },
+      { src: '/images/decoracion/restaurante.webp', alt: 'Restaurante' },
     ],
   };
 
@@ -51,7 +51,6 @@ const decoracionPage = () => {
       </div>
 
       <div className={styles.categoriesLinks}>
-        <h2>Otras Categorías</h2>
         <div className={styles.linksContainer}>
           <Link href="/mobiliario" className={styles.categoryLink}>Mobiliario</Link>
           <Link href="/encimeras" className={styles.categoryLink}>Encimeras</Link>
