@@ -9,7 +9,7 @@ export default function AboutSection() {
       {/* --- PRIMERA FILA --- */}
       <div className={styles.row}>
         <div className={styles.imageContainer}>
-          <Image src="/images/nosotros.webp" alt="Taller VertexArt" width={400} height={250} className={styles.bnw} />
+          <Image src="/vertexArts/images/nosotros.webp" alt="Taller VertexArt" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestra Historia</h3>
@@ -25,7 +25,7 @@ export default function AboutSection() {
       {/* --- SEGUNDA FILA --- */}
       <div className={styles.row}>
         <div className={styles.imageContainer}>
-          <Image src="/images/about.webp" alt="Creando arte" width={400} height={250} className={styles.bnw} />
+          <Image src="/vertexArts/images/about.webp" alt="Creando arte" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestro Proceso</h3>

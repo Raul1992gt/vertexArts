@@ -8,22 +8,22 @@ const categorias = [
   {
     nombre: 'Encimeras',
     carpeta: 'encimeras',
-    imagen: '/images/encimeras/efecto_piedra_web.webp',
+    imagen: '/vertexArts/images/encimeras/efecto_piedra_web.webp',
   },
   {
     nombre: 'Mobiliario',
     carpeta: 'mobiliario',
-    imagen: '/images/mobiliario/mesa de rio.webp',
+    imagen: '/vertexArts/images/mobiliario/mesa de rio.webp',
   },
   {
     nombre: 'Suelos',
     carpeta: 'suelo',
-    imagen: '/images/suelo/suelos_4.webp',
+    imagen: '/vertexArts/images/suelo/suelos_4.webp',
   },
   {
     nombre: 'Decoración',
     carpeta: 'decoracion',
-    imagen: '/images/decoracion/restaurante.webp',
+    imagen: '/vertexArts/images/decoracion/restaurante.webp',
   },
 ];
 
@@ -98,7 +98,7 @@ function ModalGaleria({ open, onClose, categoria, carpeta, imagenes }) {
         <div className={styles.modalGrid}>
           {imagenes.map((img, i) => (
             <div key={i} className={styles.modalImgWrapper} onClick={() => abrirLightbox(i)}>
-              <Image src={`/images/${carpeta}/${img}`} alt={img} fill className={styles.modalImg} />
+              <Image src={`/vertexArts/images/${carpeta}/${img}`} alt={img} fill className={styles.modalImg} />
             </div>
           ))}
         </div>
