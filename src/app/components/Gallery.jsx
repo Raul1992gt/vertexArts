@@ -104,7 +104,7 @@ function ModalGaleria({ open, onClose, categoria, carpeta, imagenes }) {
         </div>
         <Lightbox
           open={lightbox.open}
-          imagen={`/images/${carpeta}/${imagenes[lightbox.index]}`}
+          imagen={`/vertexArts/images/${carpeta}/${imagenes[lightbox.index]}`}
           onClose={cerrarLightbox}
           onPrev={prevImg}
           onNext={nextImg}
