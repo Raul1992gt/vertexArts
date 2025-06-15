@@ -10,8 +10,8 @@ export default function Hero() {
         <div className={styles.overlay}></div>
         <div className={styles.textContent}>
           <h1>Arte Funcional, Diseño Único</h1>
-          <p>VertexArt: Mobiliario y decoración en resina epoxi y materiales reciclados.</p>
-          <Link href="/categorias" className={styles.button}>Ver Proyectos</Link>
+          <p>Mobiliario y decoración en resina epoxi y materiales reciclados.</p>
+          <Link href="/categorias" className={styles.button}>Ver Especialidades</Link>
         </div>
       </div>
     </section>
