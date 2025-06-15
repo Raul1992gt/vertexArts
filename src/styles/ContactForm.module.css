@@ -1,10 +1,7 @@
 .contact {
-  padding: 4rem 2rem 3rem 2rem;
   background: #fff;
-  max-width: 500px;
+  max-width: 1200px;
   margin: 0 auto;
-  border-radius: 1.2rem;
-  box-shadow: 0 0 0 0 transparent;
 }
 .contact h2 {
   font-size: 2rem;
@@ -16,6 +13,10 @@
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
+  padding: 2rem;
+  background: #fff;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .form input,
 .form textarea {
@@ -51,7 +52,9 @@
 }
 .contactIntro {
   text-align: center;
-  margin-bottom: 2.5rem;
+  padding: 4rem 2rem 3rem 2rem;
+  margin-bottom: 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 .contactIntro h2 {
   color: #0a3d2c;
@@ -67,7 +70,9 @@
 .contactImageWrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 2.5rem;
+  padding: 2rem;
+  margin-bottom: 0;
+  background: #fff;
 }
 .contactImage {
   border-radius: 1.2rem;
@@ -77,15 +82,21 @@
   height: auto;
 }
 @media (max-width: 700px) {
-  .contactImageWrapper {
-    margin-bottom: 1.2rem;
+  .contactIntro {
+    padding: 3rem 1rem 2rem 1rem;
   }
   .contactIntro h2 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+  }
+  .contactImageWrapper {
+    padding: 1.5rem 1rem;
   }
   .contactImage {
-    max-width: 98vw;
+    max-width: 100%;
     height: auto;
+  }
+  .form {
+    padding: 1.5rem 1rem 2rem 1rem;
   }
 }
 .contactGrid {

@@ -9,7 +9,7 @@ export default function AboutSection() {
       {/* --- PRIMERA FILA --- */}
       <div className={styles.row}>
         <div className={styles.imageContainer}>
-          <Image src="/vertexArts/images/nosotros.webp" alt="Taller VertexArt" width={400} height={250} className={styles.bnw} />
+          <Image src="/images/nosotros.webp" alt="Taller de VertexArt con herramientas y proyectos de resina epoxi en proceso de creación" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestra Historia</h3>
@@ -25,15 +25,15 @@ export default function AboutSection() {
       {/* --- SEGUNDA FILA --- */}
       <div className={styles.row}>
         <div className={styles.imageContainer}>
-          <Image src="/vertexArts/images/about.webp" alt="Creando arte" width={400} height={250} className={styles.bnw} />
+          <Image src="/images/about.webp" alt="Artesano de VertexArt trabajando con resina epoxi y madera reciclada en el proceso de creación" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestro Proceso</h3>
           <p>
-            "Vertex Art" es una empresa especializada en el diseño y tratamiento de encimeras de cocina y muebles exclusivos, elaborados con materiales reciclados. Nos enfocamos en fusionar sostenibilidad y diseño innovador, transformando recursos reciclados en piezas únicas que destacan por su calidad y estilo.
+            Cada creación comienza con una conversación, una idea, un sueño. Seleccionamos cuidadosamente maderas con historia y metales que han vivido, dándoles nueva vida a través de la magia de la resina epoxi.
           </p>
           <p>
-            Nuestro proceso combina técnicas modernas, como el uso de resina epoxi, con un enfoque artesanal, asegurando acabados excepcionales que respetan el medio ambiente. En "Vertex Art", convertimos ideas en realidad, ofreciendo soluciones personalizadas para hogares y espacios que buscan un equilibrio entre funcionalidad, estética y responsabilidad ecológica.
+            Nuestras manos moldean, pulen y perfeccionan cada detalle hasta crear piezas únicas que no solo decoran, sino que cuentan historias y despiertan emociones.
           </p>
         </div>
       </div>

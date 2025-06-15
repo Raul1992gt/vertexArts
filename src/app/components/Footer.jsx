@@ -5,14 +5,13 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div>
-        © {new Date().getFullYear()} 
-        <a href="https://www.linkedin.com/in/raul-garcia-torrejon/" target="_blank" rel="noopener noreferrer">
-          _ Raul GT
-        </a>
+        © <a href="https://www.linkedin.com/in/raul-garcia-torrejon/" target="_blank" rel="noopener noreferrer">
+          Raul GT {new Date().getFullYear()}
+        </a>                  
         . Todos los derechos reservados.
       </div>
       <div className={styles.socials}>
-        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>
+        <a href="https://www.instagram.com/vertexartsdesign?utm_source=qr&igsh=cHkwdTdsMDJzNDgz" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>
       </div>
     </footer>
   );

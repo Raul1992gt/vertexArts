@@ -1,25 +1,38 @@
-/* Estilos generales de la sección (mantenidos de tu código) */
+/* Estilos generales de la sección */
 .about {
-  padding: 4rem 2rem 3rem 2rem;
   background: #fff;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Header con gradiente elegante */
 .about h2 {
   font-size: 2.2rem;
   font-family: var(--font-geist-sans, serif);
-  margin-bottom: 2.5rem;
+  margin-bottom: 0;
   color: #0a3d2c;
   text-align: center;
+  padding: 4rem 2rem 3rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-/* --- NUEVO LAYOUT DE FILAS --- */
+/* --- LAYOUT DE FILAS CON FONDOS ALTERNOS --- */
 .row {
   display: flex;
   gap: 3rem;
-  align-items: center; /* Centra verticalmente el texto con la imagen */
-  margin-bottom: 3rem; /* Espacio entre las filas */
+  align-items: center;
+  padding: 3rem 2rem;
+  margin-bottom: 0;
+}
+
+/* Primera fila - fondo blanco */
+.row:nth-child(2) {
+  background: #fff;
+}
+
+/* Segunda fila - fondo gris suave */
+.row:nth-child(3) {
+  background: #f8f9fa;
 }
 
 /* Contenedores para imagen y texto, cada uno ocupa la mitad */
@@ -41,18 +54,53 @@
   margin-bottom: 1rem;
 }
 
-/* Estilos para la imagen (reutilizados de tu clase .bnw) */
+/* Estilos para la imagen */
 .bnw {
-  filter: grayscale(1) contrast(1.1);
   border-radius: 1.2rem;
   width: 100%;
   height: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bnw:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
 }
 
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 900px) {
+  .about h2 {
+    font-size: 2rem;
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  
   .row {
-    flex-direction: column; /* Apila la imagen y el texto en vertical */
+    flex-direction: column;
     gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  
+  .textContainer {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .about h2 {
+    font-size: 1.8rem;
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+  
+  .row {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .textContainer {
+    font-size: 1rem;
+  }
+  
+  .textContainer h3 {
+    font-size: 1.3rem;
   }
 }
