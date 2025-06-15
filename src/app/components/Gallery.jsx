@@ -8,22 +8,22 @@ const categorias = [
   {
     nombre: 'Encimeras',
     carpeta: 'encimeras',
-    imagen: '/vertexArt/images/encimeras/efecto_piedra_web.webp',
+    imagen: '/images/encimeras/efecto_piedra_web.webp',
   },
   {
     nombre: 'Mobiliario',
     carpeta: 'mobiliario',
-    imagen: '/vertexArt/images/mobiliario/mesa de rio.webp',
+    imagen: '/images/mobiliario/mesa de rio.webp',
   },
   {
     nombre: 'Suelos',
     carpeta: 'suelo',
-    imagen: '/vertexArt/images/suelo/suelos_4.webp',
+    imagen: '/images/suelo/suelos_4.webp',
   },
   {
     nombre: 'Decoración',
     carpeta: 'decoracion',
-    imagen: '/vertexArt/images/decoracion/restaurante.webp',
+    imagen: '/images/decoracion/restaurante.webp',
   },
 ];
 
@@ -98,13 +98,13 @@ function ModalGaleria({ open, onClose, categoria, carpeta, imagenes }) {
         <div className={styles.modalGrid}>
           {imagenes.map((img, i) => (
             <div key={i} className={styles.modalImgWrapper} onClick={() => abrirLightbox(i)}>
-              <Image src={`/vertexArt/images/${carpeta}/${img}`} alt={img} fill className={styles.modalImg} />
+              <Image src={`/images/${carpeta}/${img}`} alt={img} fill className={styles.modalImg} />
             </div>
           ))}
         </div>
         <Lightbox
           open={lightbox.open}
-          imagen={`/vertexArt/images/${carpeta}/${imagenes[lightbox.index]}`}
+          imagen={`/images/${carpeta}/${imagenes[lightbox.index]}`}
           onClose={cerrarLightbox}
           onPrev={prevImg}
           onNext={nextImg}
