@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ VertexArt
 
-## Getting Started
+> **Arte funcional, diseño único**  
+> *Donde la sostenibilidad se encuentra con la elegancia*
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🎯 **Concepto**
+
+VertexArt representa la fusión perfecta entre **arte funcional** y **diseño sostenible**. Cada pieza es una historia única, creada a partir de materiales reciclados y resina epoxi, transformando lo ordinario en extraordinario.
+
+## 🏗️ **Arquitectura Técnica**
+
+### **Stack Moderno**
+```
+Next.js 13+     →  App Router & SSR
+React 18        →  Componentes optimizados  
+CSS Modules     →  Styling encapsulado
+Vercel          →  Deploy automático
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Estructura Elegante**
+```
+src/
+├── app/
+│   ├── components/          # Componentes reutilizables
+│   ├── categorias/         # Especialidades individuales
+│   ├── materiales/         # Información técnica
+│   ├── about/              # Historia + testimonios
+│   ├── contacto/           # Formulario interactivo
+│   └── faq/                # Preguntas frecuentes
+├── styles/                 # CSS Modules
+└── public/vertexArts/      # Assets optimizados
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🎨 **Diseño Minimalista**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Filosofía Visual**
+- **"Gray Touch"** → Toques elegantes de gradiente
+- **Transiciones sutiles** → Experiencia fluida
+- **Responsive total** → Mobile-first design
+- **Accesibilidad** → WCAG compliant
 
-## Learn More
+### **Características Premium**
+```css
+/* Paleta refinada */
+--primary: #0a3d2c;
+--accent: #145c43;
+--gray-elegant: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+--transition: 0.4s ease-out;
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 **Desarrollo**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Inicio Rápido**
+```bash
+# Instalar dependencias
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Desarrollo local
+npm run dev
+```
 
-## Deploy on Vercel
+### **Comandos Útiles**
+```bash
+npm run build    # Build optimizado
+npm run start    # Producción local
+npm run lint     # Verificar código
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌟 **Características Destacadas**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **SEO Avanzado**
+- ✅ Meta descriptions personalizadas
+- ✅ Schema.org markup (LocalBusiness)
+- ✅ Sitemap automático
+- ✅ Images optimizadas
+
+### **UX Premium**
+- ✅ Lightbox elegante para galerías
+- ✅ Formulario de contacto funcional
+- ✅ Navegación intuitiva con dropdown
+- ✅ Estados de carga suaves
+
+### **Performance**
+- ✅ Next.js Image optimization
+- ✅ Code splitting automático
+- ✅ CSS-in-JS optimizado
+- ✅ Lazy loading inteligente
+
+## 🎭 **Páginas Especializadas**
+
+```
+🏠 Home           →  Hero minimalista + CTA claro
+👥 About          →  Storytelling + testimonios
+🔧 Materiales     →  Información técnica detallada
+🎨 Especialidades →  Categorías con galerías
+📞 Contacto       →  Formulario elegante
+❓ FAQ            →  Preguntas frecuentes
+```
+
+## 🌐 **Deploy**
+
+### **Producción**
+```bash
+# Build optimizado
+npm run build
+
+# Las rutas de imágenes usan /vertexArts/ para producción
+# Estructura esperada en servidor:
+# /vertexArts/images/
+```
+
+### **Variables de Entorno**
+```env
+# Formspree (contacto)
+NEXT_PUBLIC_FORMSPREE_ID=your_form_id
+```
+
+---
+
+## 💫 **La Experiencia VertexArt**
+
+> *"Cada clic es una transición suave,  
+> cada página cuenta una historia,  
+> cada detalle refleja nuestra pasión  
+> por el arte funcional."*
+
+### **Tecnología al servicio del arte**
+- 🎯 **Minimalismo funcional**
+- ✨ **Elegancia responsiva** 
+- 🌱 **Sostenibilidad digital**
+- 🔥 **Performance excepcional**
+
+---
+
+<div align="center">
+
+**Desarrollado con ❤️ para transformar espacios**
+
+*VertexArt - Arte funcional, diseño único*
+
+</div>
