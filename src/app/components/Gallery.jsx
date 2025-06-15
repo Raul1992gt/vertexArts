@@ -37,7 +37,7 @@ export default function Gallery() {
   return (
     <section className={styles.categoriasSection}>
       <div className={styles.presentacion}>
-        <h2>Nuestros Proyectos</h2>
+        <h2>Nuestras Especialidades</h2>
         <p>
           Cada pieza está hecha a medida, con mimo y dedicación. Fusionamos arte, sostenibilidad y funcionalidad para crear proyectos únicos que transforman cualquier espacio.
         </p>
