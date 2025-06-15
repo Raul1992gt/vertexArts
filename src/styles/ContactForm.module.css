@@ -27,6 +27,15 @@
   font-family: var(--font-geist-sans, sans-serif);
   background: #fafafa;
   resize: none;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #0a3d2c;
+  box-shadow: 0 0 0 2px rgba(10, 61, 44, 0.1);
 }
 .form button {
   background: #0a3d2c;
