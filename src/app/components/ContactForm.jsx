@@ -12,18 +12,21 @@ export default function ContactForm() {
 
   return (
     <section className={styles.contact}>
-      <div className={styles.contactRow}>
-        <div className={styles.contactIntro}>
+      <div className={styles.contactHeader}>
+        <div className={styles.contactContainer}>
           <h2>
-          <span className={styles.titleLine}>¿Tienes una idea?</span>
-          <span className={styles.titleLine}>¡Hazla realidad!</span>
-        </h2>
+            <span className={styles.titleLine}>¿Tienes una idea?</span>
+            <span className={styles.titleLine}>¡Hazla realidad!</span>
+          </h2>
           <p>
             Cuéntanos tu proyecto, por más original o ambicioso que sea. Nos apasiona convertir ideas en piezas únicas y personalizadas. ¡Juntos podemos crear algo extraordinario!
           </p>
         </div>
+      </div>
+      
+      <div className={styles.contactContent}>
         <div className={styles.contactImageWrapper}>
-                      <Image src="/vertexArts/images/mobiliario.webp" alt="Mesa de resina epoxi y madera reciclada creada por VertexArt, ejemplo de mobiliario personalizado" width={500} height={350} className={styles.contactImage} />
+          <Image src="/vertexArts/images/mobiliario.webp" alt="Mesa de resina epoxi y madera reciclada creada por VertexArt, ejemplo de mobiliario personalizado" width={500} height={350} className={styles.contactImage} />
         </div>
         <form className={styles.form} onSubmit={handleSubmit}>
           <input type="text" name="nombre" placeholder="Nombre" required />
