@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.logo img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: var(--font-geist-sans, sans-serif);
+  transition: color 0.2s;
+}
+.menu li a:hover {
+  color: #0a3d2c;
+}
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brandMenu {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brandName {
+  font-family: var(--font-geist-sans, serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0a3d2c;
+  letter-spacing: 1px;
+  margin-right: 0.2rem;
+  transition: color 0.2s;
+}
+.brand:hover .brandName {
+  color: #145c43;
+  transform: scale(1.05);
+} 
+
+.brandMenu:hover {
+  color: #145c43;
+  transform: scale(1.05);
+}

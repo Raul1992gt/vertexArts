@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from 'react';
-import styles from './Contacto.module.css';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import ContactForm from '../components/ContactForm';
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -46,68 +46,11 @@ const Contacto = () => {
   
 
   return (
-    <div>
-      <Header />
-      <div className={styles.contactContainer}>
-        <div className={styles.imageSection}>
-          <img src="/vertexArts/images/logo.png" alt="Imagen Impactante" className={styles.image} />
-        </div>
-        <div className={styles.formSection}>
-          <h1 className={styles.title}>¿Tienes una chispa creativa?</h1>
-          <p className={styles.subtitle}>Cuéntanos tu idea, por más loca que parezca. Nos encantan los retos.</p>
-
-          <form className={styles.form} onSubmit={handleSubmit}>
-            <div className={styles.formGroup}>
-              <label htmlFor="name" className={styles.label}>Nombre</label>
-              <input 
-                type="text" 
-                id="name" 
-                name="name" 
-                value={formData.name} 
-                onChange={handleChange} 
-                className={styles.input} 
-                required 
-              />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="email" className={styles.label}>Correo Electrónico</label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                value={formData.email} 
-                onChange={handleChange} 
-                className={styles.input} 
-                required 
-              />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="message" className={styles.label}>Mensaje</label>
-              <textarea 
-                id="message" 
-                name="message" 
-                value={formData.message} 
-                onChange={handleChange} 
-                className={styles.textarea} 
-                required
-              />
-            </div>
-
-            <button type="submit" className={styles.submitButton}>Enviar</button>
-
-            {/* Agregamos el mensaje de éxito/error*/}
-            {statusMessage && (
-              <p className={isSuccess ? styles.successMessage : styles.errorMessage}>
-                {statusMessage}
-              </p>
-            )}
-          </form>
-        </div>
-      </div>
+    <>
+      <Navbar />
+      <ContactForm />
       <Footer />
-    </div>
+    </>
   );
 };
 

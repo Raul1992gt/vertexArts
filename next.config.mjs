@@ -3,7 +3,6 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  output: 'export',
   basePath: isProd ? '/vertexArts' : '',
   trailingSlash: true, // Muy importante para GitHub Pages
 };

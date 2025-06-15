@@ -1,0 +1,58 @@
+/* Estilos generales de la sección (mantenidos de tu código) */
+.about {
+  padding: 4rem 2rem 3rem 2rem;
+  background: #fff;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  font-family: var(--font-geist-sans, serif);
+  margin-bottom: 2.5rem;
+  color: #0a3d2c;
+  text-align: center;
+}
+
+/* --- NUEVO LAYOUT DE FILAS --- */
+.row {
+  display: flex;
+  gap: 3rem;
+  align-items: center; /* Centra verticalmente el texto con la imagen */
+  margin-bottom: 3rem; /* Espacio entre las filas */
+}
+
+/* Contenedores para imagen y texto, cada uno ocupa la mitad */
+.imageContainer,
+.textContainer {
+  flex: 1;
+}
+
+/* Estilos para el texto (reutilizados de tu clase .text) */
+.textContainer {
+  min-width: 260px;
+  font-size: 1.1rem;
+  color: #222;
+  font-family: var(--font-geist-sans, sans-serif);
+}
+
+.textContainer h3 {
+  color: #0a3d2c;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para la imagen (reutilizados de tu clase .bnw) */
+.bnw {
+  filter: grayscale(1) contrast(1.1);
+  border-radius: 1.2rem;
+  width: 100%;
+  height: auto;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column; /* Apila la imagen y el texto en vertical */
+    gap: 2rem;
+  }
+}

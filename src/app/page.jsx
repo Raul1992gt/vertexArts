@@ -1,16 +1,13 @@
-import React from 'react';
-import Header from './components/Header/Header'; // Actualizado
-import Banner from './components/Banner/Banner'; // Actualizado
-import Categories from './components/Categories/Categories'; // Actualizado
-import Footer from './components/Footer/Footer'; // Actualizado
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <Header />
-      <Banner />
-      <Categories />
+    <>
+      <Navbar />
+      <Hero />
       <Footer />
-    </div>
+    </>
   );
 }

@@ -1,9 +1,3 @@
-@font-face {
-  font-family: 'Bernard MT Condensed regular';
-  src: url('../assets/fonts/bernard-mt-condensed-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 p, a, button{
   letter-spacing: 0.8px;
