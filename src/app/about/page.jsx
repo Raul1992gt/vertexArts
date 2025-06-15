@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import AboutSection from '../components/AboutSection';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
+import PageTransition from '../components/PageTransition';
 
 export const metadata = {
   title: "Sobre Nosotros - VertexArt",
@@ -13,8 +14,10 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <AboutSection />
-      <Testimonials />
+      <PageTransition>
+        <AboutSection />
+        <Testimonials />
+      </PageTransition>
       <Footer />
     </>
   );

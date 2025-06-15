@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import CategoryPage from '../../components/CategoryPage';
+import PageTransition from '../../components/PageTransition';
 
 export const metadata = {
   title: "Encimeras de Resina Epoxi | VertexArt",
@@ -22,12 +23,14 @@ export default function EncimerasPage() {
   return (
     <>
       <Navbar />
-      <CategoryPage 
-        titulo="Encimeras"
-        descripcion="Nuestras encimeras combinan la durabilidad de la resina epoxi con diseños únicos que imitan texturas naturales como madera, piedra y mármol. Cada encimera es resistente, fácil de mantener y completamente personalizable para adaptarse a tu estilo de vida. Perfectas para cocinas, baños y espacios comerciales donde la funcionalidad se encuentra con el arte."
-        carpeta="encimeras"
-        imagenes={imagenes}
-      />
+      <PageTransition>
+        <CategoryPage 
+          titulo="Encimeras"
+          descripcion="Nuestras encimeras combinan la durabilidad de la resina epoxi con diseños únicos que imitan texturas naturales como madera, piedra y mármol. Cada encimera es resistente, fácil de mantener y completamente personalizable para adaptarse a tu estilo de vida. Perfectas para cocinas, baños y espacios comerciales donde la funcionalidad se encuentra con el arte."
+          carpeta="encimeras"
+          imagenes={imagenes}
+        />
+      </PageTransition>
       <Footer />
     </>
   );

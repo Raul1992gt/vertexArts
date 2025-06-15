@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import ContactForm from '../components/ContactForm';
+import PageTransition from '../components/PageTransition';
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -48,7 +49,9 @@ const Contacto = () => {
   return (
     <>
       <Navbar />
-      <ContactForm />
+      <PageTransition>
+        <ContactForm />
+      </PageTransition>
       <Footer />
     </>
   );

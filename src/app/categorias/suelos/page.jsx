@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import CategoryPage from '../../components/CategoryPage';
+import PageTransition from '../../components/PageTransition';
 
 export const metadata = {
   title: "Suelos de Resina Epoxi | VertexArt", 
@@ -23,12 +24,14 @@ export default function SuelosPage() {
   return (
     <>
       <Navbar />
-      <CategoryPage 
-        titulo="Suelos"
-        descripcion="Nuestros suelos de resina epoxi ofrecen una solución duradera y estéticamente impactante para cualquier espacio. Ideales para garajes, cocinas industriales, showrooms y espacios comerciales, proporcionan una superficie continua, resistente a químicos y fácil de limpiar. Disponibles en múltiples acabados: desde efectos marmolados hasta texturas granuladas."
-        carpeta="suelo"
-        imagenes={imagenes}
-      />
+      <PageTransition>
+        <CategoryPage 
+          titulo="Suelos"
+          descripcion="Nuestros suelos de resina epoxi ofrecen una solución duradera y estéticamente impactante para cualquier espacio. Ideales para garajes, cocinas industriales, showrooms y espacios comerciales, proporcionan una superficie continua, resistente a químicos y fácil de limpiar. Disponibles en múltiples acabados: desde efectos marmolados hasta texturas granuladas."
+          carpeta="suelo"
+          imagenes={imagenes}
+        />
+      </PageTransition>
       <Footer />
     </>
   );

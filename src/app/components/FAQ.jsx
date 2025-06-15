@@ -39,12 +39,7 @@ export default function FAQ() {
 
   return (
     <section className={styles.faqSection}>
-      <div className={styles.faqContainer}>
-        <div className={styles.faqHeader}>
-          <h2>Preguntas Frecuentes</h2>
-          <p>Resolvemos las dudas más comunes sobre nuestros proyectos y materiales</p>
-        </div>
-        
+      <div className={styles.faqContainer}>        
         <div className={styles.faqGrid}>
           {faqs.map((faq, index) => (
             <div key={index} className={`${styles.faqItem} ${openIndex === index ? styles.open : ''}`}>

@@ -191,6 +191,14 @@
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.titleLine {
+  display: block;
+  white-space: nowrap;
 }
 .contactIntro p {
   color: #444;

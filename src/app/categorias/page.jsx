@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
+import PageTransition from '../components/PageTransition';
 
 export const metadata = {
   title: "Especialidades - Proyectos de Resina Epoxi | VertexArt",
@@ -12,7 +13,9 @@ export default function CategoriasPage() {
   return (
     <>
       <Navbar />
-      <Gallery />
+      <PageTransition>
+        <Gallery />
+      </PageTransition>
       <Footer />
     </>
   );

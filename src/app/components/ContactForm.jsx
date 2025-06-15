@@ -14,7 +14,10 @@ export default function ContactForm() {
     <section className={styles.contact}>
       <div className={styles.contactRow}>
         <div className={styles.contactIntro}>
-          <h2>¿Tienes una idea? ¡Hazla realidad!</h2>
+          <h2>
+          <span className={styles.titleLine}>¿Tienes una idea?</span>
+          <span className={styles.titleLine}>¡Hazla realidad!</span>
+        </h2>
           <p>
             Cuéntanos tu proyecto, por más original o ambicioso que sea. Nos apasiona convertir ideas en piezas únicas y personalizadas. ¡Juntos podemos crear algo extraordinario!
           </p>

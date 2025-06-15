@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import MaterialesContent from '../components/MaterialesContent';
-import FAQ from '../components/FAQ';
+import PageTransition from '../components/PageTransition';
 
 export const metadata = {
   title: "Materiales - Resina Epoxi y Reciclados | VertexArt",
@@ -13,8 +13,9 @@ export default function MaterialesPage() {
   return (
     <>
       <Navbar />
-      <MaterialesContent />
-      <FAQ />
+      <PageTransition>
+        <MaterialesContent />
+      </PageTransition>
       <Footer />
     </>
   );

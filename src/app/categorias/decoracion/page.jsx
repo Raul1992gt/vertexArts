@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import CategoryPage from '../../components/CategoryPage';
+import PageTransition from '../../components/PageTransition';
 
 export const metadata = {
   title: "Decoración con Resina Epoxi | VertexArt",
@@ -18,12 +19,14 @@ export default function DecoracionPage() {
   return (
     <>
       <Navbar />
-      <CategoryPage 
-        titulo="Decoración"
-        descripcion="Transformamos espacios con elementos decorativos únicos que van más allá de lo convencional. Desde paneles artísticos hasta elementos arquitectónicos personalizados, cada pieza está diseñada para crear ambientes inolvidables. Perfectos para restaurantes, hoteles, discotecas y espacios comerciales que buscan diferenciarse con un diseño original y sofisticado."
-        carpeta="decoracion"
-        imagenes={imagenes}
-      />
+      <PageTransition>
+        <CategoryPage 
+          titulo="Decoración"
+          descripcion="Transformamos espacios con elementos decorativos únicos que van más allá de lo convencional. Desde paneles artísticos hasta elementos arquitectónicos personalizados, cada pieza está diseñada para crear ambientes inolvidables. Perfectos para restaurantes, hoteles, discotecas y espacios comerciales que buscan diferenciarse con un diseño original y sofisticado."
+          carpeta="decoracion"
+          imagenes={imagenes}
+        />
+      </PageTransition>
       <Footer />
     </>
   );
