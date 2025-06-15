@@ -1,5 +1,6 @@
 import styles from '../../styles/MaterialesContent.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function MaterialesContent() {
   return (
@@ -157,7 +158,7 @@ export default function MaterialesContent() {
         <div className={styles.ctaContent}>
           <h2>¿Tienes un material especial?</h2>
           <p>Si tienes madera, metal u otros materiales con valor sentimental, podemos integrarlos en tu proyecto personalizado.</p>
-          <a href="/contacto" className={styles.ctaButton}>Consulta tu Proyecto</a>
+          <Link href="/contacto" className={styles.ctaButton}>Consulta tu Proyecto</Link>
         </div>
       </section>
     </div>
