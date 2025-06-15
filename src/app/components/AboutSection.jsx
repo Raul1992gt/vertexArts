@@ -9,7 +9,7 @@ export default function AboutSection() {
       {/* --- PRIMERA FILA --- */}
       <div className={styles.row}>
         <div className={styles.imageContainer}>
-          <Image src="/images/nosotros.webp" alt="Taller de VertexArt con herramientas y proyectos de resina epoxi en proceso de creación" width={400} height={250} className={styles.bnw} />
+          <Image src="/vertexArts/images/nosotros.webp" alt="Taller de VertexArt con herramientas y proyectos de resina epoxi en proceso de creación" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestra Historia</h3>
@@ -25,7 +25,7 @@ export default function AboutSection() {
       {/* --- SEGUNDA FILA --- */}
       <div className={styles.row}>
         <div className={styles.imageContainer}>
-          <Image src="/images/about.webp" alt="Artesano de VertexArt trabajando con resina epoxi y madera reciclada en el proceso de creación" width={400} height={250} className={styles.bnw} />
+          <Image src="/vertexArts/images/about.webp" alt="Artesano de VertexArt trabajando con resina epoxi y madera reciclada en el proceso de creación" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestro Proceso</h3>
