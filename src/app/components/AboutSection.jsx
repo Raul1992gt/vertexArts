@@ -23,23 +23,6 @@ export default function AboutSection() {
           ref={textRef}
           className={`${styles.content} scroll-reveal ${textVisible ? 'visible' : ''}`}
         >
-          <p>
-            En <strong>VertexArt</strong>, somos especialistas en la creación de <strong>piezas únicas de resina epoxi</strong> y materiales reciclados. 
-            Nuestro compromiso va más allá de lo estético: combinamos <strong>arte, sostenibilidad y funcionalidad</strong> 
-            para transformar espacios con diseños personalizados que perduran en el tiempo.
-          </p>
-          
-          <p>
-            Cada proyecto es una oportunidad para dar vida a tus ideas más creativas. Desde <strong>encimeras de cocina</strong> 
-            hasta <strong>mesas río</strong>, <strong>suelos decorativos</strong> y <strong>elementos de decoración únicos</strong>, 
-            trabajamos contigo para crear piezas que reflejen tu personalidad y se adapten perfectamente a tu espacio.
-          </p>
-          
-          <p>
-            Nos especializamos en técnicas avanzadas de resina epoxi que nos permiten lograr efectos visuales espectaculares: 
-            desde <strong>texturas de piedra natural</strong> hasta <strong>diseños translúcidos</strong> que juegan con la luz. 
-            Todo esto con la garantía de la máxima durabilidad y resistencia.
-          </p>
         </div>
       </div>
 

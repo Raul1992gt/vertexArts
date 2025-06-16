@@ -16,130 +16,62 @@ export default function ContactForm() {
           ref={titleRef}
           className={`scroll-reveal-scale ${titleVisible ? 'visible' : ''}`}
         >
-          ¿Tienes un proyecto en mente?
+          ¿Tienes una idea?
         </h2>
         <p className={styles.subtitle}>
-          Cuéntanos tu idea y te ayudamos a hacerla realidad con materiales únicos y diseño personalizado.
+          Cuéntanos tu proyecto y te ayudamos a hacerlo realidad
         </p>
         
         <div className={styles.contactContent}>
           <div 
-            ref={formRef}
-            className={`${styles.formContainer} scroll-reveal-left ${formVisible ? 'visible' : ''}`}
+            ref={imageRef}
+            className={`${styles.imageContainer} scroll-reveal-left ${imageVisible ? 'visible' : ''}`}
           >
-            <form className={styles.contactForm}>
-              <div className={styles.inputGroup}>
-                <label htmlFor="name">Nombre *</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
-                  required 
-                  placeholder="Tu nombre completo"
-                />
-              </div>
-              
-              <div className={styles.inputGroup}>
-                <label htmlFor="email">Email *</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  name="email" 
-                  required 
-                  placeholder="tu@email.com"
-                />
-              </div>
-              
-              <div className={styles.inputGroup}>
-                <label htmlFor="phone">Teléfono</label>
-                <input 
-                  type="tel" 
-                  id="phone" 
-                  name="phone" 
-                  placeholder="+34 xxx xxx xxx"
-                />
-              </div>
-              
-              <div className={styles.inputGroup}>
-                <label htmlFor="project">Tipo de Proyecto</label>
-                <select id="project" name="project">
-                  <option value="">Selecciona una opción</option>
-                  <option value="encimera">Encimera de Cocina/Baño</option>
-                  <option value="mesa">Mesa (Comedor/Río/Centro)</option>
-                  <option value="suelo">Suelo Decorativo</option>
-                  <option value="mobiliario">Mobiliario Personalizado</option>
-                  <option value="decoracion">Elemento Decorativo</option>
-                  <option value="otro">Otro (especificar en mensaje)</option>
-                </select>
-              </div>
-              
-              <div className={styles.inputGroup}>
-                <label htmlFor="budget">Presupuesto Estimado</label>
-                <select id="budget" name="budget">
-                  <option value="">Selecciona un rango</option>
-                  <option value="500-1000">500€ - 1.000€</option>
-                  <option value="1000-2500">1.000€ - 2.500€</option>
-                  <option value="2500-5000">2.500€ - 5.000€</option>
-                  <option value="5000+">Más de 5.000€</option>
-                  <option value="consultar">Prefiero consultar</option>
-                </select>
-              </div>
-              
-              <div className={styles.inputGroup}>
-                <label htmlFor="message">Describe tu proyecto *</label>
-                <textarea 
-                  id="message" 
-                  name="message" 
-                  required 
-                  placeholder="Cuéntanos en detalle qué tienes en mente: dimensiones, colores, estilo, ubicación, materiales específicos que quieras incluir..."
-                  rows="6"
-                ></textarea>
-              </div>
-              
-              <div className={styles.inputGroup}>
-                <label className={styles.checkbox}>
-                  <input type="checkbox" required />
-                  <span className={styles.checkmark}></span>
-                  Acepto la política de privacidad y el tratamiento de mis datos
-                </label>
-              </div>
-              
-              <button type="submit" className={styles.submitButton}>
-                Enviar Consulta
-              </button>
-            </form>
+            <Image 
+              src="/vertexArts/images/mobiliario/ajedrez_web.webp" 
+              alt="Tablero de ajedrez de resina epoxi y madera artesanal creado por VertexArt" 
+              width={500} 
+              height={350} 
+              className={styles.contactImage}
+            />
           </div>
           
           <div 
-            ref={imageRef}
-            className={`${styles.imageContainer} scroll-reveal-right ${imageVisible ? 'visible' : ''}`}
+            ref={formRef}
+            className={`${styles.formContainer} scroll-reveal-right ${formVisible ? 'visible' : ''}`}
           >
-            <Image 
-              src="/vertexArts/images/contacto.webp" 
-              alt="Taller de VertexArt con proyectos de resina epoxi en proceso" 
-              width={600} 
-              height={800} 
-              className={styles.contactImage}
-            />
-            <div className={styles.contactInfo}>
-              <h3>Información de Contacto</h3>
-              <div className={styles.contactItem}>
-                <strong>📧 Email:</strong>
-                <span>info@vertexart.es</span>
+            <form className={styles.contactForm}>
+              <div className={styles.inputGroup}>
+                <input 
+                  type="text" 
+                  name="name" 
+                  placeholder="Nombre" 
+                  required 
+                />
               </div>
-              <div className={styles.contactItem}>
-                <strong>📱 Teléfono:</strong>
-                <span>+34 xxx xxx xxx</span>
+              
+              <div className={styles.inputGroup}>
+                <input 
+                  type="email" 
+                  name="email" 
+                  placeholder="Email" 
+                  required 
+                />
               </div>
-              <div className={styles.contactItem}>
-                <strong>📍 Ubicación:</strong>
-                <span>Barcelona, España</span>
+              
+              <div className={styles.inputGroup}>
+                <textarea 
+                  name="message" 
+                  placeholder="Cuéntanos tu idea..." 
+                  rows="5"
+                  required 
+                ></textarea>
               </div>
-              <div className={styles.contactItem}>
-                <strong>⏰ Horario:</strong>
-                <span>Lun-Vie: 9:00-18:00</span>
-              </div>
-            </div>
+              
+              <button type="submit" className={styles.submitButton}>
+                Enviar
+              </button>
+            </form>
           </div>
         </div>
       </div>
