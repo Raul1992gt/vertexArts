@@ -1,20 +1,41 @@
 import styles from '../../styles/MaterialesContent.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useStaggeredIntersection, useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 export default function MaterialesContent() {
+  const { targetRef: titleRef, hasIntersected: titleVisible } = useIntersectionObserver({ threshold: 0.3 });
+  const { targetRef: subtitleRef, hasIntersected: subtitleVisible } = useIntersectionObserver({ threshold: 0.2 });
+  const { targetRef: resinRef, hasIntersected: resinVisible } = useIntersectionObserver({ threshold: 0.2 });
+  const { targetRef: recycledRef, hasIntersected: recycledVisible } = useIntersectionObserver({ threshold: 0.2 });
+  const { targetRef: processRef, hasIntersected: processVisible } = useIntersectionObserver({ threshold: 0.2 });
+  const { containerRef, visibleItems } = useStaggeredIntersection(4); // 4 elementos en el grid
+
   return (
     <div className={styles.materialesContainer}>
       {/* Hero Section */}
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <h1>Nuestros Materiales</h1>
-          <p>La excelencia en cada creación comienza con la selección de los mejores materiales. Combinamos innovación, sostenibilidad y calidad para dar vida a piezas únicas.</p>
+          <h1 
+            ref={titleRef}
+            className={`scroll-reveal-scale ${titleVisible ? 'visible' : ''}`}
+          >
+            Nuestros Materiales
+          </h1>
+          <p 
+            ref={subtitleRef}
+            className={`${styles.subtitle} scroll-reveal ${subtitleVisible ? 'visible' : ''}`}
+          >
+            La excelencia en cada creación comienza con la selección de los mejores materiales. Combinamos innovación, sostenibilidad y calidad para dar vida a piezas únicas.
+          </p>
         </div>
       </section>
 
       {/* Resina Epoxi Section */}
-      <section className={styles.materialSection}>
+      <section 
+        ref={resinRef}
+        className={`${styles.materialSection} scroll-reveal-left ${resinVisible ? 'visible' : ''}`}
+      >
         <div className={styles.materialRow}>
           <div className={styles.materialImage}>
             <Image 
@@ -52,7 +73,10 @@ export default function MaterialesContent() {
       </section>
 
       {/* Materiales Reciclados Section */}
-      <section className={styles.materialSection}>
+      <section 
+        ref={recycledRef}
+        className={`${styles.materialSection} scroll-reveal-right ${recycledVisible ? 'visible' : ''}`}
+      >
         <div className={styles.sectionHeader}>
           <h2>Materiales Reciclados</h2>
           <p>Nuestra filosofía sostenible nos lleva a dar nueva vida a materiales nobles, creando piezas únicas con historia y carácter.</p>
@@ -120,7 +144,10 @@ export default function MaterialesContent() {
       </section>
 
       {/* Proceso de Trabajo Section */}
-      <section className={styles.processSection}>
+      <section 
+        ref={processRef}
+        className={`${styles.processSection} scroll-reveal-scale ${processVisible ? 'visible' : ''}`}
+      >
         <div className={styles.processContent}>
           <h2>Nuestro Proceso de Trabajo</h2>
           <p>Cada material pasa por un proceso de selección, preparación y tratamiento especializado para garantizar la máxima calidad en el producto final.</p>

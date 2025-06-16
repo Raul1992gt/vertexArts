@@ -1,6 +1,7 @@
 import styles from '../../styles/Gallery.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useStaggeredIntersection } from '../hooks/useIntersectionObserver';
 
 const categorias = [
   {
@@ -34,6 +35,8 @@ const categorias = [
 ];
 
 export default function Gallery() {
+  const { containerRef, visibleItems } = useStaggeredIntersection(categorias.length);
+
   return (
     <section className={styles.categoriasSection}>
       <div className={styles.presentacion}>
@@ -42,13 +45,16 @@ export default function Gallery() {
           Cada pieza está hecha a medida, con mimo y dedicación. Fusionamos arte, sostenibilidad y funcionalidad para crear proyectos únicos que transforman cualquier espacio.
         </p>
       </div>
-      <div className={styles.categoriasGrid}>
+      <div 
+        ref={containerRef}
+        className={`${styles.categoriasGrid} scroll-stagger-container`}
+      >
         {categorias.map((cat, index) => (
           <Link 
             key={cat.nombre} 
             href={`/categorias/${cat.slug}`} 
-            className={`${styles.categoriaCard} stagger-item`}
-            style={{ animationDelay: `${(index + 1) * 0.1}s` }}
+            className={`${styles.categoriaCard} scroll-stagger-item ${visibleItems.has(index) ? 'visible' : ''}`}
+            data-index={index}
           >
             <div className={styles.categoriaImgWrapper}>
               <Image src={cat.imagen} alt={cat.alt} fill className={styles.categoriaImg} />
