@@ -43,8 +43,13 @@ export default function Gallery() {
         </p>
       </div>
       <div className={styles.categoriasGrid}>
-        {categorias.map((cat) => (
-          <Link key={cat.nombre} href={`/categorias/${cat.slug}`} className={styles.categoriaCard}>
+        {categorias.map((cat, index) => (
+          <Link 
+            key={cat.nombre} 
+            href={`/categorias/${cat.slug}`} 
+            className={`${styles.categoriaCard} stagger-item`}
+            style={{ animationDelay: `${(index + 1) * 0.1}s` }}
+          >
             <div className={styles.categoriaImgWrapper}>
               <Image src={cat.imagen} alt={cat.alt} fill className={styles.categoriaImg} />
               <div className={styles.categoriaOverlay}>

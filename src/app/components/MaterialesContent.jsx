@@ -126,25 +126,25 @@ export default function MaterialesContent() {
           <p>Cada material pasa por un proceso de selección, preparación y tratamiento especializado para garantizar la máxima calidad en el producto final.</p>
           
           <div className={styles.processSteps}>
-            <div className={styles.processStep}>
+            <div className={`${styles.processStep} stagger-item`} style={{ animationDelay: '0.1s' }}>
               <div className={styles.stepNumber}>1</div>
               <h3>Selección</h3>
               <p>Elegimos cuidadosamente cada material por su calidad, historia y potencial estético.</p>
             </div>
             
-            <div className={styles.processStep}>
+            <div className={`${styles.processStep} stagger-item`} style={{ animationDelay: '0.2s' }}>
               <div className={styles.stepNumber}>2</div>
               <h3>Preparación</h3>
               <p>Limpieza, lijado y tratamiento específico para cada tipo de material.</p>
             </div>
             
-            <div className={styles.processStep}>
+            <div className={`${styles.processStep} stagger-item`} style={{ animationDelay: '0.3s' }}>
               <div className={styles.stepNumber}>3</div>
               <h3>Integración</h3>
               <p>Combinamos los materiales con técnicas avanzadas de resina epoxi.</p>
             </div>
             
-            <div className={styles.processStep}>
+            <div className={`${styles.processStep} stagger-item`} style={{ animationDelay: '0.4s' }}>
               <div className={styles.stepNumber}>4</div>
               <h3>Acabado</h3>
               <p>Pulido y tratamiento final para obtener la superficie perfecta.</p>

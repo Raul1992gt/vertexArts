@@ -7,6 +7,11 @@ p, a, button {
   --background: #ffffff;
   --foreground: #171717;
   --max-width: 1200px;
+  --primary-color: #0a3d2c;
+  --primary-hover: #145c43;
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,6 +61,124 @@ img {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+/* Global Subtle Transitions */
+* {
+  transition: 
+    color var(--transition-fast),
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-medium),
+    box-shadow var(--transition-medium),
+    opacity var(--transition-medium);
+}
+
+/* Optimized transitions for interactive elements */
+a, button, input, textarea, select {
+  transition: 
+    color var(--transition-fast),
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-medium),
+    opacity var(--transition-medium);
+}
+
+/* Hover effects for interactive elements */
+a:hover, button:hover {
+  transform: translateY(-1px);
+}
+
+/* Focus states with smooth transitions */
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  transform: scale(1.02);
+}
+
+/* Image hover effects */
+img {
+  transition: 
+    transform var(--transition-medium),
+    filter var(--transition-medium),
+    opacity var(--transition-medium);
+}
+
+/* Card-like elements hover effects */
+[class*="card"]:hover,
+[class*="Card"]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(10, 61, 44, 0.15);
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity var(--transition-medium), transform var(--transition-medium);
+}
+
+/* Stagger animations for lists */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp var(--transition-slow) ease forwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility: Respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .page-enter,
+  .page-enter-active,
+  .page-exit,
+  .page-exit-active {
+    transition: none !important;
+    transform: none !important;
+  }
+  
+  .stagger-item {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 /* Responsive text utilities */
