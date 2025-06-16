@@ -1,3 +1,5 @@
+"use client";
+
 import styles from '../../styles/AboutSection.module.css';
 import Image from 'next/image';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';

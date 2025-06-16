@@ -1,3 +1,5 @@
+"use client";
+
 import styles from '../../styles/ContactForm.module.css';
 import Image from 'next/image';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';

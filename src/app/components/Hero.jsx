@@ -1,3 +1,5 @@
+"use client";
+
 import styles from '../../styles/Hero.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
