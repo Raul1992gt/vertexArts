@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
       "addressRegion": "Madrid"
     },
     "openingHours": "Mo-Fr 09:00-18:00",
-            "image": "/vertexArts/images/logo.png",
+            "image": "/images/logo.png",
     "priceRange": "€€",
     "serviceArea": "España",
     "hasOfferCatalog": {

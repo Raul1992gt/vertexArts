@@ -7,53 +7,158 @@
   justify-content: center;
   overflow: hidden;
 }
-@media (max-width: 700px) {
-  .hero, .imageWrapper {
-    min-height: 60vh;
-  }
-}
+
 .imageWrapper {
   position: relative;
   width: 100vw;
   min-height: 85vh;
 }
+
 .heroImage {
   object-fit: cover;
   z-index: 1;
 }
+
 .overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
   background: rgba(0,0,0,0.35);
   z-index: 2;
 }
+
 .textContent {
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
   color: #fff;
   text-align: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  width: 100%;
 }
+
 .textContent h1 {
   font-size: 2.8rem;
   font-family: var(--font-geist-sans, serif);
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
+
 .textContent p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
+
 .button {
   background: #0a3d2c;
   color: #fff;
-  padding: 0.9rem 2.2rem;
+  padding: 1rem 2.5rem;
   border-radius: 2rem;
   border: none;
   font-size: 1.1rem;
+  font-weight: 600;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
 }
+
 .button:hover {
   background: #145c43;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(10, 61, 44, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .textContent h1 {
+    font-size: 2.5rem;
+  }
+  
+  .textContent p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero, 
+  .imageWrapper {
+    min-height: 70vh;
+  }
+  
+  .textContent {
+    padding: 0 1.5rem;
+  }
+  
+  .textContent h1 {
+    font-size: 2.2rem;
+  }
+  
+  .textContent p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .button {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero, 
+  .imageWrapper {
+    min-height: 60vh;
+  }
+  
+  .textContent {
+    padding: 0 1rem;
+  }
+  
+  .textContent h1 {
+    font-size: 1.9rem;
+  }
+  
+  .textContent p {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .button {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero, 
+  .imageWrapper {
+    min-height: 55vh;
+  }
+  
+  .textContent {
+    padding: 0 0.8rem;
+  }
+  
+  .textContent h1 {
+    font-size: 1.7rem;
+  }
+  
+  .textContent p {
+    font-size: 0.9rem;
+  }
+  
+  .button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
 } 

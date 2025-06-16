@@ -33,7 +33,7 @@ export default function CategoryPage({ titulo, descripcion, carpeta, imagenes })
     <div className={styles.categoryContainer}>
       <div className={styles.categoryHeader}>
         <Link href="/categorias" className={styles.backButton}>
-          ← Volver a Especialidades
+          ← Volver
         </Link>
         <h1>{titulo}</h1>
         <p>{descripcion}</p>
@@ -44,7 +44,7 @@ export default function CategoryPage({ titulo, descripcion, carpeta, imagenes })
           <div key={i} className={styles.projectCard} onClick={() => abrirLightbox(i)}>
             <div className={styles.projectImgWrapper}>
               <Image 
-                src={`/vertexArts/images/${carpeta}/${img}`} 
+                src={`/images/${carpeta}/${img}`} 
                 alt={`${titulo} ${i + 1}`} 
                 fill 
                 className={styles.projectImg} 
@@ -56,7 +56,7 @@ export default function CategoryPage({ titulo, descripcion, carpeta, imagenes })
 
       <Lightbox
         open={lightbox.open}
-        imagen={`/vertexArts/images/${carpeta}/${imagenes[lightbox.index]}`}
+                        imagen={`/images/${carpeta}/${imagenes[lightbox.index]}`}
         onClose={cerrarLightbox}
         onPrev={prevImg}
         onNext={nextImg}

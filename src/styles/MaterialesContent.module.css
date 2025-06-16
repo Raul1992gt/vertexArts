@@ -63,10 +63,14 @@
 .materialImage {
   flex: 1;
   min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .materialImg {
   width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 1.2rem;
   object-fit: cover;
@@ -256,7 +260,25 @@
 }
 
 /* Responsive Design */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .materialRow {
+    gap: 2rem;
+  }
+  
+  .materialImg {
+    max-width: 400px;
+  }
+  
+  .materialContent h2 {
+    font-size: 2rem;
+  }
+  
+  .materialContent h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
   .heroContent h1 {
     font-size: 2.5rem;
   }
@@ -265,17 +287,45 @@
     font-size: 1.1rem;
   }
   
+  .materialSection {
+    padding: 3rem 1.5rem;
+  }
+  
   .materialRow {
     flex-direction: column;
     gap: 2rem;
+    text-align: center;
   }
   
   .materialRow:nth-child(even) {
     flex-direction: column;
   }
   
+  .materialImage {
+    order: -1;
+  }
+  
+  .materialImg {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .materialContent {
+    text-align: left;
+  }
+  
   .materialContent h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .materialContent h3 {
+    font-size: 1.5rem;
+  }
+  
+  .materialContent h4 {
+    font-size: 1.3rem;
   }
   
   .sectionHeader h2 {
@@ -285,6 +335,14 @@
   .processSteps {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
+  }
+  
+  .processSection {
+    padding: 3rem 1.5rem;
+  }
+  
+  .ctaSection {
+    padding: 3rem 1.5rem;
   }
 }
 
@@ -299,29 +357,135 @@
   
   .heroContent h1 {
     font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .heroContent p {
+    font-size: 1rem;
   }
   
   .materialSection {
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem;
+  }
+  
+  .materialRow {
+    gap: 1.5rem;
+  }
+  
+  .materialContent h2 {
+    font-size: 1.6rem;
+  }
+  
+  .materialContent h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+  
+  .materialContent h4 {
+    font-size: 1.2rem;
+  }
+  
+  .materialDescription {
+    font-size: 1.1rem;
+  }
+  
+  .benefitsList li {
+    font-size: 1rem;
+    padding: 0.6rem 0;
+  }
+  
+  .technicalInfo {
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .sectionHeader h2 {
+    font-size: 1.8rem;
+  }
+  
+  .sectionHeader p {
+    font-size: 1.1rem;
   }
   
   .processSection {
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem;
   }
   
-  .ctaSection {
-    padding: 3rem 1rem;
+  .processContent h2 {
+    font-size: 2rem;
+  }
+  
+  .processContent > p {
+    font-size: 1.1rem;
   }
   
   .processSteps {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
   }
   
   .processStep {
     padding: 1.5rem;
   }
   
-  .benefitsList li {
+  .stepNumber {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  
+  .ctaSection {
+    padding: 2.5rem 1rem;
+  }
+  
+  .ctaContent h2 {
+    font-size: 1.8rem;
+  }
+  
+  .ctaContent p {
+    font-size: 1.1rem;
+  }
+  
+  .ctaButton {
+    padding: 0.8rem 2rem;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 2rem 0.8rem 1.5rem 0.8rem;
+  }
+  
+  .heroContent h1 {
+    font-size: 1.8rem;
+  }
+  
+  .materialSection {
+    padding: 2rem 0.8rem;
+  }
+  
+  .processSection {
+    padding: 2rem 0.8rem;
+  }
+  
+  .ctaSection {
+    padding: 2rem 0.8rem;
+  }
+  
+  .materialContent h2 {
+    font-size: 1.5rem;
+  }
+  
+  .sectionHeader h2 {
+    font-size: 1.6rem;
+  }
+  
+  .processContent h2 {
+    font-size: 1.8rem;
+  }
+  
+  .ctaContent h2 {
+    font-size: 1.6rem;
   }
 } 

@@ -26,7 +26,7 @@ export default function ContactForm() {
       
       <div className={styles.contactContent}>
         <div className={styles.contactImageWrapper}>
-          <Image src="/vertexArts/images/mobiliario.webp" alt="Mesa de resina epoxi y madera reciclada creada por VertexArt, ejemplo de mobiliario personalizado" width={500} height={350} className={styles.contactImage} />
+          <Image src="/images/mobiliario.webp" alt="Mesa de resina epoxi y madera reciclada creada por VertexArt, ejemplo de mobiliario personalizado" width={500} height={350} className={styles.contactImage} />
         </div>
         <form className={styles.form} onSubmit={handleSubmit}>
           <input type="text" name="nombre" placeholder="Nombre" required />
