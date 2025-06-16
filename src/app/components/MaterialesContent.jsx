@@ -18,7 +18,7 @@ export default function MaterialesContent() {
         <div className={styles.materialRow}>
           <div className={styles.materialImage}>
             <Image 
-              src="/images/encimeras/efecto_piedra_web.webp" 
+              src="/vertexArts/images/encimeras/efecto_piedra_web.webp" 
               alt="Resina Epoxi en encimera" 
               width={500} 
               height={350} 
@@ -79,7 +79,7 @@ export default function MaterialesContent() {
           </div>
           <div className={styles.materialImage}>
             <Image 
-              src="/images/mobiliario/mesa de rio.webp" 
+              src="/vertexArts/images/mobiliario/mesa de rio.webp" 
               alt="Mesa con madera reciclada" 
               width={500} 
               height={350} 
@@ -92,7 +92,7 @@ export default function MaterialesContent() {
         <div className={styles.materialRow}>
           <div className={styles.materialImage}>
             <Image 
-              src="/images/mobiliario/mobiliario3.webp" 
+              src="/vertexArts/images/mobiliario/mobiliario3.webp" 
               alt="Estructura de hierro reciclado" 
               width={500} 
               height={350} 
