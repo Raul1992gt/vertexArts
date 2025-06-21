@@ -30,7 +30,7 @@ const categorias = [
   {
     nombre: 'Decoración',
     carpeta: 'decoracion',
-    imagen: '/images/decoracion/restaurante.webp',
+    imagen: '/vertexArts/images/decoracion/restaurante.webp',
     slug: 'decoracion',
     alt: 'Decoración interior de restaurante con elementos de resina epoxi y diseño personalizado'
   },
