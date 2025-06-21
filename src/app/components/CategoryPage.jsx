@@ -23,40 +23,94 @@ function Lightbox({ open, imagen, onClose, onPrev, onNext }) {
 
 export default function CategoryPage({ titulo, descripcion, carpeta, imagenes }) {
   const [lightbox, setLightbox] = useState({ open: false, index: 0 });
-
-  const abrirLightbox = (idx) => setLightbox({ open: true, index: idx });
+  const [currentPage, setCurrentPage] = useState(0);
+  
+  const imagesPerPage = 3;
+  const totalPages = Math.ceil(imagenes.length / imagesPerPage);
+  
+  // Calcular las imágenes a mostrar en la página actual
+  const startIndex = currentPage * imagesPerPage;
+  const endIndex = startIndex + imagesPerPage;
+  const currentImages = imagenes.slice(startIndex, endIndex);
+  
+  const abrirLightbox = (localIdx) => {
+    const globalIdx = startIndex + localIdx;
+    setLightbox({ open: true, index: globalIdx });
+  };
   const cerrarLightbox = () => setLightbox({ open: false, index: 0 });
   const prevImg = () => setLightbox(l => ({ open: true, index: (l.index - 1 + imagenes.length) % imagenes.length }));
   const nextImg = () => setLightbox(l => ({ open: true, index: (l.index + 1) % imagenes.length }));
+  
+  const goToPrevPage = () => {
+    setCurrentPage(prev => (prev - 1 + totalPages) % totalPages);
+  };
+  
+  const goToNextPage = () => {
+    setCurrentPage(prev => (prev + 1) % totalPages);
+  };
 
   return (
     <div className={styles.categoryContainer}>
       <div className={styles.categoryHeader}>
-        <Link href="/categorias" className={styles.backButton}>
-          ← Volver
-        </Link>
         <h1>{titulo}</h1>
-        <p>{descripcion}</p>
+        <p className={styles.description}>{descripcion}</p>
       </div>
 
-      <div className={styles.projectsGrid}>
-        {imagenes.map((img, i) => (
-          <div key={i} className={styles.projectCard} onClick={() => abrirLightbox(i)}>
-            <div className={styles.projectImgWrapper}>
-              <Image 
-                src={`/vertexArts/images/${carpeta}/${img}`} 
-                alt={`${titulo} ${i + 1}`} 
-                fill 
-                className={styles.projectImg} 
-              />
+              <div className={styles.galleryContainer}>
+          {/* Contenedor con flechas laterales */}
+          <div className={styles.imageNavigationContainer}>
+            {/* Flecha izquierda */}
+            {totalPages > 1 && (
+              <button 
+                className={styles.arrowButton} 
+                onClick={goToPrevPage}
+                disabled={currentPage === 0}
+                aria-label="Página anterior"
+              >
+                ←
+              </button>
+            )}
+            
+            {/* Grid de 3 imágenes */}
+            <div className={styles.projectsGrid}>
+              {currentImages.map((img, i) => (
+                <div key={startIndex + i} className={styles.projectCard} onClick={() => abrirLightbox(i)}>
+                  <div className={styles.projectImgWrapper}>
+                    <Image 
+                      src={`/vertexArts/images/${carpeta}/${img}`} 
+                      alt={`${titulo} ${startIndex + i + 1}`} 
+                      fill 
+                      className={styles.projectImg}
+                      quality={95}
+                      priority={i < 3}
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
+            
+            {/* Flecha derecha */}
+            {totalPages > 1 && (
+              <button 
+                className={styles.arrowButton} 
+                onClick={goToNextPage}
+                disabled={currentPage === totalPages - 1}
+                aria-label="Página siguiente"
+              >
+                →
+              </button>
+            )}
           </div>
-        ))}
-      </div>
+          
+          {/* Contador discreto abajo */}
+          <div className={styles.photoCounter}>
+            {imagenes.length} fotos
+          </div>
+        </div>
 
       <Lightbox
         open={lightbox.open}
-                        imagen={`/vertexArts/images/${carpeta}/${imagenes[lightbox.index]}`}
+        imagen={`/vertexArts/images/${carpeta}/${imagenes[lightbox.index]}`}
         onClose={cerrarLightbox}
         onPrev={prevImg}
         onNext={nextImg}

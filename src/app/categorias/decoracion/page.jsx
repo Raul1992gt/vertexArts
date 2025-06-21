@@ -21,7 +21,7 @@ export default function DecoracionPage() {
       <Navbar />
       <PageTransition>
         <CategoryPage 
-          titulo="Decoración"
+          titulo='"Decoración de grandes espacios con ambientes únicos personalizados y sostenibles"'
           descripcion="Transformamos espacios con elementos decorativos únicos que van más allá de lo convencional. Desde paneles artísticos hasta elementos arquitectónicos personalizados, cada pieza está diseñada para crear ambientes inolvidables. Perfectos para restaurantes, hoteles, discotecas y espacios comerciales que buscan diferenciarse con un diseño original y sofisticado."
           carpeta="decoracion"
           imagenes={imagenes}

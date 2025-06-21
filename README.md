@@ -94,7 +94,7 @@ npm run lint     # Verificar código
 🏠 Home           →  Hero minimalista + CTA claro
 👥 About          →  Storytelling + testimonios
 🔧 Materiales     →  Información técnica detallada
-🎨 Especialidades →  Categorías con galerías
+🎨 Sercicios      →  Categorías con galerías
 📞 Contacto       →  Formulario elegante
 ❓ FAQ            →  Preguntas frecuentes
 ```
@@ -105,11 +105,6 @@ npm run lint     # Verificar código
 ```bash
 # Build optimizado
 npm run build
-
-# Las rutas de imágenes usan /vertexArts/ para producción
-# Estructura esperada en servidor:
-# /vertexArts/images/
-```
 
 ### **Variables de Entorno**
 ```env

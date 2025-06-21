@@ -27,11 +27,8 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoGroup}>
-        <Link href="/" onClick={closeMenu}>
-          <Image src="/vertexArts/images/logo.png" alt="VertexArt Logo" width={40} height={40} priority />
-        </Link>
-        <Link href="/" className={styles.brand} onClick={closeMenu}>
-          <span className={styles.brandName}>VertexArt</span>
+        <Link href="/" onClick={closeMenu} className={styles.logoLink}>
+          <Image src="/vertexArts/images/logo.png" alt="VertexArt Logo" width={60} height={60} priority className={styles.logo} />
         </Link>
       </div>
 
@@ -57,7 +54,7 @@ export default function Navbar() {
               className={`${styles.brandMenu} ${styles.dropdownMainLink}`}
               onClick={closeMenu}
             >
-              Especialidades
+              Servicios
             </Link>
             <button 
               className={styles.dropdownToggle}

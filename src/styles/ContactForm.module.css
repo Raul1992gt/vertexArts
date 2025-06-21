@@ -108,10 +108,50 @@
   align-self: flex-start;
 }
 
-.submitButton:hover {
+.submitButton:hover:not(:disabled) {
   background: #145c43;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(10, 61, 44, 0.2);
+}
+
+.submitButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Mensajes de estado */
+.successMessage {
+  background: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid #c3e6cb;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.errorMessage {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Campos deshabilitados */
+.inputGroup input:disabled,
+.inputGroup textarea:disabled {
+  background: #f8f9fa;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 /* Responsive Design */

@@ -16,6 +16,7 @@
   color: #0a3d2c;
   margin-bottom: 1rem;
   font-family: var(--font-geist-sans, serif);
+  font-style: italic;
 }
 
 .faqContainer p {

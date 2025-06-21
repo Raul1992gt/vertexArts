@@ -26,8 +26,8 @@ export default function MobiliarioPage() {
       <Navbar />
       <PageTransition>
         <CategoryPage 
-          titulo="Mobiliario"
-          descripcion="Creamos muebles únicos que fusionan arte y funcionalidad. Nuestras mesas, estanterías y piezas decorativas están hechas con resina epoxi y materiales reciclados, resultando en piezas irrepetibles que se convierten en el punto focal de cualquier espacio. Cada mueble cuenta una historia y está diseñado para durar generaciones."
+          titulo='"Mobiliario artesanal con materiales de primera calidad y reciclados para crear un diseño con historia"'
+          descripcion='"Creamos muebles únicos que fusionan arte y funcionalidad. Nuestras mesas, estanterías y piezas decorativas están hechas con materiales de primera calidad, materiales reciclados y elementos externos, resultando en piezas irrepetibles que se convierten en el punto focal de cualquier espacio. Cada mueble cuenta una historia y está diseñado para durar generaciones."'
           carpeta="mobiliario"
           imagenes={imagenes}
         />

@@ -25,8 +25,12 @@ export default function EncimerasPage() {
       <Navbar />
       <PageTransition>
         <CategoryPage 
-          titulo="Encimeras"
-          descripcion="Nuestras encimeras combinan la durabilidad de la resina epoxi con diseños únicos que imitan texturas naturales como madera, piedra y mármol. Cada encimera es resistente, fácil de mantener y completamente personalizable para adaptarse a tu estilo de vida. Perfectas para cocinas, baños y espacios comerciales donde la funcionalidad se encuentra con el arte."
+          titulo='"Encimeras personalizadas, estilo, funcionalidad y sostenibilidad en cada detalle"'
+          descripcion="Diseño a medida, elegancia sin límites
+            En Vertex Arts transformamos tu cocina o baño en un espacio único, creando encimeras artesanales con resina epoxi de alta calidad y acabados que imitan a la perfección materiales nobles como el mármol, el granito, la madera o el ónix. Cada proyecto es una pieza exclusiva: no hay dos iguales.
+            La resina epoxi nos permite lograr superficies continuas, brillantes y resistentes, que no solo deslumbran por su estética, sino que garantizan durabilidad frente a la humedad, el calor o el uso diario. Gracias a nuestra técnica y experiencia, fusionamos arte y funcionalidad en cada encimera.
+            Ya sea que busques un estilo moderno, natural o sofisticado, te ofrecemos soluciones totalmente personalizadas que elevan tu espacio con carácter, diseño y sostenibilidad.
+            Vertex Arts. Donde cada encimera es una obra irrepetible."
           carpeta="encimeras"
           imagenes={imagenes}
         />

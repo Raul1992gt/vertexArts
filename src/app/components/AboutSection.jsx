@@ -17,7 +17,7 @@ export default function AboutSection() {
           ref={titleRef}
           className={`scroll-reveal-scale ${titleVisible ? 'visible' : ''}`}
         >
-          ¿Quiénes somos?
+          "Empresa especializada en diseño y tratamiento de encimeras y mobiliario exclusivo"
         </h2>
         <div 
           ref={textRef}
@@ -32,15 +32,20 @@ export default function AboutSection() {
         className={`${styles.row} scroll-reveal-left ${row1Visible ? 'visible' : ''}`}
       >
         <div className={styles.imageContainer}>
-          <Image src="/vertexArts/images/nosotros.webp" alt="Taller de VertexArt con herramientas y proyectos de resina epoxi en proceso de creación" width={400} height={250} className={styles.bnw} />
+          <Image src="/vertexArts/images/nosotros.png" alt="Taller de VertexArt con herramientas y proyectos de resina epoxi en proceso de creación" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestra Historia</h3>
           <p>
-            VertexArt nace de la pasión por el arte funcional y el diseño sostenible. Creamos piezas únicas combinando resina epoxi y materiales reciclados, fusionando creatividad y respeto por el medio ambiente.
+            Pasión por crear. Compromiso con cada detalle.
+            En Vertex Arts nacimos con una idea clara: transformar materiales nobles como la resina epoxi y maderas de primera calidad en piezas únicas que combinen arte, funcionalidad y durabilidad. 
           </p>
           <p>
-            Cada proyecto es una obra de arte hecha a mano, pensada para transformar espacios y contar historias a través de la materia.
+            Cada proyecto refleja nuestra dedicación, desde la elección del material hasta el último acabado.
+          </p>
+          <p>            
+            No fabricamos en serie. Trabajamos cada encimera, mueble o revestimiento como una obra exclusiva, cuidando cada detalle y escuchando las necesidades reales de nuestros clientes. Nuestro compromiso es con la calidad, la estética y el servicio cercano.        
+            Vertex Arts es esfuerzo, diseño y pasión por lo bien hecho
           </p>
         </div>
       </div>
@@ -51,15 +56,15 @@ export default function AboutSection() {
         className={`${styles.row} scroll-reveal-right ${row2Visible ? 'visible' : ''}`}
       >
         <div className={styles.imageContainer}>
-          <Image src="/vertexArts/images/about.webp" alt="Artesano de VertexArt trabajando con resina epoxi y madera reciclada en el proceso de creación" width={400} height={250} className={styles.bnw} />
+          <Image src="/vertexArts/images/about.png" alt="Artesano de VertexArt trabajando con resina epoxi y madera reciclada en el proceso de creación" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestro Proceso</h3>
           <p>
-            Cada creación comienza con una conversación, una idea, un sueño. Seleccionamos cuidadosamente maderas con historia y metales que han vivido, dándoles nueva vida a través de la magia de la resina epoxi.
+          Cada creación nace de una conversación, una idea, un sueño compartido. Elegimos con precisión maderas excepcionales y metales de carácter, combinándolos con la elegancia y versatilidad de la resina epoxi.
           </p>
           <p>
-            Nuestras manos moldean, pulen y perfeccionan cada detalle hasta crear piezas únicas que no solo decoran, sino que cuentan historias y despiertan emociones.
+          Con manos expertas, moldeamos, pulimos y perfeccionamos cada pieza hasta convertirla en una obra única. No solo embellecen los espacios, sino que transmiten emociones, cuentan historias y reflejan la esencia de quien las imagina.
           </p>
         </div>
       </div>

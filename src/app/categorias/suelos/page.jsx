@@ -26,8 +26,12 @@ export default function SuelosPage() {
       <Navbar />
       <PageTransition>
         <CategoryPage 
-          titulo="Suelos"
-          descripcion="Nuestros suelos de resina epoxi ofrecen una solución duradera y estéticamente impactante para cualquier espacio. Ideales para garajes, cocinas industriales, showrooms y espacios comerciales, proporcionan una superficie continua, resistente a químicos y fácil de limpiar. Disponibles en múltiples acabados: desde efectos marmolados hasta texturas granuladas."
+          titulo='"Transforma cualquier espacio con resistencia y diseño"'
+          descripcion="Durabilidad, diseño y carácter bajo tus pies
+            En Vertex Arts, los suelos no son solo una superficie: son una declaración de estilo. Especialistas en suelos de resina epoxi, ofrecemos soluciones únicas que combinan resistencia industrial, acabados exclusivos y un marcado sentido estético. Cada suelo que diseñamos transforma espacios residenciales, comerciales o industriales con personalidad y funcionalidad.
+            Desde efectos marmoleados, metálicos, minimalistas o con acabados artísticos, nuestras resinas permiten una personalización total, adaptándose a cualquier estilo y necesidad. La alta resistencia a impactos, humedad, productos químicos y el desgaste diario, los convierte en una elección práctica, duradera y visualmente sorprendente.
+            Utilizamos materiales reciclados siempre que es posible y aplicamos técnicas precisas que garantizan un acabado impecable, continuo y fácil de mantener. Ya sea para una vivienda moderna, un local comercial o un entorno creativo, creamos superficies que no solo soportan el tiempo, sino que lo redefinen con arte.
+            Vertex Arts. Pisos con diseño, alma y resistencia."
           carpeta="suelo"
           imagenes={imagenes}
         />

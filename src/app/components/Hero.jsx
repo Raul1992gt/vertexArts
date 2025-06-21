@@ -26,13 +26,13 @@ export default function Hero() {
             ref={subtitleRef}
             className={`${styles.subtitle} scroll-reveal ${subtitleVisible ? 'visible' : ''}`}
           >
-            Especialistas en resina epoxi
+            Innovación artesanal para espacios únicos
           </p>
           <p 
             ref={descRef}
             className={`${styles.description} scroll-reveal-right ${descVisible ? 'visible' : ''}`}
           >
-            Transformamos espacios con piezas únicas de resina epoxi. Diseño, arte y funcionalidad en perfecta armonía.
+            Arte funcional
           </p>
           <Link href="/categorias" className={styles.button}>Ver Especialidades</Link>
         </div>

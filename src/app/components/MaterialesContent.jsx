@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from 'react';
 import styles from '../../styles/MaterialesContent.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,9 +10,15 @@ export default function MaterialesContent() {
   const { targetRef: titleRef, hasIntersected: titleVisible } = useIntersectionObserver({ threshold: 0.3 });
   const { targetRef: subtitleRef, hasIntersected: subtitleVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { targetRef: resinRef, hasIntersected: resinVisible } = useIntersectionObserver({ threshold: 0.2 });
-  const { targetRef: recycledRef, hasIntersected: recycledVisible } = useIntersectionObserver({ threshold: 0.2 });
+  const { targetRef: woodRef, hasIntersected: woodVisible } = useIntersectionObserver({ threshold: 0.2 });
+  const { targetRef: metalRef, hasIntersected: metalVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { targetRef: processRef, hasIntersected: processVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { containerRef, visibleItems } = useStaggeredIntersection(4); // 4 elementos en el grid
+  
+  // Estados para controlar la expansión de cada material
+  const [isResinExpanded, setIsResinExpanded] = useState(false);
+  const [isWoodExpanded, setIsWoodExpanded] = useState(false);
+  const [isMetalExpanded, setIsMetalExpanded] = useState(false);
 
   return (
     <div className={styles.materialesContainer}>
@@ -54,54 +61,68 @@ export default function MaterialesContent() {
               La <strong>resina epoxi</strong> es nuestro material estrella, un polímero termoestable que se cura mediante una reacción química, creando una superficie extremadamente dura y duradera.
             </p>
             
-            <div className={styles.benefitsList}>
-              <h3>¿Por qué elegimos resina epoxi?</h3>
-              <ul>
-                <li><strong>Durabilidad excepcional:</strong> Resistente a golpes, rayones y desgaste diario</li>
-                <li><strong>Impermeabilidad total:</strong> No absorbe líquidos, ideal para cocinas y baños</li>
-                <li><strong>Resistencia química:</strong> Soporta ácidos, aceites y productos de limpieza</li>
-                <li><strong>Versatilidad estética:</strong> Permite crear efectos únicos: madera, piedra, mármol</li>
-                <li><strong>Mantenimiento mínimo:</strong> Fácil limpieza con productos básicos</li>
-                <li><strong>Personalización total:</strong> Colores, texturas y efectos completamente personalizables</li>
-              </ul>
-            </div>
+            <div className={`${styles.expandableContent} ${isResinExpanded ? styles.expanded : ''}`}>
+              <div className={styles.benefitsList}>
+                <h3>¿Por qué elegimos resina epoxi?</h3>
+                <ul>
+                  <li><strong>Durabilidad excepcional:</strong> Resistente a golpes, rayones y desgaste diario</li>
+                  <li><strong>Impermeabilidad total:</strong> No absorbe líquidos, ideal para cocinas y baños</li>
+                  <li><strong>Resistencia química:</strong> Soporta ácidos, aceites y productos de limpieza</li>
+                  <li><strong>Versatilidad estética:</strong> Permite crear efectos únicos: madera, piedra, mármol</li>
+                  <li><strong>Mantenimiento mínimo:</strong> Fácil limpieza con productos básicos</li>
+                  <li><strong>Personalización total:</strong> Colores, texturas y efectos completamente personalizables</li>
+                </ul>
+              </div>
 
-            <div className={styles.technicalInfo}>
-              <h3>Características técnicas</h3>
-              <p>Nuestra resina epoxi ofrece una resistencia térmica de hasta 120°C, una dureza Shore D superior a 80, y una resistencia a la compresión de más de 100 MPa. Estas propiedades la convierten en el material perfecto para aplicaciones que requieren máxima durabilidad.</p>
+              <div className={styles.technicalInfo}>
+                <h3>Características técnicas</h3>
+                <p>Nuestra resina epoxi ofrece una resistencia térmica de hasta 120°C, una dureza Shore D superior a 80, y una resistencia a la compresión de más de 100 MPa. Estas propiedades la convierten en el material perfecto para aplicaciones que requieren máxima durabilidad.</p>
+              </div>
             </div>
+            
+            <button 
+              className={styles.materialExpandButton}
+              onClick={() => setIsResinExpanded(!isResinExpanded)}
+              aria-label={isResinExpanded ? "Ver menos" : "Ver más detalles"}
+            >
+              {isResinExpanded ? '↑ Ver menos' : '↓ Ver más detalles'}
+            </button>
           </div>
         </div>
       </section>
 
-      {/* Materiales Reciclados Section */}
+      {/* Madera Reciclada Section */}
       <section 
-        ref={recycledRef}
-        className={`${styles.materialSection} scroll-reveal-right ${recycledVisible ? 'visible' : ''}`}
+        ref={woodRef}
+        className={`${styles.materialSection} scroll-reveal-right ${woodVisible ? 'visible' : ''}`}
       >
-        <div className={styles.sectionHeader}>
-          <h2>Materiales Reciclados</h2>
-          <p>Nuestra filosofía sostenible nos lleva a dar nueva vida a materiales nobles, creando piezas únicas con historia y carácter.</p>
-        </div>
-
-        {/* Madera Reciclada */}
         <div className={styles.materialRow}>
           <div className={styles.materialContent}>
-            <h3>Madera Reciclada</h3>
+            <h2>Madera Reciclada</h2>
             <p className={styles.materialDescription}>
               Recuperamos <strong>maderas nobles</strong> de construcciones antiguas, muebles en desuso y estructuras históricas, dándoles una segunda vida llena de carácter y personalidad.
             </p>
             
-            <div className={styles.benefitsList}>
-              <h4>Características de nuestras maderas:</h4>
-              <ul>
-                <li><strong>Historia y carácter:</strong> Cada pieza cuenta una historia única</li>
-                <li><strong>Vetas naturales:</strong> Patrones únicos imposibles de replicar</li>
-                <li><strong>Durabilidad probada:</strong> Maderas que han resistido décadas</li>
-                <li><strong>Sostenibilidad:</strong> Reducimos la tala de árboles nuevos</li>
-                <li><strong>Variedad de especies:</strong> Roble, castaño, pino, eucalipto y maderas exóticas</li>
-              </ul>
+            <div className={`${styles.expandableContent} ${isWoodExpanded ? styles.expanded : ''}`}>
+              <div className={styles.benefitsList}>
+                <h3>Características de nuestras maderas:</h3>
+                <ul>
+                  <li><strong>Historia y carácter:</strong> Cada pieza cuenta una historia única</li>
+                  <li><strong>Vetas naturales:</strong> Patrones únicos imposibles de replicar</li>
+                  <li><strong>Durabilidad probada:</strong> Maderas que han resistido décadas</li>
+                  <li><strong>Sostenibilidad:</strong> Reducimos la tala de árboles nuevos</li>
+                  <li><strong>Variedad de especies:</strong> Roble, castaño, pino, eucalipto y maderas exóticas</li>
+                </ul>
+              </div>
             </div>
+            
+            <button 
+              className={styles.materialExpandButton}
+              onClick={() => setIsWoodExpanded(!isWoodExpanded)}
+              aria-label={isWoodExpanded ? "Ver menos" : "Ver más detalles"}
+            >
+              {isWoodExpanded ? '↑ Ver menos' : '↓ Ver más detalles'}
+            </button>
           </div>
           <div className={styles.materialImage}>
             <Image 
@@ -113,8 +134,13 @@ export default function MaterialesContent() {
             />
           </div>
         </div>
+      </section>
 
-        {/* Hierro y Metal Reciclado */}
+      {/* Hierro y Metales Reciclados Section */}
+      <section 
+        ref={metalRef}
+        className={`${styles.materialSection} scroll-reveal-left ${metalVisible ? 'visible' : ''}`}
+      >
         <div className={styles.materialRow}>
           <div className={styles.materialImage}>
             <Image 
@@ -126,21 +152,31 @@ export default function MaterialesContent() {
             />
           </div>
           <div className={styles.materialContent}>
-            <h3>Hierro y Metales Reciclados</h3>
+            <h2>Hierro y Metales Reciclados</h2>
             <p className={styles.materialDescription}>
               Transformamos <strong>estructuras metálicas</strong> industriales, herramientas antiguas y elementos arquitectónicos en componentes estructurales y decorativos únicos.
             </p>
             
-            <div className={styles.benefitsList}>
-              <h4>Ventajas del metal reciclado:</h4>
-              <ul>
-                <li><strong>Resistencia estructural:</strong> Capacidad de carga excepcional</li>
-                <li><strong>Pátina natural:</strong> Efectos de oxidación controlada únicos</li>
-                <li><strong>Versatilidad de formas:</strong> Moldeable para cualquier diseño</li>
-                <li><strong>Bajo impacto ambiental:</strong> Evitamos la extracción de nuevos metales</li>
-                <li><strong>Combinación perfecta:</strong> Se integra armoniosamente con resina y madera</li>
-              </ul>
+            <div className={`${styles.expandableContent} ${isMetalExpanded ? styles.expanded : ''}`}>
+              <div className={styles.benefitsList}>
+                <h3>Ventajas del metal reciclado:</h3>
+                <ul>
+                  <li><strong>Resistencia estructural:</strong> Capacidad de carga excepcional</li>
+                  <li><strong>Pátina natural:</strong> Efectos de oxidación controlada únicos</li>
+                  <li><strong>Versatilidad de formas:</strong> Moldeable para cualquier diseño</li>
+                  <li><strong>Bajo impacto ambiental:</strong> Evitamos la extracción de nuevos metales</li>
+                  <li><strong>Combinación perfecta:</strong> Se integra armoniosamente con resina y madera</li>
+                </ul>
+              </div>
             </div>
+            
+            <button 
+              className={styles.materialExpandButton}
+              onClick={() => setIsMetalExpanded(!isMetalExpanded)}
+              aria-label={isMetalExpanded ? "Ver menos" : "Ver más detalles"}
+            >
+              {isMetalExpanded ? '↑ Ver menos' : '↓ Ver más detalles'}
+            </button>
           </div>
         </div>
       </section>
@@ -170,7 +206,7 @@ export default function MaterialesContent() {
             <div className={`${styles.processStep} stagger-item`} style={{ animationDelay: '0.3s' }}>
               <div className={styles.stepNumber}>3</div>
               <h3>Integración</h3>
-              <p>Combinamos los materiales con técnicas avanzadas de resina epoxi.</p>
+              <p>Combinamos los materiales con técnicas tradicionales y avanzadas.</p>
             </div>
             
             <div className={`${styles.processStep} stagger-item`} style={{ animationDelay: '0.4s' }}>

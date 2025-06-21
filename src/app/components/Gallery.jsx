@@ -30,7 +30,7 @@ const categorias = [
   {
     nombre: 'Decoración',
     carpeta: 'decoracion',
-    imagen: '/vertexArts/images/decoracion/restaurante.webp',
+    imagen: '/images/decoracion/restaurante.webp',
     slug: 'decoracion',
     alt: 'Decoración interior de restaurante con elementos de resina epoxi y diseño personalizado'
   },
@@ -42,7 +42,7 @@ export default function Gallery() {
   return (
     <section className={styles.categoriasSection}>
       <div className={styles.presentacion}>
-        <h2>Nuestras Especialidades</h2>
+        <h2>Servicios</h2>
         <p>
           Cada pieza está hecha a medida, con mimo y dedicación. Fusionamos arte, sostenibilidad y funcionalidad para crear proyectos únicos que transforman cualquier espacio.
         </p>

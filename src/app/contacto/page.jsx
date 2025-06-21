@@ -50,7 +50,13 @@ const Contacto = () => {
     <>
       <Navbar />
       <PageTransition>
-        <ContactForm />
+        <ContactForm 
+          formData={formData}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          statusMessage={statusMessage}
+          isSuccess={isSuccess}
+        />
       </PageTransition>
       <Footer />
     </>

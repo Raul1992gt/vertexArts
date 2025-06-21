@@ -8,31 +8,9 @@
 
 .categoryHeader {
   text-align: center;
-  padding: 4rem 2rem 3rem 2rem;
+  padding: 0rem 2rem 1rem 2rem;
   margin-bottom: 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  position: relative;
-}
-
-.backButton {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  color: #0a3d2c;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background: rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease;
-  backdrop-filter: blur(5px);
-}
-
-.backButton:hover {
-  background: rgba(255, 255, 255, 0.95);
-  transform: translateX(-3px);
-  color: #145c43;
 }
 
 .categoryHeader h1 {
@@ -40,22 +18,74 @@
   color: #0a3d2c;
   margin-bottom: 1.5rem;
   font-family: var(--font-geist-sans, serif);
+  font-style: italic;
 }
 
-.categoryHeader p {
+.description {
   font-size: 1.2rem;
   color: #444;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
+  font-style: italic;
+}
+
+.galleryContainer {
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+.imageNavigationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .projectsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-bottom: 2rem;
-  padding: 3rem 2rem 2rem 2rem;
+  max-width: 1000px;
+  flex: 1;
+}
+
+.arrowButton {
+  background: #0a3d2c;
+  color: #fff;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(10,61,44,0.2);
+  flex-shrink: 0;
+}
+
+.arrowButton:hover:not(:disabled) {
+  background: #145c43;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(10,61,44,0.3);
+}
+
+.arrowButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.photoCounter {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-style: italic;
 }
 
 .projectCard {
@@ -77,16 +107,24 @@
   width: 100%;
   aspect-ratio: 4/3;
   overflow: hidden;
+  background: #f5f5f5;
 }
 
 .projectImg {
   object-fit: cover;
   transition: transform 0.3s ease;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: none;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .projectCard:hover .projectImg {
   transform: scale(1.05);
 }
+
+
 
 /* Lightbox styles */
 .lightboxOverlay {
@@ -171,14 +209,27 @@
     font-size: 2rem;
   }
   
-  .categoryHeader p {
+  .description {
     font-size: 1.1rem;
   }
   
-  .projectsGrid {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
+  .galleryContainer {
     padding: 2rem 1rem;
+  }
+  
+  .imageNavigationContainer {
+    gap: 1rem;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .arrowButton {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
   }
   
   .lightboxImgWrapper {
@@ -198,17 +249,32 @@
     font-size: 1.8rem;
   }
   
-  .backButton {
-    top: 1rem;
-    left: 1rem;
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+  .description {
+    font-size: 1rem;
+  }
+  
+  .galleryContainer {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .imageNavigationContainer {
+    flex-direction: column;
+    gap: 1.5rem;
   }
   
   .projectsGrid {
     grid-template-columns: 1fr;
     gap: 1.2rem;
-    padding: 1.5rem 0.8rem;
+  }
+  
+  .arrowButton {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+  
+  .photoCounter {
+    font-size: 0.8rem;
   }
   
   .lightboxImgWrapper {
