@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../../styles/CategoryPage.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -24,9 +24,38 @@ function Lightbox({ open, imagen, onClose, onPrev, onNext }) {
 export default function CategoryPage({ titulo, descripcion, carpeta, imagenes }) {
   const [lightbox, setLightbox] = useState({ open: false, index: 0 });
   const [currentPage, setCurrentPage] = useState(0);
+  const [imagesPerPage, setImagesPerPage] = useState(3);
   
-  const imagesPerPage = 3;
+  // Hook para detectar el tamaño de pantalla y ajustar imágenes por página
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 600) {
+        setImagesPerPage(1); // Móvil: 1 imagen
+      } else if (window.innerWidth <= 900) {
+        setImagesPerPage(2); // Tablet: 2 imágenes  
+      } else {
+        setImagesPerPage(3); // Desktop: 3 imágenes
+      }
+    };
+
+    // Ejecutar al cargar
+    handleResize();
+    
+    // Escuchar cambios de tamaño
+    window.addEventListener('resize', handleResize);
+    
+    // Limpiar listener
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
   const totalPages = Math.ceil(imagenes.length / imagesPerPage);
+  
+  // Reiniciar página actual si es necesario cuando cambia imagesPerPage
+  useEffect(() => {
+    if (currentPage >= totalPages) {
+      setCurrentPage(0);
+    }
+  }, [imagesPerPage, totalPages, currentPage]);
   
   // Calcular las imágenes a mostrar en la página actual
   const startIndex = currentPage * imagesPerPage;

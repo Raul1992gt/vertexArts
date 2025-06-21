@@ -258,8 +258,7 @@
   }
   
   .imageNavigationContainer {
-    flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.8rem;
   }
   
   .projectsGrid {
@@ -268,9 +267,9 @@
   }
   
   .arrowButton {
-    width: 45px;
-    height: 45px;
-    font-size: 1.2rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
   }
   
   .photoCounter {
