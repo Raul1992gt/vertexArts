@@ -15,7 +15,7 @@ const imagenes = [
   'suelos4.png',
   'suelos5.png',
   'suelos6.png',
-  'suelos7.png',
+  'Suelos7.png',
   'suelos9.png',
   'suelos11.png',
 ];
