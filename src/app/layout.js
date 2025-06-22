@@ -3,7 +3,7 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter', // La usaremos como variable CSS
+  variable: '--font-inter',
 });
 
 export const metadata = {

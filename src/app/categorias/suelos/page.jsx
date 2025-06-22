@@ -10,14 +10,14 @@ export const metadata = {
 };
 
 const imagenes = [
-  'terminacion marmolizado_8.webp',
-  'terminacion granito_7.webp',
-  'terminacion blanca_6.webp',
-  'suelos2_5.webp',
-  'suelos_4.webp',
-  'garaje_3.webp',
-  'cockteleria_2.webp',
-  'aplicacion suelos_1.webp',
+  'suelos01.png',
+  'suelos3.png',
+  'suelos4.png',
+  'suelos5.png',
+  'suelos6.png',
+  'suelos7.png',
+  'suelos9.png',
+  'suelos11.png',
 ];
 
 export default function SuelosPage() {

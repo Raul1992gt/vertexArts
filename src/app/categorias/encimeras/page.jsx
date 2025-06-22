@@ -10,13 +10,20 @@ export const metadata = {
 };
 
 const imagenes = [
-  'vertido_encimera.webp',
-  'encimera_madera.webp',
-  'encimera_granito.webp',
-  'efecto_piedra_web.webp',
-  'efecto_marmol_web.webp',
-  'efecto madera_web2.webp',
-  'cockteleria.webp',
+  'baño.png',
+  'cocina_piedra.png',
+  'Encimera de isla.png',
+  'Encimeras.png',
+  'granito1.png',
+  'granito2.png',
+  'madera2.png',
+  'marmol1.png',
+  'marmol2.png',
+  'marmol3.png',
+  'marmol4.png',
+  'marmol6.png',
+  'onyx1.png',
+  'onyx2.jpg'
 ];
 
 export default function EncimerasPage() {

@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import styles from '../../styles/CategoryPage.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
 
 function Lightbox({ open, imagen, onClose, onPrev, onNext }) {
   if (!open) return null;

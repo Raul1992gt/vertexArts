@@ -10,14 +10,15 @@ export const metadata = {
 };
 
 const imagenes = [
-  'vertexArt.webp',
-  'tabla_corte3.webp',
-  'mobiliario3.webp',
-  'mobiliario_3.webp',
-  'mesa_rio_mia_web.webp',
-  'mesa_grande.webp',
-  'mesa de rio.webp',
-  'ajedrez_web.webp',
+  'ajedrez_web.png',
+  'mesa de rio.png',
+  'mesa_grande.png',
+  'mesa_resina.png',
+  'mesa_rio_mia_web.png',
+  'mesa_tambor.png',
+  'mobiliario.png',
+  'Mobiliario2.png',
+  'tabla_corte3.jpg',
 ];
 
 export default function MobiliarioPage() {

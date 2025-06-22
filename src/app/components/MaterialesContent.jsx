@@ -29,14 +29,8 @@ export default function MaterialesContent() {
             ref={titleRef}
             className={`scroll-reveal-scale ${titleVisible ? 'visible' : ''}`}
           >
-            Nuestros Materiales
+            "La excelencia en cada creación comienza con la selección de los mejores materiales. Combinamos innovación, sostenibilidad y calidad para dar vida a piezas únicas."
           </h1>
-          <p 
-            ref={subtitleRef}
-            className={`${styles.subtitle} scroll-reveal ${subtitleVisible ? 'visible' : ''}`}
-          >
-            La excelencia en cada creación comienza con la selección de los mejores materiales. Combinamos innovación, sostenibilidad y calidad para dar vida a piezas únicas.
-          </p>
         </div>
       </section>
 
@@ -59,6 +53,12 @@ export default function MaterialesContent() {
             <h2>Resina Epoxi</h2>
             <p className={styles.materialDescription}>
               La <strong>resina epoxi</strong> es nuestro material estrella, un polímero termoestable que se cura mediante una reacción química, creando una superficie extremadamente dura y duradera.
+            </p>
+            <p className={styles.materialDescription}>
+              Este material revolucionario nos permite crear <strong>encimeras, mesas y superficies</strong> con acabados únicos que imitan perfectamente la madera, piedra natural, mármol o efectos artísticos personalizados. Su versatilidad es incomparable, ya que podemos incorporar elementos decorativos, crear efectos de transparencia y lograr cualquier color o textura imaginable.
+            </p>
+            <p className={styles.materialDescription}>
+              Ideal para <strong>cocinas, baños, oficinas y espacios comerciales</strong>, la resina epoxi soporta el uso intensivo diario sin perder su brillo ni resistencia. No requiere selladores adicionales y mantiene sus propiedades durante décadas.
             </p>
             
             <div className={`${styles.expandableContent} ${isResinExpanded ? styles.expanded : ''}`}>
@@ -91,16 +91,19 @@ export default function MaterialesContent() {
         </div>
       </section>
 
-      {/* Madera Reciclada Section */}
+      {/* Madera Section */}
       <section 
         ref={woodRef}
         className={`${styles.materialSection} scroll-reveal-right ${woodVisible ? 'visible' : ''}`}
       >
         <div className={styles.materialRow}>
           <div className={styles.materialContent}>
-            <h2>Madera Reciclada</h2>
+            <h2>Maderas de primera calidad</h2>
             <p className={styles.materialDescription}>
-              Recuperamos <strong>maderas nobles</strong> de construcciones antiguas, muebles en desuso y estructuras históricas, dándoles una segunda vida llena de carácter y personalidad.
+              Seleccionamos exclusivamente <strong>maderas nobles de primera calidad</strong> con criterios extremadamente rigurosos: densidad superior, vetas excepcionales y ausencia total de defectos. Solo las piezas que han demostrado resistencia durante décadas pasan nuestra selección.
+            </p>
+            <p className={styles.materialDescription}>
+              La <strong>maduración natural y el secado controlado</strong> dotan a estas maderas de una dureza excepcional y una belleza incomparable. Cuando las combinamos con resina epoxi, el resultado son piezas únicas que expresan la sofisticación de la naturaleza en su máximo esplendor.
             </p>
             
             <div className={`${styles.expandableContent} ${isWoodExpanded ? styles.expanded : ''}`}>
@@ -136,7 +139,7 @@ export default function MaterialesContent() {
         </div>
       </section>
 
-      {/* Hierro y Metales Reciclados Section */}
+      {/* Hierro y Metales Section */}
       <section 
         ref={metalRef}
         className={`${styles.materialSection} scroll-reveal-left ${metalVisible ? 'visible' : ''}`}
@@ -152,9 +155,15 @@ export default function MaterialesContent() {
             />
           </div>
           <div className={styles.materialContent}>
-            <h2>Hierro y Metales Reciclados</h2>
+            <h2>Hierros, metales reciclados y elementos externos</h2>
             <p className={styles.materialDescription}>
               Transformamos <strong>estructuras metálicas</strong> industriales, herramientas antiguas y elementos arquitectónicos en componentes estructurales y decorativos únicos.
+            </p>
+            <p className={styles.materialDescription}>
+              Incorporamos <strong>hierro forjado, acero corten, latón, cobre y aluminio</strong> recuperado de demoliciones, fábricas antiguas y construcciones industriales. Cada metal aporta su propia textura, color y historia, desde la pátina natural del hierro oxidado hasta el brillo noble del cobre envejecido.
+            </p>
+            <p className={styles.materialDescription}>
+              Estos elementos metálicos proporcionan <strong>resistencia estructural y carácter industrial</strong> a nuestras creaciones, creando contrastes fascinantes cuando se combinan con la calidez de la madera y la transparencia de la resina epoxi.
             </p>
             
             <div className={`${styles.expandableContent} ${isMetalExpanded ? styles.expanded : ''}`}>
