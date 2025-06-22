@@ -64,6 +64,12 @@ export default function AboutSection() {
           Cada creación nace de una conversación, una idea, un sueño compartido. Elegimos con precisión maderas excepcionales y metales de carácter, combinándolos con la elegancia y versatilidad de la resina epoxi.
           </p>
           <p>
+          Nuestro método artesanal comienza con un análisis exhaustivo de las necesidades y gustos de cada cliente. Estudiamos el espacio, la funcionalidad requerida y el estilo deseado para crear un diseño completamente personalizado que supere las expectativas.
+          </p>
+          <p>
+          En nuestro taller, cada material pasa por un riguroso proceso de preparación: selección manual, lijado preciso, tratamiento específico y curado controlado. La combinación con resina epoxi se realiza con técnicas avanzadas que garantizan la máxima adherencia y durabilidad.
+          </p>
+          <p>
           Con manos expertas, moldeamos, pulimos y perfeccionamos cada pieza hasta convertirla en una obra única. No solo embellecen los espacios, sino que transmiten emociones, cuentan historias y reflejan la esencia de quien las imagina.
           </p>
         </div>
