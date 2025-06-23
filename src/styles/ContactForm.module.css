@@ -12,9 +12,11 @@
 .container h2 {
   text-align: center;
   color: #0a3d2c;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
   line-height: 1.2;
+  font-style: italic;
+  font-family: var(--font-geist-sans, serif);
 }
 
 .subtitle {
@@ -169,7 +171,7 @@
   }
   
   .container h2 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -179,7 +181,7 @@
   }
   
   .container h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .subtitle {

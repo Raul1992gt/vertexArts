@@ -16,7 +16,7 @@ export default function ContactForm({ formData, handleChange, handleSubmit, stat
           ref={titleRef}
           className={`scroll-reveal-scale ${titleVisible ? 'visible' : ''}`}
         >
-          ¿Tienes una idea?
+          "¿Tienes una idea?"
         </h2>
         <p className={styles.subtitle}>
           Cuéntanos tu proyecto y te ayudamos a hacerlo realidad
