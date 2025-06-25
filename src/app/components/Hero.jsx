@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.imageWrapper}>
-        <Image src="/vertexArts/images/mobiliario/mesa_rio_mia_web.png" alt="Mesa de resina" fill priority className={styles.heroImage} />
+        <Image src="/images/mobiliario/mesa_rio_mia_web.png" alt="Mesa de resina" fill priority className={styles.heroImage} />
         <div className={styles.overlay}></div>
         <div className={styles.textContent}>
           <h1 

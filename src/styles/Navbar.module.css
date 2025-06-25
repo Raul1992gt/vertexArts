@@ -1,8 +1,7 @@
 /* Configuración de la fuente Chiller */
 @font-face {
   font-family: 'Chiller';
-  src: url('/vertexArts/font/chiller.ttf') format('truetype'),
-       url('/font/chiller.ttf') format('truetype');
+  src: url('/font/chiller.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

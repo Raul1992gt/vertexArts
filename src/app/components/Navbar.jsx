@@ -28,7 +28,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.logoGroup}>
         <Link href="/" onClick={closeMenu} className={styles.logoLink}>
-          <Image src="/vertexArts/images/logo.png" alt="VertexArt Logo" width={60} height={60} priority className={styles.logo} />
+          <Image src="/images/logo.png" alt="VertexArt Logo" width={60} height={60} priority className={styles.logo} />
         </Link>
         <Link href="/" onClick={closeMenu} className={styles.brandLink}>
           <span className={styles.brandName}>VertexArts</span>

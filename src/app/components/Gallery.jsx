@@ -9,28 +9,28 @@ const categorias = [
   {
     nombre: 'Encimeras',
     carpeta: 'encimeras',
-    imagen: '/vertexArts/images/categorias/Encimeras.png',
+    imagen: '/images/categorias/Encimeras.png',
     slug: 'encimeras',
     alt: 'Encimera de resina epoxi con efecto piedra natural, resistente y personalizada por VertexArt'
   },
   {
     nombre: 'Mobiliario',
     carpeta: 'mobiliario',
-    imagen: '/vertexArts/images/categorias/Mobiliario.png',
+    imagen: '/images/categorias/Mobiliario.png',
     slug: 'mobiliario',
     alt: 'Mesa río de resina epoxi transparente y madera reciclada, mobiliario único artesanal'
   },
   {
     nombre: 'Suelos',
     carpeta: 'suelo',
-    imagen: '/vertexArts/images/categorias/Suelos.png',
+    imagen: '/images/categorias/Suelos.png',
     slug: 'suelos',
     alt: 'Suelo de resina epoxi industrial decorativo, pavimento duradero y fácil mantenimiento'
   },
   {
     nombre: 'Decoración',
     carpeta: 'decoracion',
-    imagen: '/vertexArts/images/categorias/Decoracion.png',
+    imagen: '/images/categorias/Decoracion.png',
     slug: 'decoracion',
     alt: 'Decoración interior de restaurante con elementos de resina epoxi y diseño personalizado'
   },

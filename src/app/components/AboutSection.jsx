@@ -32,7 +32,7 @@ export default function AboutSection() {
         className={`${styles.row} scroll-reveal-left ${row1Visible ? 'visible' : ''}`}
       >
         <div className={styles.imageContainer}>
-          <Image src="/vertexArts/images/mezcla_logo.png" alt="Taller de VertexArt con herramientas y proyectos de resina epoxi en proceso de creación" width={400} height={250} className={styles.bnw} />
+          <Image src="/images/mezcla_logo.png" alt="Taller de VertexArt con herramientas y proyectos de resina epoxi en proceso de creación" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestra Historia</h3>
@@ -56,7 +56,7 @@ export default function AboutSection() {
         className={`${styles.row} scroll-reveal-right ${row2Visible ? 'visible' : ''}`}
       >
         <div className={styles.imageContainer}>
-          <Image src="/vertexArts/images/about.png" alt="Artesano de VertexArt trabajando con resina epoxi y madera reciclada en el proceso de creación" width={400} height={250} className={styles.bnw} />
+          <Image src="/images/about.png" alt="Artesano de VertexArt trabajando con resina epoxi y madera reciclada en el proceso de creación" width={400} height={250} className={styles.bnw} />
         </div>
         <div className={styles.textContainer}>
           <h3>Nuestro Proceso</h3>

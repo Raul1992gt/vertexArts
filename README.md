@@ -30,7 +30,6 @@ src/
 │   ├── contacto/           # Formulario interactivo
 │   └── faq/                # Preguntas frecuentes
 ├── styles/                 # CSS Modules
-└── public/vertexArts/      # Assets optimizados
 ```
 
 ## 🎨 **Diseño Minimalista**

@@ -28,7 +28,7 @@ export default function ContactForm({ formData, handleChange, handleSubmit, stat
             className={`${styles.imageContainer} scroll-reveal-left ${imageVisible ? 'visible' : ''}`}
           >
             <Image 
-              src="/vertexArts/images/mobiliario/ajedrez_web.png" 
+              src="/images/mobiliario/ajedrez_web.png" 
               alt="Tablero de ajedrez de resina epoxi y madera artesanal creado por VertexArt" 
               width={500} 
               height={350} 
