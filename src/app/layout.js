@@ -31,6 +31,41 @@ export const metadata = {
     "mobiliario contemporáneo ecológico",
     "muebles únicos y sostenibles",
   ],
+  // Configuración de iconos y favicon
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/images/logo.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/logo.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  // Open Graph para redes sociales y Google
+  openGraph: {
+    type: 'website',
+    locale: 'es_ES',
+    url: 'https://vertexarts.es',
+    siteName: 'VertexArt',
+    title: 'Mobiliario de Resina Epoxi y Reciclado | VertexArt',
+    description: 'VertexArt crea mobiliario único y sostenible con resina epoxi y materiales reciclados. Descubre piezas de arte funcionales y ecológicas para tu hogar.',
+    images: [
+      {
+        url: '/images/mobiliario/mesa_rio_mia_web.png',
+        width: 1200,
+        height: 630,
+        alt: 'Mesa de río con resina epoxi - VertexArt',
+      },
+    ],
+  },
+  // Twitter Cards
+  twitter: {
+    card: 'summary_large_image',
+    site: '@vertexart',
+    title: 'Mobiliario de Resina Epoxi y Reciclado | VertexArt',
+    description: 'VertexArt crea mobiliario único y sostenible con resina epoxi y materiales reciclados.',
+    images: ['/images/mobiliario/mesa_rio_mia_web.png'],
+  },
 };
 
 export default function RootLayout({ children }) {

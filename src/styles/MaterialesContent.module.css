@@ -152,6 +152,11 @@
   line-height: 1.6;
 }
 
+.downloadSection {
+  margin-top: 2rem;
+  text-align: center;
+}
+
 /* Expandable Content Styles */
 .expandableContent {
   max-height: 0;

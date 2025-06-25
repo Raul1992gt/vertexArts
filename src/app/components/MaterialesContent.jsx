@@ -12,7 +12,7 @@ export default function MaterialesContent() {
   const { targetRef: resinRef, hasIntersected: resinVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { targetRef: woodRef, hasIntersected: woodVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { targetRef: metalRef, hasIntersected: metalVisible } = useIntersectionObserver({ threshold: 0.2 });
-  const { targetRef: specificationsRef, hasIntersected: specificationsVisible } = useIntersectionObserver({ threshold: 0.2 });
+
   const { targetRef: processRef, hasIntersected: processVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { containerRef, visibleItems } = useStaggeredIntersection(4); // 4 elementos en el grid
   
@@ -57,20 +57,13 @@ export default function MaterialesContent() {
             </p>
             <p className={styles.materialDescription}>
               La resina epoxi es un tipo de <strong>plástico termoestable</strong> que se forma al mezclar dos componentes: una resina base y un endurecedor (o catalizador). Químicamente, la mayoría de resinas epoxi derivan de la reacción entre bisfenol A y epiclorohidrina, que al combinarse con el endurecedor inician un proceso de curado químico. Durante este proceso, el material pasa de líquido viscoso a un sólido rígido mediante enlaces cruzados entre moléculas, en lugar de simplemente secarse por evaporación.
-            </p>
-            <p className={styles.materialDescription}>
               Una vez endurecida, la resina epoxi <strong>no puede fundirse de nuevo con calor</strong> ni modificarse su forma, lo que le confiere gran estabilidad y resistencia. Esto la diferencia de los plásticos termoplásticos tradicionales y significa que se debe trabajar con cuidado en la mezcla, ya que solo endurece una vez.
+              En resumen, la resina epoxi es un <strong>polímero muy versátil y adhesivo</strong>. Combina moléculas con grupos epoxi (de ahí su nombre) que reaccionan con el agente endurecedor (a menudo aminas) para formar una estructura tridimensional rígida. El resultado es un material transparente o ligeramente ámbar, de acabado brillante, con excelentes propiedades mecánicas y de aislamiento.
+              Gracias a su <strong>naturaleza adhesiva</strong>, la resina epoxi se pega fuertemente a superficies como madera, metal, vidrio o cerámica, lo que la hace ideal tanto como pegamento de alta resistencia como para recubrir y proteger otros materiales.
             </p>
             
             <div className={`${styles.expandableContent} ${isResinExpanded ? styles.expanded : ''}`}>
               <div className={styles.benefitsList}>
-                
-                <p className={styles.materialDescription}>
-                  En resumen, la resina epoxi es un <strong>polímero muy versátil y adhesivo</strong>. Combina moléculas con grupos epoxi (de ahí su nombre) que reaccionan con el agente endurecedor (a menudo aminas) para formar una estructura tridimensional rígida. El resultado es un material transparente o ligeramente ámbar, de acabado brillante, con excelentes propiedades mecánicas y de aislamiento.
-                </p>
-                <p className={styles.materialDescription}>
-                  Gracias a su <strong>naturaleza adhesiva</strong>, la resina epoxi se pega fuertemente a superficies como madera, metal, vidrio o cerámica, lo que la hace ideal tanto como pegamento de alta resistencia como para recubrir y proteger otros materiales.
-                </p>
                 
                 <h3>¿Por qué elegimos resina epoxi?</h3>
                 <ul>
@@ -86,6 +79,16 @@ export default function MaterialesContent() {
               <div className={styles.technicalInfo}>
                 <h3>Características técnicas</h3>
                 <p>Nuestra resina epoxi ofrece una resistencia térmica de hasta 120°C, una dureza Shore D superior a 80, y una resistencia a la compresión de más de 100 MPa. Estas propiedades la convierten en el material perfecto para aplicaciones que requieren máxima durabilidad.</p>
+                
+                <div className={styles.downloadSection}>
+                  <a 
+                    href="/pdf/Especificaciones-Materiales-VertexArts.pdf" 
+                    download="Especificaciones-Materiales-VertexArts.pdf"
+                    className={styles.specificationsButton}
+                  >
+                    🔬 Especificaciones Detalladas
+                  </a>
+                </div>
               </div>
             </div>
             
@@ -124,15 +127,6 @@ export default function MaterialesContent() {
                 <p className={styles.materialDescription}>
                   <strong>Cada tabla, cada corte, cada nudo cuenta una historia</strong>. Nosotros nos encargamos de escucharla, preservarla y convertirla en parte de tu espacio.
                 </p>
-                
-                <h3>Características de nuestras maderas:</h3>
-                <ul>
-                  <li><strong>Historia y carácter:</strong> Cada pieza cuenta una historia única</li>
-                  <li><strong>Vetas naturales:</strong> Patrones únicos imposibles de replicar</li>
-                  <li><strong>Durabilidad probada:</strong> Maderas que han resistido décadas</li>
-                  <li><strong>Sostenibilidad:</strong> Reducimos la tala de árboles nuevos</li>
-                  <li><strong>Variedad de especies:</strong> Roble, castaño, pino, eucalipto y maderas exóticas</li>
-                </ul>
               </div>
             </div>
             
@@ -189,15 +183,6 @@ export default function MaterialesContent() {
                 <p className={styles.materialDescription}>
                   El resultado: <strong>piezas con alma, resistentes, estéticas y totalmente personalizadas</strong>, capaces de transformar cualquier espacio.
                 </p>
-
-                <h3>Ventajas del metal:</h3>
-                <ul>
-                  <li><strong>Resistencia estructural:</strong> Capacidad de carga excepcional</li>
-                  <li><strong>Pátina natural:</strong> Efectos de oxidación controlada únicos</li>
-                  <li><strong>Versatilidad de formas:</strong> Moldeable para cualquier diseño</li>
-                  <li><strong>Bajo impacto ambiental:</strong> Evitamos la extracción de nuevos metales</li>
-                  <li><strong>Combinación perfecta:</strong> Se integra armoniosamente con resina y madera</li>
-                </ul>
               </div>
             </div>
             
@@ -209,24 +194,6 @@ export default function MaterialesContent() {
               {isMetalExpanded ? '↑ Ver menos' : '↓ Ver más detalles'}
             </button>
           </div>
-        </div>
-      </section>
-
-      {/* Especificaciones Detalladas Section */}
-      <section 
-        ref={specificationsRef}
-        className={`${styles.specificationsSection} scroll-reveal-scale ${specificationsVisible ? 'visible' : ''}`}
-      >
-        <div className={styles.specificationsContent}>
-          <h2>¿Necesitas más información técnica?</h2>
-          <p>Descarga nuestras Especificaciones, detalles, ventajas y mantenimiento de la resina apoxy.</p>
-          <a 
-            href="/pdf/Especificaciones-Materiales-VertexArts.pdf" 
-            download="Especificaciones-Materiales-VertexArts.pdf"
-            className={styles.specificationsButton}
-          >
-            🔬 Especificaciones Detalladas
-          </a>
         </div>
       </section>
 
