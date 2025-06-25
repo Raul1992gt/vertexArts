@@ -67,12 +67,12 @@ export default function MaterialesContent() {
                 
                 <h3>¿Por qué elegimos resina epoxi?</h3>
                 <ul>
-                  <li><strong>Durabilidad excepcional:</strong> Resistente a golpes, rayones y desgaste diario</li>
-                  <li><strong>Impermeabilidad total:</strong> No absorbe líquidos, ideal para cocinas y baños</li>
-                  <li><strong>Resistencia química:</strong> Soporta ácidos, aceites y productos de limpieza</li>
-                  <li><strong>Versatilidad estética:</strong> Permite crear efectos únicos: madera, piedra, mármol</li>
-                  <li><strong>Mantenimiento mínimo:</strong> Fácil limpieza con productos básicos</li>
-                  <li><strong>Personalización total:</strong> Colores, texturas y efectos completamente personalizables</li>
+                  <li><strong>Durabilidad excepcional:</strong> Resistente a golpes, rayones y desgaste diario.</li>
+                  <li><strong>Impermeabilidad total:</strong> No absorbe líquidos, ideal para cocinas y baños.</li>
+                  <li><strong>Resistencia química:</strong> Soporta ácidos, aceites y productos de limpieza.</li>
+                  <li><strong>Versatilidad estética:</strong> Permite crear efectos únicos: madera, piedra, mármol.</li>
+                  <li><strong>Mantenimiento mínimo:</strong> Fácil limpieza con productos básicos.</li>
+                  <li><strong>Personalización total:</strong> Colores, texturas y efectos completamente personalizables.</li>
                 </ul>
               </div>
 

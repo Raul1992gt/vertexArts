@@ -118,11 +118,11 @@
 }
 
 .benefitsList li {
-  padding: 0.8rem 0;
-  border-bottom: 1px solid #eee;
+  padding: 0.4rem 0;
+  border-bottom: none;
   font-size: 1.1rem;
   color: #444;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .benefitsList li:last-child {
