@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     pregunta: "¿Hacéis proyectos en toda España?",
-    respuesta: "Trabajamos principalmente en la comunidad de Madrid y alrededores para proyectos de instalación. Para piezas de mobiliario, podemos enviar a toda España."
+    respuesta: "¡Sí! Trabajamos en toda España realizando un exhaustivo estudio de viabilidad para cada proyecto. Nos desplazamos para evaluar el espacio, asesorar sobre las mejores opciones de diseño y garantizar que cada creación se adapte perfectamente a tus necesidades y estilo de vida."
   },
   {
     pregunta: "¿Cómo se mantiene la resina epoxi?",

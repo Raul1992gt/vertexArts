@@ -16,6 +16,32 @@
   align-items: center;
 }
 
+.socials a {
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #0a3d2c;
+}
+
+.instagramIcon {
+  transition: all 0.3s ease;
+}
+
+.instagramIcon svg {
+  color: #E4405F;
+  transition: all 0.3s ease;
+}
+
+.instagramIcon:hover {
+  transform: scale(1.1);
+}
+
+.instagramIcon:hover svg {
+  color: #C13584;
+}
+
 .faqLink {
   color: #888;
   text-decoration: underline;

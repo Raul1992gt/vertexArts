@@ -52,17 +52,25 @@ export default function MaterialesContent() {
           <div className={styles.materialContent}>
             <h2>Resina Epoxi</h2>
             <p className={styles.materialDescription}>
-              La <strong>resina epoxi</strong> es nuestro material estrella, un polímero termoestable que se cura mediante una reacción química, creando una superficie extremadamente dura y duradera.
+              <strong>¿Qué es la resina epoxi?</strong>
             </p>
             <p className={styles.materialDescription}>
-              Este material revolucionario nos permite crear <strong>encimeras, mesas y superficies</strong> con acabados únicos que imitan perfectamente la madera, piedra natural, mármol o efectos artísticos personalizados. Su versatilidad es incomparable, ya que podemos incorporar elementos decorativos, crear efectos de transparencia y lograr cualquier color o textura imaginable.
+              La resina epoxi es un tipo de <strong>plástico termoestable</strong> que se forma al mezclar dos componentes: una resina base y un endurecedor (o catalizador). Químicamente, la mayoría de resinas epoxi derivan de la reacción entre bisfenol A y epiclorohidrina, que al combinarse con el endurecedor inician un proceso de curado químico. Durante este proceso, el material pasa de líquido viscoso a un sólido rígido mediante enlaces cruzados entre moléculas, en lugar de simplemente secarse por evaporación.
             </p>
             <p className={styles.materialDescription}>
-              Ideal para <strong>cocinas, baños, oficinas y espacios comerciales</strong>, la resina epoxi soporta el uso intensivo diario sin perder su brillo ni resistencia. No requiere selladores adicionales y mantiene sus propiedades durante décadas.
+              Una vez endurecida, la resina epoxi <strong>no puede fundirse de nuevo con calor</strong> ni modificarse su forma, lo que le confiere gran estabilidad y resistencia. Esto la diferencia de los plásticos termoplásticos tradicionales y significa que se debe trabajar con cuidado en la mezcla, ya que solo endurece una vez.
             </p>
             
             <div className={`${styles.expandableContent} ${isResinExpanded ? styles.expanded : ''}`}>
               <div className={styles.benefitsList}>
+                
+                <p className={styles.materialDescription}>
+                  En resumen, la resina epoxi es un <strong>polímero muy versátil y adhesivo</strong>. Combina moléculas con grupos epoxi (de ahí su nombre) que reaccionan con el agente endurecedor (a menudo aminas) para formar una estructura tridimensional rígida. El resultado es un material transparente o ligeramente ámbar, de acabado brillante, con excelentes propiedades mecánicas y de aislamiento.
+                </p>
+                <p className={styles.materialDescription}>
+                  Gracias a su <strong>naturaleza adhesiva</strong>, la resina epoxi se pega fuertemente a superficies como madera, metal, vidrio o cerámica, lo que la hace ideal tanto como pegamento de alta resistencia como para recubrir y proteger otros materiales.
+                </p>
+                
                 <h3>¿Por qué elegimos resina epoxi?</h3>
                 <ul>
                   <li><strong>Durabilidad excepcional:</strong> Resistente a golpes, rayones y desgaste diario</li>
@@ -100,14 +108,22 @@ export default function MaterialesContent() {
           <div className={styles.materialContent}>
             <h2>Maderas de primera calidad</h2>
             <p className={styles.materialDescription}>
-              Seleccionamos exclusivamente <strong>maderas nobles de primera calidad</strong> con criterios extremadamente rigurosos: densidad superior, vetas excepcionales y ausencia total de defectos. Solo las piezas que han demostrado resistencia durante décadas pasan nuestra selección.
+              <strong>Maderas seleccionadas: nobleza, carácter y sostenibilidad</strong>
             </p>
             <p className={styles.materialDescription}>
-              La <strong>maduración natural y el secado controlado</strong> dotan a estas maderas de una dureza excepcional y una belleza incomparable. Cuando las combinamos con resina epoxi, el resultado son piezas únicas que expresan la sofisticación de la naturaleza en su máximo esplendor.
+              En Vertex Arts trabajamos con <strong>maderas de primera calidad</strong>, cuidadosamente seleccionadas por su belleza, resistencia y singularidad. Utilizamos especies nobles, exóticas y exclusivas que aportan carácter a cada pieza, con vetas únicas y texturas que convierten nuestros diseños en verdaderas obras de arte funcional.
             </p>
             
             <div className={`${styles.expandableContent} ${isWoodExpanded ? styles.expanded : ''}`}>
               <div className={styles.benefitsList}>
+                
+                <p className={styles.materialDescription}>
+                  Además, apostamos por la <strong>recuperación de maderas previamente utilizadas</strong>, dándoles una segunda vida a través de un proceso de tratamiento artesanal que respeta su esencia y potencia su estética. Este enfoque sostenible no solo reduce el impacto ambiental, sino que añade historia y autenticidad a cada creación.
+                </p>
+                <p className={styles.materialDescription}>
+                  <strong>Cada tabla, cada corte, cada nudo cuenta una historia</strong>. Nosotros nos encargamos de escucharla, preservarla y convertirla en parte de tu espacio.
+                </p>
+                
                 <h3>Características de nuestras maderas:</h3>
                 <ul>
                   <li><strong>Historia y carácter:</strong> Cada pieza cuenta una historia única</li>
@@ -157,18 +173,23 @@ export default function MaterialesContent() {
           <div className={styles.materialContent}>
             <h2>Hierros, metales reciclados y elementos externos</h2>
             <p className={styles.materialDescription}>
-              Transformamos <strong>estructuras metálicas</strong> industriales, herramientas antiguas y elementos arquitectónicos en componentes estructurales y decorativos únicos.
+              <strong>Hierro y metales: fuerza, carácter y diseño con alma</strong>
             </p>
             <p className={styles.materialDescription}>
-              Incorporamos <strong>hierro forjado, acero corten, latón, cobre y aluminio</strong> recuperado de demoliciones, fábricas antiguas y construcciones industriales. Cada metal aporta su propia textura, color y historia, desde la pátina natural del hierro oxidado hasta el brillo noble del cobre envejecido.
-            </p>
-            <p className={styles.materialDescription}>
-              Estos elementos metálicos proporcionan <strong>resistencia estructural y carácter industrial</strong> a nuestras creaciones, creando contrastes fascinantes cuando se combinan con la calidez de la madera y la transparencia de la resina epoxi.
+              En Vertex Arts integramos <strong>hierro y metales reciclados</strong> en nuestros diseños para aportar solidez, estilo y una estética única que fusiona lo industrial con lo artesanal. Recuperamos y transformamos pletinas, ángulos, tubos y piezas metálicas en bruto, dándoles nueva vida como estructuras funcionales y elementos decorativos con personalidad propia.
             </p>
             
             <div className={`${styles.expandableContent} ${isMetalExpanded ? styles.expanded : ''}`}>
               <div className={styles.benefitsList}>
-                <h3>Ventajas del metal reciclado:</h3>
+                
+                <p className={styles.materialDescription}>
+                  Cada elemento metálico es tratado con cuidado para conservar su esencia y adaptarlo al diseño final, generando <strong>contrastes elegantes</strong> con la calidez de la madera o la sutileza de la resina epoxi. También incorporamos otros materiales y elementos externos que enriquecen cada proyecto, aportando texturas y detalles que marcan la diferencia.
+                </p>
+                <p className={styles.materialDescription}>
+                  El resultado: <strong>piezas con alma, resistentes, estéticas y totalmente personalizadas</strong>, capaces de transformar cualquier espacio.
+                </p>
+
+                <h3>Ventajas del metal:</h3>
                 <ul>
                   <li><strong>Resistencia estructural:</strong> Capacidad de carga excepcional</li>
                   <li><strong>Pátina natural:</strong> Efectos de oxidación controlada únicos</li>

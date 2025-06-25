@@ -13,7 +13,7 @@ export default function Footer() {
       </div>
       <div className={styles.socials}>
         <Link href="/faq" className={styles.faqLink}>FAQ</Link>
-        <a href="https://www.instagram.com/vertexartsdesign?utm_source=qr&igsh=cHkwdTdsMDJzNDgz" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>
+        <a href="https://www.instagram.com/vertexartsdesign?utm_source=qr&igsh=cHkwdTdsMDJzNDgz" target="_blank" rel="noopener" aria-label="Instagram" className={styles.instagramIcon}><FaInstagram /></a>
       </div>
     </footer>
   );

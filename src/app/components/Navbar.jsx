@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from '../../styles/Navbar.module.css';
 import Image from 'next/image';
 import { useState } from 'react';
+import { FaInstagram } from 'react-icons/fa';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,6 +49,11 @@ export default function Navbar() {
 
       {/* Menú de navegación */}
       <ul className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ''}`}>
+        <li className={styles.socialIcon}>
+          <a href="https://www.instagram.com/vertexartsdesign?utm_source=qr&igsh=cHkwdTdsMDJzNDgz" target="_blank" rel="noopener" aria-label="Instagram" className={styles.instagramNavIcon}>
+            <FaInstagram />
+          </a>
+        </li>
         <li><Link href="/" className={styles.brandMenu} onClick={closeMenu}>Inicio</Link></li>
         <li><Link href="/about" className={styles.brandMenu} onClick={closeMenu}>Nosotros</Link></li>
         <li className={styles.dropdown}>
