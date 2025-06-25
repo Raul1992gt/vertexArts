@@ -12,6 +12,7 @@ export default function MaterialesContent() {
   const { targetRef: resinRef, hasIntersected: resinVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { targetRef: woodRef, hasIntersected: woodVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { targetRef: metalRef, hasIntersected: metalVisible } = useIntersectionObserver({ threshold: 0.2 });
+  const { targetRef: specificationsRef, hasIntersected: specificationsVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { targetRef: processRef, hasIntersected: processVisible } = useIntersectionObserver({ threshold: 0.2 });
   const { containerRef, visibleItems } = useStaggeredIntersection(4); // 4 elementos en el grid
   
@@ -208,6 +209,24 @@ export default function MaterialesContent() {
               {isMetalExpanded ? '↑ Ver menos' : '↓ Ver más detalles'}
             </button>
           </div>
+        </div>
+      </section>
+
+      {/* Especificaciones Detalladas Section */}
+      <section 
+        ref={specificationsRef}
+        className={`${styles.specificationsSection} scroll-reveal-scale ${specificationsVisible ? 'visible' : ''}`}
+      >
+        <div className={styles.specificationsContent}>
+          <h2>¿Necesitas más información técnica?</h2>
+          <p>Descarga nuestras Especificaciones, detalles, ventajas y mantenimiento de la resina apoxy.</p>
+          <a 
+            href="/pdf/Especificaciones-Materiales-VertexArts.pdf" 
+            download="Especificaciones-Materiales-VertexArts.pdf"
+            className={styles.specificationsButton}
+          >
+            🔬 Especificaciones Detalladas
+          </a>
         </div>
       </section>
 
