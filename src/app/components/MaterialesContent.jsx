@@ -83,7 +83,7 @@ export default function MaterialesContent() {
                 download="Especificaciones-Materiales-VertexArts.pdf"
                 className={styles.specificationsButton}
               >
-                🔬 Descargar Caracteríticas Técnicas y cuidados de la resina epoxi
+                🔬 Descargar caracteríticas técnicas y cuidados de la resina epoxi
               </a>
             </div>
             
