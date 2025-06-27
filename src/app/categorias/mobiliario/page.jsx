@@ -4,9 +4,20 @@ import CategoryPage from '../../components/CategoryPage';
 import PageTransition from '../../components/PageTransition';
 
 export const metadata = {
-  title: "Mobiliario de Resina Epoxi | VertexArt",
-  description: "Muebles únicos de resina epoxi y materiales reciclados. Mesas, estanterías y piezas decorativas irrepetibles que se convierten en el punto focal de cualquier espacio.",
-  keywords: ["muebles resina epoxi", "mobiliario reciclado", "mesas resina", "muebles personalizados", "mesa río epoxi"],
+  title: "Muebles Artesanales Madrid | Mobiliario Resina Epoxi | VertexArt",
+  description: "Muebles artesanales únicos en Madrid con resina epoxi y materiales reciclados. Mesas de río, mobiliario personalizado y piezas decorativas irrepetibles. Creación artesanal en Madrid.",
+  keywords: [
+    "muebles artesanales Madrid",
+    "mobiliario resina epoxi Madrid", 
+    "mesas de río Madrid",
+    "muebles personalizados Madrid",
+    "mesa río epoxi Madrid",
+    "mobiliario reciclado Madrid",
+    "muebles hecho a mano Madrid",
+    "ebanistería artesanal Madrid",
+    "mesas resina Madrid",
+    "mobiliario sostenible Madrid"
+  ],
 };
 
 const imagenes = [

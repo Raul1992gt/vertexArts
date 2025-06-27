@@ -4,9 +4,20 @@ import CategoryPage from '../../components/CategoryPage';
 import PageTransition from '../../components/PageTransition';
 
 export const metadata = {
-  title: "Decoración con Resina Epoxi | VertexArt",
-  description: "Elementos decorativos únicos con resina epoxi para restaurantes, hoteles y espacios comerciales. Paneles artísticos y elementos arquitectónicos personalizados.",
-  keywords: ["decoración resina epoxi", "paneles decorativos", "arte resina", "decoración comercial", "elementos arquitectónicos"],
+  title: "Decoración con Resina Epoxi Madrid | Espacios Comerciales | VertexArt",
+  description: "Decoración única con resina epoxi en Madrid para restaurantes, hoteles y espacios comerciales. Paneles artísticos y elementos arquitectónicos personalizados en Madrid.",
+  keywords: [
+    "decoración con resina epoxi Madrid",
+    "paneles decorativos Madrid",
+    "arte resina Madrid", 
+    "decoración comercial Madrid",
+    "elementos arquitectónicos Madrid",
+    "decoración restaurantes Madrid",
+    "decoración hoteles Madrid",
+    "ambientación espacios Madrid",
+    "interiorismo resina epoxi Madrid",
+    "diseño decorativo Madrid"
+  ],
 };
 
 const imagenes = [

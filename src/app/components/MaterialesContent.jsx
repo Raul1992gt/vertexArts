@@ -52,44 +52,39 @@ export default function MaterialesContent() {
           </div>
           <div className={styles.materialContent}>
             <h2>Resina Epoxi</h2>
+            
+            <div className={styles.benefitsList}>
+            
+            <h3>¿Por qué elegimos resina epoxi?</h3>
+            <ul>
+              <li><strong>Durabilidad excepcional:</strong> Resistente a golpes, rayones y desgaste diario.</li>
+              <li><strong>Impermeabilidad total:</strong> No absorbe líquidos, ideal para cocinas y baños.</li>
+              <li><strong>Resistencia química:</strong> Soporta ácidos, aceites y productos de limpieza.</li>
+              <li><strong>Versatilidad estética:</strong> Permite crear efectos únicos: madera, piedra, mármol.</li>
+              <li><strong>Mantenimiento mínimo:</strong> Fácil limpieza con productos básicos.</li>
+              <li><strong>Personalización total:</strong> Colores, texturas y efectos completamente personalizables.</li>
+            </ul>
+          </div>
+
+            <h3>¿Qué es la resina epoxi?</h3>
             <p className={styles.materialDescription}>
-              <strong>¿Qué es la resina epoxi?</strong>
-            </p>
-            <p className={styles.materialDescription}>
-              La resina epoxi es un tipo de <strong>plástico termoestable</strong> que se forma al mezclar dos componentes: una resina base y un endurecedor (o catalizador). Químicamente, la mayoría de resinas epoxi derivan de la reacción entre bisfenol A y epiclorohidrina, que al combinarse con el endurecedor inician un proceso de curado químico. Durante este proceso, el material pasa de líquido viscoso a un sólido rígido mediante enlaces cruzados entre moléculas, en lugar de simplemente secarse por evaporación.
-              Una vez endurecida, la resina epoxi <strong>no puede fundirse de nuevo con calor</strong> ni modificarse su forma, lo que le confiere gran estabilidad y resistencia. Esto la diferencia de los plásticos termoplásticos tradicionales y significa que se debe trabajar con cuidado en la mezcla, ya que solo endurece una vez.
-              En resumen, la resina epoxi es un <strong>polímero muy versátil y adhesivo</strong>. Combina moléculas con grupos epoxi (de ahí su nombre) que reaccionan con el agente endurecedor (a menudo aminas) para formar una estructura tridimensional rígida. El resultado es un material transparente o ligeramente ámbar, de acabado brillante, con excelentes propiedades mecánicas y de aislamiento.
-              Gracias a su <strong>naturaleza adhesiva</strong>, la resina epoxi se pega fuertemente a superficies como madera, metal, vidrio o cerámica, lo que la hace ideal tanto como pegamento de alta resistencia como para recubrir y proteger otros materiales.
+              La resina epoxi es un tipo de <strong>plástico termoestable</strong> que se forma al mezclar dos componentes: una resina base y un endurecedor (o catalizador). Químicamente, la mayoría de resinas epoxi derivan de la reacción entre bisfenol A y epiclorohidrina, que al combinarse con el endurecedor inician un proceso de curado químico. 
             </p>
             
             <div className={`${styles.expandableContent} ${isResinExpanded ? styles.expanded : ''}`}>
-              <div className={styles.benefitsList}>
-                
-                <h3>¿Por qué elegimos resina epoxi?</h3>
-                <ul>
-                  <li><strong>Durabilidad excepcional:</strong> Resistente a golpes, rayones y desgaste diario.</li>
-                  <li><strong>Impermeabilidad total:</strong> No absorbe líquidos, ideal para cocinas y baños.</li>
-                  <li><strong>Resistencia química:</strong> Soporta ácidos, aceites y productos de limpieza.</li>
-                  <li><strong>Versatilidad estética:</strong> Permite crear efectos únicos: madera, piedra, mármol.</li>
-                  <li><strong>Mantenimiento mínimo:</strong> Fácil limpieza con productos básicos.</li>
-                  <li><strong>Personalización total:</strong> Colores, texturas y efectos completamente personalizables.</li>
-                </ul>
-              </div>
-
-              <div className={styles.technicalInfo}>
-                <h3>Características técnicas</h3>
-                <p>Nuestra resina epoxi ofrece una resistencia térmica de hasta 120°C, una dureza Shore D superior a 80, y una resistencia a la compresión de más de 100 MPa. Estas propiedades la convierten en el material perfecto para aplicaciones que requieren máxima durabilidad.</p>
-                
-                <div className={styles.downloadSection}>
-                  <a 
-                    href="/pdf/Especificaciones-Materiales-VertexArts.pdf" 
-                    download="Especificaciones-Materiales-VertexArts.pdf"
-                    className={styles.specificationsButton}
-                  >
-                    🔬 Especificaciones Detalladas
-                  </a>
-                </div>
-              </div>
+              <p className={styles.materialDescription}>
+                Durante este proceso, el material pasa de líquido viscoso a un sólido rígido mediante enlaces cruzados entre moléculas, en lugar de simplemente secarse por evaporación.
+                Una vez endurecida, la resina epoxi <strong>no puede fundirse de nuevo con calor</strong> ni modificarse su forma, lo que le confiere gran estabilidad y resistencia. Esto la diferencia de los plásticos termoplásticos tradicionales y significa que se debe trabajar con cuidado en la mezcla, ya que solo endurece una vez.
+                En resumen, la resina epoxi es un <strong>polímero muy versátil y adhesivo</strong>. Combina moléculas con grupos epoxi (de ahí su nombre) que reaccionan con el agente endurecedor (a menudo aminas) para formar una estructura tridimensional rígida. El resultado es un material transparente o ligeramente ámbar, de acabado brillante, con excelentes propiedades mecánicas y de aislamiento.
+                Gracias a su <strong>naturaleza adhesiva</strong>, la resina epoxi se pega fuertemente a superficies como madera, metal, vidrio o cerámica, lo que la hace ideal tanto como pegamento de alta resistencia como para recubrir y proteger otros materiales.
+              </p>
+              <a 
+                href="/pdf/Especificaciones-Materiales-VertexArts.pdf" 
+                download="Especificaciones-Materiales-VertexArts.pdf"
+                className={styles.specificationsButton}
+              >
+                🔬 Descargar Caracteríticas Técnicas y cuidados de la resina epoxi
+              </a>
             </div>
             
             <button 

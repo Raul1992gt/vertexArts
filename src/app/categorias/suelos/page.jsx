@@ -4,9 +4,20 @@ import CategoryPage from '../../components/CategoryPage';
 import PageTransition from '../../components/PageTransition';
 
 export const metadata = {
-  title: "Suelos de Resina Epoxi | VertexArt", 
-  description: "Suelos de resina epoxi duraderos y estéticamente impactantes. Ideales para garajes, cocinas industriales y espacios comerciales. Resistentes y fáciles de limpiar.",
-  keywords: ["suelos resina epoxi", "pavimentos industriales", "suelos garaje", "resina epoxi decorativa"],
+  title: "Suelos de Resina Epoxi Madrid | Pavimentos Industriales | VertexArt", 
+  description: "Suelos de resina epoxi duraderos en Madrid para hogares, garajes y espacios comerciales. Pavimentos industriales decorativos y resistentes. Instalación profesional en Madrid.",
+  keywords: [
+    "suelos resina epoxi Madrid",
+    "pavimentos industriales Madrid", 
+    "suelos garaje Madrid",
+    "resina epoxi decorativa Madrid",
+    "pavimentos decorativos Madrid",
+    "suelos industriales Madrid",
+    "instalación suelos resina Madrid",
+    "pavimentos comerciales Madrid",
+    "suelos continuos Madrid",
+    "acabados resina epoxi Madrid"
+  ],
 };
 
 const imagenes = [

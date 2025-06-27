@@ -118,7 +118,7 @@
 }
 
 .benefitsList li {
-  padding: 0.4rem 0;
+  padding: 0.1rem 0;
   border-bottom: none;
   font-size: 1.1rem;
   color: #444;
@@ -288,8 +288,9 @@
 }
 
 .specificationsButton {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   background: linear-gradient(135deg, #0a3d2c, #145c43);
   color: white;
@@ -300,6 +301,9 @@
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(10, 61, 44, 0.2);
+  margin: 1rem auto;
+  width: fit-content;
+  text-align: center;
 }
 
 .specificationsButton:hover {
