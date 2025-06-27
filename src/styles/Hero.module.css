@@ -51,11 +51,11 @@
 
 .textContent p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .button {
@@ -70,6 +70,7 @@
   transition: all 0.3s ease;
   display: inline-block;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .button:hover {
@@ -105,7 +106,7 @@
   
   .textContent p {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.6rem;
   }
   
   .button {
@@ -130,7 +131,7 @@
   
   .textContent p {
     font-size: 0.95rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
   }
   
   .button {

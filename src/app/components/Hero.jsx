@@ -34,7 +34,7 @@ export default function Hero() {
           >
             Arte funcional
           </p>
-          <Link href="/categorias" className={styles.button}>Ver Especialidades</Link>
+          <Link href="/categorias" className={styles.button}>Ver Servicios</Link>
         </div>
       </div>
     </section>
