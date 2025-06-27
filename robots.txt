@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vertexarts.es/sitemap.xml
+
+# Optimización específica para VertexArt
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages para SEO local
+Allow: /categorias/
+Allow: /about/
+Allow: /contacto/
+Allow: /materiales/
+Allow: /faq/
+
+# Crawl-delay para ser amigable con el servidor
+Crawl-delay: 1 
